@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "store_id": {
+      "type": "integer"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "theme_id": {
+      "type": "integer"
+    },
+    "theme_attributes": {
+      "type": "array",
+      "items": {}
+    },
+    "theme_name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "store_id",
+    "image_url",
+    "theme_id",
+    "theme_attributes",
+    "theme_name"
+  ]
+}

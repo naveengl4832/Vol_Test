@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "language": {
+      "type": "string"
+    },
+    "content_dto": {
+      "type": "null"
+    },
+    "store_id": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "string"
+    },
+    "id": {
+      "type": ["null","string"]
+    },
+    "banner_id": {
+      "type": "integer"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "banner_names": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "language_name": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "language_name",
+            "name"
+          ]
+        }
+      ]
+    },
+    "banner_build_infos": {
+      "type": "null"
+    },
+    "banner_subscriptions": {
+      "type": "null"
+    },
+    "navigation_description": {
+      "type": "null"
+    },
+    "gif_url": {
+      "type": "string"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": ["null","string"]
+    }
+  },
+  "required": [
+    "language",
+    "content_dto",
+    "store_id",
+    "type",
+    "id",
+    "banner_id",
+    "image_url",
+    "banner_names",
+    "banner_build_infos",
+    "banner_subscriptions",
+    "navigation_description",
+    "gif_url",
+    "video_url",
+    "name",
+    "description"
+  ]
+}

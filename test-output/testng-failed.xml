@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Theme(failed)">
+    <classes>
+      <class name="com.onmobile.vol.cataloghub.api.chat.GetAllCharts">
+        <methods>
+          <include name="NegativeGetAllCharts" invocation-numbers="0 1"/>
+          <include name="init"/>
+          <include name="initLogger"/>
+          <include name="generateToken"/>
+          <include name="close"/>
+          <include name="getAllCharts" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.onmobile.vol.cataloghub.api.chat.GetAllCharts -->
+      <class name="com.onmobile.vol.cataloghub.api.chat.CreateChat">
+        <methods>
+          <include name="init"/>
+          <include name="initLogger"/>
+          <include name="generateToken"/>
+          <include name="close"/>
+          <include name="NegativeScenarioCreateChat" invocation-numbers="0 1 2"/>
+          <include name="createChatByChatName" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.onmobile.vol.cataloghub.api.chat.CreateChat -->
+    </classes>
+  </test> <!-- Theme(failed) -->
+</suite> <!-- Failed suite [Suite] -->

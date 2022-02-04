@@ -1,0 +1,44 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "array",
+	"items": [
+		{
+			"type": "object",
+			"properties": {
+				"language": {
+					"type": [
+						"null",
+						"string"
+					]
+				},
+				"store_id": {
+					"type": "integer"
+				},
+				"chart_id": {
+					"type": "integer"
+				},
+				"chart_name": {
+					"type": "string"
+				},
+				"type": {
+					"type": "string"
+				},
+				"primary_image": {
+					"type": "string"
+				},
+				"purchasable": {
+					"type": "boolean"
+				}
+			},
+			"required": [
+				"language",
+				"store_id",
+				"chart_id",
+				"chart_name",
+				"type",
+				"primary_image",
+				"purchasable"
+			]
+		}
+	]
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test thread-count="1" name="Theme">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.api.banner.CreateBanner" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.banner.GetAllBanner" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.banner.GetBannerById" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.banner.UpdateBanner" />
+
+			<class
+				name="com.onmobile.vol.cataloghub.api.banner.DeleteBannerById" />
+		</classes>
+
+	</test> <!-- Test -->
+
+</suite>

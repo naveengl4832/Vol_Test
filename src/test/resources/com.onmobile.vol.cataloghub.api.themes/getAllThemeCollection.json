@@ -1,0 +1,33 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "array",
+	"items": [
+		{
+			"type": "object",
+			"properties": {
+				"theme_collection_name": {
+					"type": "string"
+				},
+				"store_id": {
+					"type": "integer"
+				},
+				"start_datetime": {
+					"type": ["string","null"]
+				},
+				"end_datetime": {
+					"type": ["string","null"]
+				},
+				"theme_collection_id": {
+					"type": "integer"
+				}
+			},
+			"required": [
+				"theme_collection_name",
+				"store_id",
+				"start_datetime",
+				"end_datetime",
+				"theme_collection_id"
+			]
+		}
+	]
+}

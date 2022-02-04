@@ -1,0 +1,97 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"type": {
+			"type": "string"
+		},
+		"offset": {
+			"type": "integer"
+		},
+		"language": {
+			"type": "string"
+		},
+		"item_count": {
+			"type": "integer"
+		},
+		"chart_id": {
+			"type": "integer"
+		},
+		"items": {
+			"type": [
+				"array",
+				"null"
+			],
+			"items": {
+			}
+		},
+		"chart_name": {
+			"type": "string"
+		},
+		"chart_build_info": {
+			"type": "null"
+		},
+		"clearance_status_code": {
+			"type": "string"
+		},
+		"additional_attributes": {
+			"type": [
+				"array",
+				"null"
+			],
+			"items": {
+			}
+		},
+		"tokens": {
+			"type": "array",
+			"items": {
+			}
+		},
+		"total_item_count": {
+			"type": "integer"
+		},
+		"locale_chart_names": {
+			"type": "array",
+			"items": [
+				{
+					"type": "object",
+					"properties": {
+						"language": {
+							"type": "string"
+						},
+						"chart_name": {
+							"type": "string"
+						},
+						"description": {
+							"type": ["string","null"]
+						}
+					},
+					"required": [
+						"language",
+						"chart_name",
+						"description"
+					]
+				}
+			]
+		},
+		"primary_image": {
+			"type": "string"
+		}
+	},
+	"required": [
+		"type",
+		"offset",
+		"language",
+		"item_count",
+		"chart_id",
+		"items",
+		"chart_name",
+		"chart_build_info",
+		"clearance_status_code",
+		"additional_attributes",
+		"tokens",
+		"total_item_count",
+		"locale_chart_names",
+		"primary_image"
+	]
+}

@@ -1,0 +1,62 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"start_datetime": {
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"end_datetime": {
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"theme_collection_name": {
+			"type": "string"
+		},
+		"store_id": {
+			"type": "integer"
+		},
+		"theme_collection_id": {
+			"type": "integer"
+		},
+		"theme_collection_themes": {
+			"type": [
+				"array",
+				"null"
+			],
+			"items": [
+				{
+					"type": "object",
+					"properties": {
+						"theme_id": {
+							"type": "integer"
+						},
+						"image_url": {
+							"type": "string"
+						},
+						"theme_name": {
+							"type": "string"
+						}
+					},
+					"required": [
+						"theme_id",
+						"image_url",
+						"theme_name"
+					]
+				}
+			]
+		}
+	},
+	"required": [
+		"start_datetime",
+		"end_datetime",
+		"theme_collection_name",
+		"store_id",
+		"theme_collection_id",
+		"theme_collection_themes"
+	]
+}

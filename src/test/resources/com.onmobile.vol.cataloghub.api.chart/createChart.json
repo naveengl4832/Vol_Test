@@ -1,0 +1,65 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"chart_id": {
+			"type": "integer"
+		},
+		"chart_name": {
+			"type": "string"
+		},
+		"store_id": {
+			"type": "integer"
+		},
+		"type": {
+			"type": "string"
+		},
+		"language": {
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"locale_chart_names": {
+			"type": [
+				"array",
+				"null"
+			],
+			"items": [
+				{
+					"type": "object",
+					"properties": {
+						"language": {
+							"type": [
+								"string",
+								"null"
+							]
+						},
+						"chart_name": {
+							"type": "string"
+						},
+						"description": {
+							"type": [
+								"string",
+								"null"
+							]
+						}
+					},
+					"required": [
+						"language",
+						"chart_name",
+						"description"
+					]
+				}
+			]
+		}
+	},
+	"required": [
+		"chart_id",
+		"chart_name",
+		"store_id",
+		"type",
+		"language",
+		"locale_chart_names"
+	]
+}

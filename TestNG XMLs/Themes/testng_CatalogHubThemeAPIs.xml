@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test thread-count="1" name="Theme">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.CreateTheme" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.UpdateThemeImageURL" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.UpdateTheme" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.GetThemeByID" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.GetAllThemes" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test thread-count="1" name="Image Upload">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.api.imageupload.UploadThemeImage" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test thread-count="1" name="Theme collection">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.api.collectionThemes.CreateThemeCollection" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.collectionThemes.UpdateThemeCollection" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.collectionThemes.GetAllCollectionThemes" />
+		</classes>
+	</test> <!-- Test -->
+
+
+
+	<test thread-count="1" name="Theme Search">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.themeSearch.SearchByThemeName" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.themeSearch.SearchByThemeCollectionName" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.DeleteThemeByID" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.collectionThemes.DeleteThemeCollectionByID" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test thread-count="1" name="CatalogHub Configuration">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.api.cataloghubconfiguration.GetThemeAttributes" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

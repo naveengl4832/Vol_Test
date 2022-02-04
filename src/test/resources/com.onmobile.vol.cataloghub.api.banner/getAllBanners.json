@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "store_id": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "string"
+        },
+        "id": {
+          "type": ["null","string"]
+        },
+        "banner_id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "store_id",
+        "type",
+        "id",
+        "banner_id",
+        "name"
+      ]
+    }
+  ]
+}
