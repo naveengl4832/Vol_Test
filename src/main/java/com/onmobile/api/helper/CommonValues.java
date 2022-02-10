@@ -14,6 +14,10 @@ public class CommonValues {
 
 	public static Map<String, String> chartValues = new HashMap<String, String>();
 	public static Map<String, String> bannerValues = new HashMap<String, String>();
+	public static Map<String, String> chartCollectionValues = new HashMap<String, String>();
+	public static Map<String, String> faqValues = new HashMap<String, String>();
+
+	public static Map<String, String> bannerCollectionValues = new HashMap<String, String>();
 
 	public static String getDateAndTime() {
 

@@ -69,7 +69,7 @@ public class GetThemeCollectionByID extends RestBaseClass implements Constants {
 				.extract().response();
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(
-				PropertyReader.getProperty(CATALOG_HUB_THEMES_JSON_SCHEMA, GET_COLLECTION_THEMES_SCHEMA)));
+				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_COLLECTION_THEMES_SCHEMA)));
 
 		loggerReport.pass("Response" + response.prettyPrint());
 		loggerReport.pass("Veify the Theme collection ID : " + response.jsonPath().getString("theme_collection_id"));

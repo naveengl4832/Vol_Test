@@ -54,7 +54,7 @@ public class CreateChat extends RestBaseClass implements Constants {
 		while (testData.values().remove(""))
 			;
 		PathParam = new HashMap<String, String>();
-		PathParam.put("store_id", testData.get("store_id"));
+		PathParam.put("store_id", STORE_ID);
 
 		requestBody = new HashMap<String, String>();
 
@@ -64,20 +64,21 @@ public class CreateChat extends RestBaseClass implements Constants {
 
 		Response response = requestGenarator.getRequestWithPathReqobject(BASE_URL, PathParam, requestBody).when()
 				.post(CREATE_CHART_BY_CHART_NAME).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
-				.body("store_id", equalTo(Integer.parseInt(testData.get("store_id"))), "chart_name",
+				.body("store_id", equalTo(Integer.parseInt(STORE_ID)), "chart_name",
 						containsString(testData.get("chart_name")), "type", equalTo(testData.get("type")), "language",
 						equalTo(testData.get("language")), "locale_chart_names[0].chart_name",
 						containsString(testData.get("chart_name")))
 				.and().extract().response();
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(
-				PropertyReader.getProperty(CATALOG_HUB_THEMES_JSON_SCHEMA, CREATE_CHART_JSON_SCHEMA)));
+				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, CREATE_CHART_JSON_SCHEMA)));
 
 		CommonValues.chartValues.put("chart_id", response.jsonPath().getString("chart_id"));
 		CommonValues.chartValues.put("chart_name", response.jsonPath().getString("chart_name"));
 		CommonValues.chartValues.put("language", response.jsonPath().getString("language"));
 		CommonValues.chartValues.put("type", response.jsonPath().getString("type"));
-
+		CommonValues.chartValues.put("store_id", response.jsonPath().getString("store_id"));
+		
 		loggerReport.info("Chart is created ---> " + response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());
 		log.debug(response.asPrettyString());

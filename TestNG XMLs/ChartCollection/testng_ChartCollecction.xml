@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test thread-count="1" name="Chart Collection">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.chartCollection.CreateChartCollection" />
+			<class
+				name="com.onmobile.vol.cataloghub.chartCollection.GetChartCollectionByID" />
+
+			<class
+				name="com.onmobile.vol.cataloghub.chartCollection.GetAllChartCollections" />
+
+			<class
+				name="com.onmobile.vol.cataloghub.chartCollection.SearchByChartCollectionName" />
+
+			<class
+				name="com.onmobile.vol.cataloghub.chartCollection.DeleteChartCollectionByID" />
+
+		</classes>
+	</test> <!-- Test -->
+
+</suite>

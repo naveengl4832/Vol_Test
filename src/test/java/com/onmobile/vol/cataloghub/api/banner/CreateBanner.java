@@ -29,6 +29,7 @@ public class CreateBanner extends RestBaseClass implements Constants {
 	 * API is developed to create Charts
 	 * 
 	 */
+	
 	public RequestGenerator requestGenarator = new RequestGenerator();
 	public Map<String, String> PathParam;
 	public Map<String, String> requestBody;

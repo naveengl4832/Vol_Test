@@ -1,1318 +1,321 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="9" passed="0" failed="7" skipped="0">
+<testng-results ignored="2" total="7" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-01T12:11:54 IST" name="Suite" finished-at="2022-02-01T12:12:15 IST" duration-ms="21266">
+  <suite started-at="2022-02-10T18:27:50 IST" name="Suite" finished-at="2022-02-10T18:27:54 IST" duration-ms="3957">
     <groups>
     </groups>
-    <test started-at="2022-02-01T12:11:54 IST" name="Theme" finished-at="2022-02-01T12:12:15 IST" duration-ms="21266">
-      <class name="com.onmobile.vol.cataloghub.api.chat.CreateChat">
-        <test-method is-config="true" signature="generateToken()[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:11:54 IST" name="generateToken" finished-at="2022-02-01T12:11:54 IST" duration-ms="92" status="PASS">
+    <test started-at="2022-02-10T18:27:50 IST" name="Banner Collection" finished-at="2022-02-10T18:27:54 IST" duration-ms="3957">
+      <class name="com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942]" started-at="2022-02-10T18:27:53 IST" name="initLogger" finished-at="2022-02-10T18:27:53 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogger -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942]" started-at="2022-02-10T18:27:53 IST" name="init" finished-at="2022-02-10T18:27:53 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID.getBannerById_NegativeScenarios(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6dc9a56e]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@5477d90e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="getBannerById_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942]" started-at="2022-02-10T18:27:53 IST" name="getBannerById_NegativeScenarios" data-provider="getNegativeTestdata" finished-at="2022-02-10T18:27:53 IST" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@10d98940]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBannerById_NegativeScenarios -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942]" started-at="2022-02-10T18:27:53 IST" name="close" finished-at="2022-02-10T18:27:53 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID.getBannerById_NegativeScenarios(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6dc9a56e]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@5477d90e]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=getBannerById_NegativeScenarios status=SUCCESS method=GetBannerCollectionByID.getBannerById_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942]" started-at="2022-02-10T18:27:53 IST" name="init" finished-at="2022-02-10T18:27:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID.getBannerById_NegativeScenarios(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@287ad0da]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@5477d90e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="getBannerById_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942]" started-at="2022-02-10T18:27:53 IST" name="getBannerById_NegativeScenarios" data-provider="getNegativeTestdata" finished-at="2022-02-10T18:27:54 IST" duration-ms="156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@7a3643e3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBannerById_NegativeScenarios -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942]" started-at="2022-02-10T18:27:54 IST" name="close" finished-at="2022-02-10T18:27:54 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID.getBannerById_NegativeScenarios(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@287ad0da]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@5477d90e]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=getBannerById_NegativeScenarios status=SUCCESS method=GetBannerCollectionByID.getBannerById_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942]" started-at="2022-02-10T18:27:54 IST" name="init" finished-at="2022-02-10T18:27:54 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID.getBannerById_NegativeScenarios(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1b19712f]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@5477d90e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="getBannerById_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942]" started-at="2022-02-10T18:27:54 IST" name="getBannerById_NegativeScenarios" data-provider="getNegativeTestdata" finished-at="2022-02-10T18:27:54 IST" duration-ms="127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@338d47b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBannerById_NegativeScenarios -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942]" started-at="2022-02-10T18:27:54 IST" name="close" finished-at="2022-02-10T18:27:54 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID.getBannerById_NegativeScenarios(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1b19712f]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@5477d90e]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=getBannerById_NegativeScenarios status=SUCCESS method=GetBannerCollectionByID.getBannerById_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942]" started-at="2022-02-10T18:27:54 IST" name="init" finished-at="2022-02-10T18:27:54 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID.getBannerCollectionById(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@714c74eb]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@5477d90e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="getBannerCollectionById([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942]" started-at="2022-02-10T18:27:54 IST" name="getBannerCollectionById" data-provider="getPositiveTestdata" finished-at="2022-02-10T18:27:54 IST" duration-ms="435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@55071497]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBannerCollectionById -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942]" started-at="2022-02-10T18:27:54 IST" name="close" finished-at="2022-02-10T18:27:54 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID.getBannerCollectionById(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@714c74eb]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@5477d90e]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=getBannerCollectionById status=SUCCESS method=GetBannerCollectionByID.getBannerCollectionById([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID@4f0f2942] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID -->
+      <class name="com.onmobile.vol.cataloghub.api.bannerCollection.CreateBannerCollection">
+        <test-method is-config="true" signature="generateToken()[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.CreateBannerCollection@5db6b9cd]" started-at="2022-02-10T18:27:50 IST" name="generateToken" finished-at="2022-02-10T18:27:50 IST" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateToken -->
-        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:11:54 IST" name="initLogger" finished-at="2022-02-01T12:11:54 IST" duration-ms="479" status="PASS">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.CreateBannerCollection@5db6b9cd]" started-at="2022-02-10T18:27:50 IST" name="initLogger" finished-at="2022-02-10T18:27:51 IST" duration-ms="555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initLogger -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:11:55 IST" name="init" finished-at="2022-02-01T12:11:55 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.CreateBannerCollection@5db6b9cd]" started-at="2022-02-10T18:27:51 IST" name="init" finished-at="2022-02-10T18:27:51 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.CreateChat.NegativeScenarioCreateChat(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.bannerCollection.CreateBannerCollection.createChatByChatName(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@68e2d03e]]>
+                <![CDATA[[Ljava.lang.Object;@13f4048e]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
+                <![CDATA[org.testng.TestRunner@5477d90e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="NegativeScenarioCreateChat([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:11:55 IST" name="NegativeScenarioCreateChat" data-provider="getNegativeTestdata" finished-at="2022-02-01T12:11:58 IST" duration-ms="3536" status="FAIL">
+        <test-method signature="createChatByChatName([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.CreateBannerCollection@5db6b9cd]" started-at="2022-02-10T18:27:51 IST" name="createChatByChatName" data-provider="getPositiveTestdata" finished-at="2022-02-10T18:27:53 IST" duration-ms="1842" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.util.Map;@19da993b]]>
+                <![CDATA[[Ljava.util.Map;@2729bb71]]>
               </value>
             </param>
           </params>
-          <exception class="java.net.ConnectException">
-            <message>
-              <![CDATA[Connection refused: connect]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.net.ConnectException: Connection refused: connect
-at java.base/sun.nio.ch.Net.connect0(Native Method)
-at java.base/sun.nio.ch.Net.connect(Net.java:579)
-at java.base/sun.nio.ch.Net.connect(Net.java:568)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-at java.base/java.net.Socket.connect(Socket.java:633)
-at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
-at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:350)
-at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1181)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:157)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.FilterContext$next.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)
-at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-at com.onmobile.vol.cataloghub.api.chat.CreateChat.NegativeScenarioCreateChat(CreateChat.java:102)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.net.ConnectException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NegativeScenarioCreateChat -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:11:58 IST" name="close" finished-at="2022-02-01T12:11:58 IST" duration-ms="16" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.CreateChat.NegativeScenarioCreateChat(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@68e2d03e]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=NegativeScenarioCreateChat status=FAILURE method=CreateChat.NegativeScenarioCreateChat([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:11:58 IST" name="init" finished-at="2022-02-01T12:11:58 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.CreateChat.NegativeScenarioCreateChat(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@32ab408e]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="NegativeScenarioCreateChat([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:11:58 IST" name="NegativeScenarioCreateChat" data-provider="getNegativeTestdata" finished-at="2022-02-01T12:12:01 IST" duration-ms="2513" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@415a3f6a]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.net.ConnectException">
-            <message>
-              <![CDATA[Connection refused: connect]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.net.ConnectException: Connection refused: connect
-at java.base/sun.nio.ch.Net.connect0(Native Method)
-at java.base/sun.nio.ch.Net.connect(Net.java:579)
-at java.base/sun.nio.ch.Net.connect(Net.java:568)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-at java.base/java.net.Socket.connect(Socket.java:633)
-at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
-at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:350)
-at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1181)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.FilterContext$next.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)
-at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-at com.onmobile.vol.cataloghub.api.chat.CreateChat.NegativeScenarioCreateChat(CreateChat.java:102)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.net.ConnectException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NegativeScenarioCreateChat -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:12:01 IST" name="close" finished-at="2022-02-01T12:12:01 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.CreateChat.NegativeScenarioCreateChat(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@32ab408e]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=NegativeScenarioCreateChat status=FAILURE method=CreateChat.NegativeScenarioCreateChat([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:12:01 IST" name="init" finished-at="2022-02-01T12:12:01 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.CreateChat.NegativeScenarioCreateChat(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@6ad6443]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="NegativeScenarioCreateChat([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:12:01 IST" name="NegativeScenarioCreateChat" data-provider="getNegativeTestdata" finished-at="2022-02-01T12:12:03 IST" duration-ms="2549" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@a54acec]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.net.ConnectException">
-            <message>
-              <![CDATA[Connection refused: connect]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.net.ConnectException: Connection refused: connect
-at java.base/sun.nio.ch.Net.connect0(Native Method)
-at java.base/sun.nio.ch.Net.connect(Net.java:579)
-at java.base/sun.nio.ch.Net.connect(Net.java:568)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-at java.base/java.net.Socket.connect(Socket.java:633)
-at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
-at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:350)
-at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1181)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.FilterContext$next.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)
-at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-at com.onmobile.vol.cataloghub.api.chat.CreateChat.NegativeScenarioCreateChat(CreateChat.java:102)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.net.ConnectException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NegativeScenarioCreateChat -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:12:03 IST" name="close" finished-at="2022-02-01T12:12:03 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.CreateChat.NegativeScenarioCreateChat(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@6ad6443]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=NegativeScenarioCreateChat status=FAILURE method=CreateChat.NegativeScenarioCreateChat([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:12:03 IST" name="init" finished-at="2022-02-01T12:12:03 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.CreateChat.createChatByChatName(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@78b03788]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="createChatByChatName([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:12:03 IST" name="createChatByChatName" data-provider="getPositiveTestdata" finished-at="2022-02-01T12:12:07 IST" duration-ms="3921" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@7df6d663]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.net.ConnectException">
-            <message>
-              <![CDATA[Connection refused: connect]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.net.ConnectException: Connection refused: connect
-at java.base/sun.nio.ch.Net.connect0(Native Method)
-at java.base/sun.nio.ch.Net.connect(Net.java:579)
-at java.base/sun.nio.ch.Net.connect(Net.java:568)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-at java.base/java.net.Socket.connect(Socket.java:633)
-at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
-at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:350)
-at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1181)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.FilterContext$next.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)
-at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-at com.onmobile.vol.cataloghub.api.chat.CreateChat.createChatByChatName(CreateChat.java:66)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.net.ConnectException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createChatByChatName -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:12:07 IST" name="close" finished-at="2022-02-01T12:12:07 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.CreateBannerCollection@5db6b9cd]" started-at="2022-02-10T18:27:53 IST" name="close" finished-at="2022-02-10T18:27:53 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.CreateChat.createChatByChatName(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.bannerCollection.CreateBannerCollection.createChatByChatName(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@78b03788]]>
+                <![CDATA[[Ljava.lang.Object;@13f4048e]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
+                <![CDATA[org.testng.TestRunner@5477d90e]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[[TestResult name=createChatByChatName status=FAILURE method=CreateChat.createChatByChatName([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f] output={null}]]]>
+                <![CDATA[[TestResult name=createChatByChatName status=SUCCESS method=CreateBannerCollection.createChatByChatName([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.CreateBannerCollection@5db6b9cd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.CreateChat@210ab13f]" started-at="2022-02-01T12:12:15 IST" name="afterSuite" finished-at="2022-02-01T12:12:17 IST" duration-ms="2322" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.onmobile.vol.cataloghub.api.bannerCollection.CreateBannerCollection@5db6b9cd]" started-at="2022-02-10T18:27:54 IST" name="afterSuite" finished-at="2022-02-10T18:27:57 IST" duration-ms="2271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.onmobile.vol.cataloghub.api.chat.CreateChat -->
-      <class name="com.onmobile.vol.cataloghub.api.chat.GetAllCharts">
-        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.GetAllCharts@2657d4dd]" started-at="2022-02-01T12:12:07 IST" name="initLogger" finished-at="2022-02-01T12:12:07 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initLogger -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.GetAllCharts@2657d4dd]" started-at="2022-02-01T12:12:07 IST" name="init" finished-at="2022-02-01T12:12:07 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.GetAllCharts.NegativeGetAllCharts(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@3f5dfe69]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="NegativeGetAllCharts([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.GetAllCharts@2657d4dd]" started-at="2022-02-01T12:12:07 IST" name="NegativeGetAllCharts" data-provider="getNegativeTestdata" finished-at="2022-02-01T12:12:10 IST" duration-ms="2593" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@2c30c81d]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.net.ConnectException">
-            <message>
-              <![CDATA[Connection refused: connect]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.net.ConnectException: Connection refused: connect
-at java.base/sun.nio.ch.Net.connect0(Native Method)
-at java.base/sun.nio.ch.Net.connect(Net.java:579)
-at java.base/sun.nio.ch.Net.connect(Net.java:568)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-at java.base/java.net.Socket.connect(Socket.java:633)
-at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
-at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:495)
-at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:452)
-at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1200)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.FilterContext$next.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-at com.onmobile.vol.cataloghub.api.chat.GetAllCharts.NegativeGetAllCharts(GetAllCharts.java:87)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.net.ConnectException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NegativeGetAllCharts -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.GetAllCharts@2657d4dd]" started-at="2022-02-01T12:12:10 IST" name="close" finished-at="2022-02-01T12:12:10 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.GetAllCharts.NegativeGetAllCharts(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@3f5dfe69]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=NegativeGetAllCharts status=FAILURE method=GetAllCharts.NegativeGetAllCharts([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.GetAllCharts@2657d4dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.GetAllCharts@2657d4dd]" started-at="2022-02-01T12:12:10 IST" name="init" finished-at="2022-02-01T12:12:10 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.GetAllCharts.NegativeGetAllCharts(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@571a663c]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="NegativeGetAllCharts([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.GetAllCharts@2657d4dd]" started-at="2022-02-01T12:12:10 IST" name="NegativeGetAllCharts" data-provider="getNegativeTestdata" finished-at="2022-02-01T12:12:12 IST" duration-ms="2498" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@7b222230]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.net.ConnectException">
-            <message>
-              <![CDATA[Connection refused: connect]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.net.ConnectException: Connection refused: connect
-at java.base/sun.nio.ch.Net.connect0(Native Method)
-at java.base/sun.nio.ch.Net.connect(Net.java:579)
-at java.base/sun.nio.ch.Net.connect(Net.java:568)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-at java.base/java.net.Socket.connect(Socket.java:633)
-at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
-at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:495)
-at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:452)
-at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1200)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.FilterContext$next.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-at com.onmobile.vol.cataloghub.api.chat.GetAllCharts.NegativeGetAllCharts(GetAllCharts.java:87)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.net.ConnectException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NegativeGetAllCharts -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.GetAllCharts@2657d4dd]" started-at="2022-02-01T12:12:13 IST" name="close" finished-at="2022-02-01T12:12:13 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.GetAllCharts.NegativeGetAllCharts(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@571a663c]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=NegativeGetAllCharts status=FAILURE method=GetAllCharts.NegativeGetAllCharts([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.GetAllCharts@2657d4dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.GetAllCharts@2657d4dd]" started-at="2022-02-01T12:12:13 IST" name="init" finished-at="2022-02-01T12:12:13 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.GetAllCharts.getAllCharts(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@3a788fe0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="getAllCharts([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.GetAllCharts@2657d4dd]" started-at="2022-02-01T12:12:13 IST" name="getAllCharts" data-provider="getPositiveTestdata" finished-at="2022-02-01T12:12:15 IST" duration-ms="2512" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@13d019a4]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.net.ConnectException">
-            <message>
-              <![CDATA[Connection refused: connect]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.net.ConnectException: Connection refused: connect
-at java.base/sun.nio.ch.Net.connect0(Native Method)
-at java.base/sun.nio.ch.Net.connect(Net.java:579)
-at java.base/sun.nio.ch.Net.connect(Net.java:568)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-at java.base/java.net.Socket.connect(Socket.java:633)
-at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
-at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:495)
-at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:452)
-at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1200)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.FilterContext$next.call(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-at com.onmobile.vol.cataloghub.api.chat.GetAllCharts.getAllCharts(GetAllCharts.java:57)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.net.ConnectException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAllCharts -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.GetAllCharts@2657d4dd]" started-at="2022-02-01T12:12:15 IST" name="close" finished-at="2022-02-01T12:12:15 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.chat.GetAllCharts.getAllCharts(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@3a788fe0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@120aa40b]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=getAllCharts status=FAILURE method=GetAllCharts.getAllCharts([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.chat.GetAllCharts@2657d4dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.onmobile.vol.cataloghub.api.chat.GetAllCharts -->
-    </test> <!-- Theme -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.bannerCollection.CreateBannerCollection -->
+    </test> <!-- Banner Collection -->
   </suite> <!-- Suite -->
 </testng-results>

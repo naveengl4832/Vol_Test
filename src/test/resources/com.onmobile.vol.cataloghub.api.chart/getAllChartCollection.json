@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "store_id": {
+          "type": "integer"
+        },
+        "chart_collection_name": {
+          "type": "string"
+        },
+        "chart_collection_id": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "store_id",
+        "chart_collection_name",
+        "chart_collection_id"
+      ]
+    }
+  ]
+}

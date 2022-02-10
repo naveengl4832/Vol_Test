@@ -79,7 +79,7 @@ public class SearchByThemeName extends RestBaseClass implements Constants {
 		}
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(
-				PropertyReader.getProperty(CATALOG_HUB_THEMES_JSON_SCHEMA, SEARCH_THEME_BY_THEME_NAME_SCHEMA)));
+				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, SEARCH_THEME_BY_THEME_NAME_SCHEMA)));
 
 		loggerReport.pass("Response" + response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());

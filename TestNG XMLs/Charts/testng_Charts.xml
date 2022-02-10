@@ -2,12 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-	<test thread-count="1" name="Theme">
+	<test thread-count="1" name="Chart">
 		<classes>
+			<class name="com.onmobile.vol.cataloghub.api.chat.CreateChat" />
+			<class name="com.onmobile.vol.cataloghub.api.chat.GetChartByID" />
+			<class name="com.onmobile.vol.cataloghub.api.chat.GetAllCharts" />
 			<class
-				name="com.onmobile.vol.cataloghub.api.chat.CreateChat" />
+				name="com.onmobile.vol.cataloghub.api.chat.SearchByChartName" />
 			<class
-				name="com.onmobile.vol.cataloghub.api.chat.GetAllCharts" />
+				name="com.onmobile.vol.cataloghub.api.chat.DeleteChartByID" />
 		</classes>
 	</test> <!-- Test -->
 

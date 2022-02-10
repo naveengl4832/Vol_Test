@@ -1,7 +1,7 @@
 package com.onmobile.vol.cataloghub.api.chat;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -50,7 +50,7 @@ public class GetChartByID extends RestBaseClass implements Constants {
 	}
 
 	@Test(dataProvider = "getPositiveTestdata")
-	public void getThemeByThemeID(Map<String, String> testDatList[]) {
+	public void getChartByID(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
@@ -64,13 +64,13 @@ public class GetChartByID extends RestBaseClass implements Constants {
 
 		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when().get(GET_CHART_BY_ID)
 				.then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
-				.body("store_id", equalTo(Integer.parseInt(testData.get("store_id"))), "chart_name",
-						equalTo(CommonValues.chartValues.get("chart_name")), "chart_id",
-						equalTo(CommonValues.chartValues.get("chart_id")))
+				.body("chart_name", equalTo(CommonValues.chartValues.get("chart_name")), "chart_id",
+						equalTo(Integer.parseInt(CommonValues.chartValues.get("chart_id"))), "$",
+						hasKey("primary_image"), "primary_image", notNullValue())
 				.extract().response();
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(
-				PropertyReader.getProperty(CATALOG_HUB_THEMES_JSON_SCHEMA, GET_CHART_BY_ID_JSON_SCHEMA)));
+				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_CHART_BY_ID_JSON_SCHEMA)));
 
 		loggerReport.pass("Response" + response.prettyPrint());
 		loggerReport.pass("Veified the ChartID : " + response.jsonPath().getString("chart_id"));
@@ -91,10 +91,9 @@ public class GetChartByID extends RestBaseClass implements Constants {
 		pathParam.put("store_id", testData.get("store_id"));
 		pathParam.put("chart_id", testData.get("chart_id"));
 
-		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when()
-				.get(GET_CHART_BY_ID).then().statusCode(Integer.parseInt(testData.get("statusCode"))).extract()
-				.response();
-		
+		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when().get(GET_CHART_BY_ID)
+				.then().statusCode(Integer.parseInt(testData.get("statusCode"))).extract().response();
+
 		loggerReport.info("Response \n" + response.asString());
 		LOGGER.info("Response : " + response.asString());
 		log.debug(response.prettyPrint());

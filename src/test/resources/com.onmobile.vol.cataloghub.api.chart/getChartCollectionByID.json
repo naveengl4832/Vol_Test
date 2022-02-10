@@ -1,0 +1,61 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"store_id": {
+			"type": "integer"
+		},
+		"chart_collection_name": {
+			"type": "string"
+		},
+		"chart_collection_charts": {
+			"type": "array",
+			"items": [
+				{
+					"type": "object",
+					"properties": {
+						"language": {
+							"type": "string"
+						},
+						"chart_id": {
+							"type": "integer"
+						},
+						"chart_name": {
+							"type": "string"
+						},
+						"start_date": {
+							"type": "string"
+						},
+						"end_date": {
+							"type": "string"
+						},
+						"image_url": {
+							"type": "string"
+						},
+						"position": {
+							"type": "integer"
+						}
+					},
+					"required": [
+						"language",
+						"chart_id",
+						"chart_name",
+						"start_date",
+						"end_date",
+						"image_url",
+						"position"
+					]
+				}
+			]
+		},
+		"chart_collection_id": {
+			"type": "integer"
+		}
+	},
+	"required": [
+		"store_id",
+		"chart_collection_name",
+		"chart_collection_charts",
+		"chart_collection_id"
+	]
+}

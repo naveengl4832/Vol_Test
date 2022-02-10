@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test thread-count="1" name="Faq">
+		<classes>
+			<class name="com.onmobile.vol.cataloghub.api.faq.CreateFaq" />
+			<class name="com.onmobile.vol.cataloghub.api.faq.GetFaq" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite>

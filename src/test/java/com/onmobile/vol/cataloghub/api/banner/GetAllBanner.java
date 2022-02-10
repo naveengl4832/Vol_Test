@@ -64,7 +64,7 @@ public class GetAllBanner extends RestBaseClass implements Constants {
 		System.out.println(response.asPrettyString());
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(
-				PropertyReader.getProperty(CATALOG_HUB_THEMES_JSON_SCHEMA, GET_ALL_BANNER_JSON_SCHEMA)));
+				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_ALL_BANNER_JSON_SCHEMA)));
 
 		loggerReport.pass("Response" + response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());

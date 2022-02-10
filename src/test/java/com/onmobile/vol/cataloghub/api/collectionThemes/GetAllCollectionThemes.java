@@ -60,7 +60,7 @@ public class GetAllCollectionThemes extends RestBaseClass implements Constants {
 		System.out.println(response.asPrettyString());
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(
-				PropertyReader.getProperty(CATALOG_HUB_THEMES_JSON_SCHEMA, GET_ALL_THEME_COLLECTION_SCHEMA)));
+				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_ALL_THEME_COLLECTION_SCHEMA)));
 
 		loggerReport.pass("Response \n" + response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());

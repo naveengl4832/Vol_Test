@@ -49,7 +49,7 @@ public class GetAllCharts extends RestBaseClass implements Constants {
 			;
 
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", testData.get("store_id"));
+		pathParam.put("store_id", CommonValues.chartValues.get("store_id"));
 
 		queryParam = new HashMap<String, String>();
 		queryParam.put("response", testData.get("response"));
@@ -64,7 +64,7 @@ public class GetAllCharts extends RestBaseClass implements Constants {
 		System.out.println(response.asPrettyString());
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(
-				PropertyReader.getProperty(CATALOG_HUB_THEMES_JSON_SCHEMA, GET_ALL_CHART_JSON_SCHEMA)));
+				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_ALL_CHART_JSON_SCHEMA)));
 
 		loggerReport.pass("Response" + response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());

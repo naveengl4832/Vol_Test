@@ -72,7 +72,7 @@ public class GetBannerById extends RestBaseClass implements Constants {
 				.extract().response();
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(
-				PropertyReader.getProperty(CATALOG_HUB_THEMES_JSON_SCHEMA, GET_BANNER_BY_ID_JSON_SCHEMA)));
+				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_BANNER_BY_ID_JSON_SCHEMA)));
 
 		loggerReport.pass("Response" + response.prettyPrint());
 		loggerReport.pass("Veified the ChartID : " + response.jsonPath().getString("chart_id"));

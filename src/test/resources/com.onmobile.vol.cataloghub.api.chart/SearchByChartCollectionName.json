@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "total_item_count": {
+      "type": "integer"
+    },
+    "offset": {
+      "type": "integer"
+    },
+    "item_count": {
+      "type": "integer"
+    },
+    "chart_collections": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "chart_collection_id": {
+              "type": "integer"
+            },
+            "chart_collection_name": {
+              "type": "string"
+            },
+            "store_id": {
+              "type": "integer"
+            },
+            "chart_collection_charts": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "chart_collection_id",
+            "chart_collection_name",
+            "store_id",
+            "chart_collection_charts"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "total_item_count",
+    "offset",
+    "item_count",
+    "chart_collections"
+  ]
+}

@@ -8,6 +8,7 @@ public interface Constants {
 	String FORM_DATA_TYPE = "multipart/form-data";
 	String BASE_URL = "BASE_URL";
 	String ENVIRONMENT = System.getProperty("env");
+	String STORE_ID = System.getProperty("store_id");
 
 	/********** URL PATH PROPERTIES **************/
 	String URL_PROPERTIES_PATH = "./src/main/java/com/onmobile/api/config/URL_Config.properties";
@@ -16,17 +17,24 @@ public interface Constants {
 	String GET_THEME_XL_PATH = "./TestData/Catalog/Theme_Api.xlsx";
 	String GET_CHART_XL_PATH = "./TestData/Catalog/Chat_Api.xlsx";
 	String GET_BANNER_XL_PATH = "./TestData/Catalog/Banner_Api.xlsx";
+	String GET_FAQ_XL_PATH = "./TestData/Catalog/Faq.xlsx";
 
 	/**************** Images Path **********************/
 	String IMAGE_PATH = "./src/main/java/com/onmobile/api/config/ThemeImages.properties";
 
 	/**** JSON-SCHEMA PATH ***********/
-	String CATALOG_HUB_THEMES_JSON_SCHEMA = "./src/main/java/com/onmobile/api/config/JsonSchemaConfig.properties";
+	String CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE = "./src/main/java/com/onmobile/api/config/JsonSchemaConfig.properties";
 	String CATALOG_HUB_THEMES = "CATALOG_HUB_THEMES";
 	String GET_THEME_ATTRIBUTES_SCHEMA = "GET_THEME_ATTRIBUTES_SCHEMA";
 	String CREATE_CHART_JSON_SCHEMA = "CREATE_CHART_JSON_SCHEMA";
-	String GET_ALL_BANNER_JSON_SCHEMA="GET_ALL_BANNER_JSON_SCHEMA";
-	String GET_BANNER_BY_ID_JSON_SCHEMA="GET_BANNER_BY_ID_JSON_SCHEMA";
+	String GET_ALL_BANNER_JSON_SCHEMA = "GET_ALL_BANNER_JSON_SCHEMA";
+	String GET_BANNER_BY_ID_JSON_SCHEMA = "GET_BANNER_BY_ID_JSON_SCHEMA";
+	String GET_CHART_COLLECTION_BY_ID_JSON_SCHEMA = "GET_CHART_COLLECTION_BY_ID_JSON_SCHEMA";
+	String GET_ALL_CHART_COLLECTION_JSON_SCHEMA = "GET_ALL_CHART_COLLECTION_JSON_SCHEMA";
+	String SEARCH_BY_CHART_COLLECTIONNAME_JSON_SCHEMA = "SEARCH_BY_CHART_COLLECTIONNAME_JSON_SCHEMA";
+	String SEARCH_BY_CHART_NAME_JSON_SCHEMA = "SEARCH_BY_CHART_NAME_JSON_SCHEMA";
+	
+	String GET_COLLECTION_BANNER_BY_ID_JSON_SCHEMA="GET_COLLECTION_BANNER_BY_ID_JSON_SCHEMA";
 
 	/*************** Get Theme BY ID **************/
 	String GET_CATALOG_HUB_THEAMS = "/catalog-hub/{store_id}/themes/{theme_id}";
@@ -107,6 +115,12 @@ public interface Constants {
 	String CREATE_CHART_NEGATIVE_SHEET = "CREATE_CHAT_NEGATIVE_SHEET";
 	String CREATE_CHART_BY_CHART_NAME = "/catalog-hub/{store_id}/charts";
 
+	/***********
+	 * delete CHART BY ID
+	 ******************************************************/
+	String DELETE_CHART_BY_ID_POSITIVE_SHEET = "DELETE_CHART_BY_ID_POSITIVE_SHE";
+	String DELETE_CHART_BY_ID = "/catalog-hub/{store_id}/charts/{chart_id}";
+
 	/******** Get All Charts ************************/
 
 	String GET_ALL_CHART_POSITIVE_SHEET = "GET_ALL_CHART_POSITIVE_SHEET";
@@ -120,7 +134,12 @@ public interface Constants {
 	String GET_CHART_BY_ID = "/catalog-hub/{store_id}/chart/{chart_id}";
 	String GET_CHART_BY_ID_JSON_SCHEMA = "GET_CHART_BY_ID_JSON_SCHEMA";
 
-	/*******************************************************************/
+	/************ SEARCH CHART BY CHART NAME ******************************/
+	String SEARCH_CHART_BY_CHART_NAME_POSITIVE_SHEET = "SEARCH_CHART_NAME_POSITIVE_SHEE";
+	String SEARCH_CHART_BY_CHARTNAME_NEGATIVE_SHEET = "SEARCH_CHART_NAME_NEGATIVE_SHEE";
+	String SEARCH_CHART_BY_CHARTNAME = "/catalog-hub/{store_id}/search/chart/chart_name";
+
+	/***************************************************************************************************************/
 
 	/******************** Create Banner *************************/
 
@@ -133,27 +152,84 @@ public interface Constants {
 	String GET_BANNER_POSTIVE_SHEET = "GET_ALL_BANNER_POSITIVE_SHEET";
 	String GET_BANNER_NEGATIVE_SHEET = "GET_ALL_BANNER_NEGATIVE_SHEET";
 	String GET_ALL_BANNER = "/catalog-hub/{store_id}/banners";
-	
+
 	/********************* Get Banner By ID ********************************/
 
 	String GET_BANNER_BY_ID_NEGATIVE_SHEET = "GET_BANNER_BY_ID_POSITIVE_SHEETT";
 	String GET_BANNER_BY_ID_POSITIVE_SHEET = "GET_BANNER_BY_ID_NEGATIVE_SHEET";
 	String GET_BANNER_BY_ID = "/catalog-hub/{store_id}/banner/{banner_id}";
-	
-	/****************Delete Banner ID****************************************/
-	
-	String DELETE_BANNER_ID_POSITIVE_SHEET="DELETE_BANNER_ID_POSITIVE_SHEET";
-	String DELETE_BANNER_ID_NEGATIVE_SHEET="DELETE_BANNER_ID_NEGATIVE_SHEET";
-	String DELETE_BANNER_BY_ID="/catalog-hub/{store_id}/banners/{banner_id}";
-	
-	/*********************Update Banner ***********************************/
-	
-	String UPDATE_BANNER_POSITIVE_SHEET="UPDATE_BANNER_POSITIVE_SHEET";
-	String UPDATE_BANNER_BY_ID="catalog-hub/{store_id}/banners";
-	
-	
-	
-	
-	
+
+	/**************** Delete Banner ID ****************************************/
+
+	String DELETE_BANNER_ID_POSITIVE_SHEET = "DELETE_BANNER_ID_POSITIVE_SHEET";
+	String DELETE_BANNER_ID_NEGATIVE_SHEET = "DELETE_BANNER_ID_NEGATIVE_SHEET";
+	String DELETE_BANNER_BY_ID = "/catalog-hub/{store_id}/banners/{banner_id}";
+
+	/********************* Update Banner ***********************************/
+
+	String UPDATE_BANNER_POSITIVE_SHEET = "UPDATE_BANNER_POSITIVE_SHEET";
+	String UPDATE_BANNER_BY_ID = "catalog-hub/{store_id}/banners";
+
+	/********************************************************************************************************/
+
+	/*********************** Create chart collection *********************/
+
+	String CREATE_CHART_COLLECTION_POSITIVE_SHEET = "CREATE_CHART_COLLECTION_POSTIVE";
+
+	String CREATE_CHART_COLLECTION_NEGATIVE_SHEET = "CREATE_CHART_COLLECTION_NEGATIV";
+
+	String CREATE_CHART_COLLECTION = "/catalog-hub/{store_id}/chartGroups";
+
+	/******************* Delete chart collection *******************/
+
+	String DELETE_CHART_COLLECTION_POSITIVE_SHEET = "DELETE_CHART_COLLECTION_POSTIVE";
+	String DELETE_CHART_COLLECTION = "/catalog-hub/{store_id}/chartGroups/{chart_collection_id}";
+
+	/********************** Get Chart collection By ID **********************/
+
+	String GET_CHART_COLLECTION_BY_ID_POSITIVE_SHEET = "GET_CHART_COLLECTION_BY_ID_POSI";
+	String GET_CHART_COLLECTION_BY_ID_NEGATIVE_SHEET = "GET_CHART_COLLECTION_BY_ID_NEGA";
+	String GET_CHART_COLLECTION_BY_ID = "/catalog-hub/{store_id}/chartGroups/{chart_collection_id}";
+
+	/***************** Get All collection Chart ********************************/
+
+	String GET__ALL_CHART_COLLECTION__POSITIVE_SHEET = "GET_ALL_COLLECTION_CHART_POSITI";
+	String GET__ALL_CHART_COLLECTION__NEGATIVE_SHEET = "GET_ALL_COLLECTION_CHART_NEGATI";
+	String GET_ALL_CHART_COLLECTION = "/catalog-hub/{store_id}/chartGroups";
+
+	/***************** SEARCH BY CHART *******************/
+	String SEARCH_BY_CHART_COLLECTION_NAME = "/catalog-hub/{store_id}/search/chart/chart_collection_name";
+	String SEARCH_BY_CHART_COLLECTION_NAME_POSTIVE_SHEET = "SEARCH_CHART_COLLECTION_NAME_PO";
+	String SEARCH_BY_CHART_COLLECTION_NAME_NEGATIVE_SHEET = "SEARCH_CHART_COLLECTION_NAME_NE";
+
+	/******************************************************************************************************************************/
+
+	/********************** CREATE FAQ *********************************/
+
+	String CREATE_FAQ_POSITIVE_SHEET = "CREATE_FAQ_POSITIVE_SHEET";
+	String CREATE_FAQ = "/catalog-hub/{store_id}/faq";
+
+	/********************** Get FAQ *********************************************/
+
+	String GET_FAQ_POSITIVE_SHEET = "GET_FAQ_POSITIVE_SHEET";
+	String GET_FAQ_NEGATIVE_SHEET = "GET_FAQ_NEGATIVE_SHEET";
+	String GET_FAQ = "/catalog-hub/{store_id}/faq";
+
+	/*********************************************************************************************************************************/
+
+	/********************* Create Banner Collection **************/
+	String CREATE_BANNER_POSITIVE_SHEET = "CREATE_BANNER_COLLECTION_POSITI";
+	String CREATE_BANNER_COLLECTION = "/catalog-hub/{store_id}/bannerGroups";
+
+	/*********************** DELETE Banner collection ***************/
+
+	String DELETE_BANNER_COLLECTION = "/catalog-hub/{store_id}/bannerGroups/{banner_collection_id}";
+	String DELETE_BANNER_COLLECTION_POSITIVE_SHEET = "DELETE_BANNER_COLLECTION_POSITI";
+
+	/************ Get Collection BY Collection ID ************************/
+
+	String GET_BANNER_COLLECTION_BY_ID_POSITIVE_SHEET = "GET_BANNER_COLLECTION_BY_ID_POS";
+	String GET_BANNER_COLLECTION_BY_ID_NEGATIVE_SHEET = "GET_BANNER_COLLECTION_BY_ID_NEG";
+	String GET_COLLECTION_BY_ID = "/catalog-hub/{store_id}/bannerGroups/{banner_collection_id}";
 
 }

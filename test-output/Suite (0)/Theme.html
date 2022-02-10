@@ -1,0 +1,347 @@
+<html>
+<head>
+<title>TestNG:  Theme</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Theme</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 10 17:49:11 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2927 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.onmobile.vol.cataloghub.api.banner.GetAllBanner.getAllBanner()'><b>getAllBanner</b><br>Test class: com.onmobile.vol.cataloghub.api.banner.GetAllBanner<br>Parameters: [Ljava.util.Map;@6bf0f70a</td>
+<td><div><pre>java.lang.AssertionError: 3 expectations failed.
+JSON path banner_id doesn&apos;t match.
+Expected: a collection containing &lt;1390&gt;
+  Actual: &lt;[450, 433, 432, 430, 64, 65, 66, 67, 170, 172, 175, 179, 184, 190, 193, 194, 196, 197, 199, 200, 202, 203, 205, 206, 208, 428, 429, 360, 234, 489, 362, 277, 363, 278, 279, 281, 357, 358, 295, 288, 294, 355, 356, 350, 292, 293, 296, 297, 298, 299, 300, 301, 303, 309, 310, 311, 312, 313, 314, 315, 347, 348, 349, 322, 323, 324, 333, 342, 343, 344, 345, 346, 372, 373, 374, 375, 376, 377, 378, 379, 380, 384, 416, 418, 420, 421, 422, 423, 424, 425, 426, 427, 436, 434, 435, 443, 444, 446, 448, 449, 451, 452, 453, 456, 457, 458, 459, 460, 461, 462, 463, 465, 466, 467, 468, 469, 472, 473, 474, 475, 476, 477, 478, 479, 480, 482, 484, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 514, 517, 523, 521, 533, 534, 535, 536, 537, 538, 539, 545, 546, 547, 676, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 583, 587, 588, 589, 590, 591, 602, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 637, 638, 639, 658, 642, 643, 659, 660, 661, 663, 666, 667, 668, 669, 670, 671, 672, 675, 674, 677, 678, 679, 680, 681, 682, 683, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 701, 702, 703, 704, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 748, 756, 757, 758, 759, 760, 761, 762, 764, 765, 766, 767, 768, 769, 774, 787, 788, 789, 790, 798, 1234, 1235, 1237, 1239, 1240, 1251, 1254, 1280, 1281, 1282, 1285, 1284, 1286, 1287, 1288, 1289, 1291, 1292, 1293, 1294, 1307, 1308, 1315, 1346, 1347, 1348, 1349, 1356, 1357, 1358, 1359, 1371, 1373, 1377, 1378, 1379, 1386]&gt;
+
+JSON path name doesn&apos;t match.
+Expected: a collection containing &quot;RIP_PUNITH_rs6MspaNi7&quot;
+  Actual: &lt;[Top M˙sicas, Banner_Dynamic_URL_1, Banner_Static_ULR_1, SampleBanner, Banner-1, Banner-2, Banner-3, Banner-4, banner168_1, banner168_2, banner168_3, banner168_4, banner168_5, banner168_6, banner168_2, banner168_1, banner168_2, banner168_1, banner168_2, banner168_1, banner168_2, banner168_1, banner168_2, banner168_1, banner168_2, bannlang, banner_lang1, Special feature, VF-IND-5, QA_Banner, Banner5feb1, list_banner, Banner502_Rose, Feature_Content, Banner_Content, Music_Content_bannerPromotion_QA_vodafone, newuser, activevationpending, Banner_Azan_Shuffle_Voda, Grid_Album_promotion, Content_Music_Banner3, 7, 8, 2, Bookmark_FeaturePromotion_QA_Vodafone, MusicContent2_BannerPromotion_QA_Vodafone, Banner_Azan_Voda, Banner_Azan_shuffle_chart, Banner_Azan_chart, Bookmark_FeaturePromotion_QA_Vodafone, SpecialCaller_FeaturePromotion_QA_Vodafone, shuffle_for_Voda_banner, Ban1, Status_act_pending, Status_act_pending1, Status_dect_pending, Status_dect_pending1, Status_no, Status_no1, Status_new_hi, voltrongold, newuser, voltron+hindi, Status_active_eng, Status_active4, Status_active6, activeuserbannertest, xyz_activ, english banner test, kannadatest, onlyvoltrongold, voltrongold, activebanner2831, newuserbanner2381, COSvoltGold_Paid, COS_volt_goldFree, ACTIVEPAID2381, NEW_FREE, hindi2381, begnalgi2831, default2831, Ringback_promotion, abcd, banner_banner, InApp1, Inapp2, Inapp3, Banner_Name_test, vol-3245, vol-3245, banner_identification, testBanner, Banner_content_URL, Banner_Static_URL_Image, Banner_Dynamic_URL_Image, url_banner, CBanner, Banner123, sample bannerz, anytyhing, ÕabcÌÛ”˙cdR⁄¸‹, ÕabcÌÛ”˙cdR⁄¸‹, sd‡¿·¡ab„√df Á«È…Í , seema, seematest, hiii, see, test12, inapp, test1, PromoBanner1, today, Test1, HELLO, see, ban, english_banner, hindi_banner, tamil_banner, hello, english_banner, hindi, banner tamil, Banner_H1, Banner_H2, test, DefaultBanner, akash, gsvxh, akash, english_banner, regis_eng_banner, regis_active_eng_banner, regis_new_eng_banner, non_regis_Active, hello_banner_default, non_reg_deac_user, test1, unregistered, QA_Banner, QA_Banner1, QA_Banner2, QA_Banner_en, QA_Banner_en2, QA_Banner_en3, QA_Banner3, QA_banner4, QA_Banner5, banner1, QA_Banner6, QA_banner_new_user, QA_Banner_2.0, Banner_NEW_ACTIVE, df, any, PWAHIN1, PWAHIN2, PWAHIN3, PWAEN1, PWAEN2, PWAEN3, QA_contentId, QA_banner1, qa_contentid1, video002, Qa_video, QA_image, BAN1, BAN2, BAN3Banner3banner3banban, BAN4Banner4BabberBanner, PWAB1, PWAB2, PWAB3, PWAB4, BANNER120, QA_Banner13, QA_Banner_chart, QA_Banner2, Banner_Holiday, mak_1, sample banner, jjj, rt banner, rtchart, rt banner, new rt, rtbanner, rtchart, banner, rt chart, create chart, haha ddd, rt chart, rt banner, rt banner, vishal, english_active, rt banner, rtonmobile, rt  banner, static_url_eng, static_url_eng1, rt banner, dynamic_banner, dynamic_banner_2, rt banner, rt_banners, rt_banner2, rt3, RT_BAN_CHART, New, Active, mak_RT, Active, New001, BRT, rt vishal, banneronmo, rtBanner, rt banner, rt, RT_DESKTOP, bannernewspain, gif1, Video001, Ztestbanner, Ztestbanner2, Ztestbanner3, Test, testbanner, banner1, about, RTBANNERchart, Default1, testbanner1, testbanner2, testbanner3, testbanner4, testbanner5, Default002, Active_Tamil, testbanner6, testbanner6, new1, new111, new11, new11, Pwa_bnr, pwa_bnr2, pwa_bnr3, pwa_bnr4, pwa_bnr5, m1, HINDI_MAK, S_banner1, s_banner, s_banner2, s_banner3, s_banner4, s_banner5, s_banner6, s_banner7, s_banner8, s_banner9, s_banner10, s_banner11, s_banner12, s_bannertamil, s_banner_active&amp;deactive, s_banner, s_bannerActpending, S_banner_actp, w, ass, s_banner_new&amp;active, s_banner_act_new_paid, canceled, english, seemaenglish, seemahindi, seemadefault, seemasinghlishfree, seemahindifreeactive, seemahindiactive, v_banner1, v_banner, bannerRT, rt_banner1, rt_banner2, rt_banner3, dede, bannerVI, test, seema, seema, vishal, link_banner, LInkedBanner, withlink, epmptyurl, abcbanner, ALL, english, Ban1, sample12, Ban1, Test_VI_Default_Banner_2, Test_VI_DefaultBanner_1, Test_VI_Eng_Banner1, Test_VI_Eng_Banner2, Test_VI_Banner_Tam_1, banner_chart_en, banner_chart_hi, banner_chart_ta, banner_en, banner_hi, Redirection_Banner, Sample, hello, banner123, B1, b2, b3, bb, demo, RT_Banner_chart_en, RT_Banner_hi, banner1, Test_One, naveen, RIP_PUNITH, RIP_PUNITH_LPciiEc2Es, sample bannerz]&gt;
+
+JSON path store_id doesn&apos;t match.
+Expected: a collection containing &lt;390&gt;
+  Actual: &lt;[168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168]&gt;
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.onmobile.vol.cataloghub.api.banner.GetAllBanner.getAllBanner(GetAllBanner.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 42 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace382522044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace382522044'><pre>java.lang.AssertionError: 3 expectations failed.
+JSON path banner_id doesn&apos;t match.
+Expected: a collection containing &lt;1390&gt;
+  Actual: &lt;[450, 433, 432, 430, 64, 65, 66, 67, 170, 172, 175, 179, 184, 190, 193, 194, 196, 197, 199, 200, 202, 203, 205, 206, 208, 428, 429, 360, 234, 489, 362, 277, 363, 278, 279, 281, 357, 358, 295, 288, 294, 355, 356, 350, 292, 293, 296, 297, 298, 299, 300, 301, 303, 309, 310, 311, 312, 313, 314, 315, 347, 348, 349, 322, 323, 324, 333, 342, 343, 344, 345, 346, 372, 373, 374, 375, 376, 377, 378, 379, 380, 384, 416, 418, 420, 421, 422, 423, 424, 425, 426, 427, 436, 434, 435, 443, 444, 446, 448, 449, 451, 452, 453, 456, 457, 458, 459, 460, 461, 462, 463, 465, 466, 467, 468, 469, 472, 473, 474, 475, 476, 477, 478, 479, 480, 482, 484, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 514, 517, 523, 521, 533, 534, 535, 536, 537, 538, 539, 545, 546, 547, 676, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 583, 587, 588, 589, 590, 591, 602, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 637, 638, 639, 658, 642, 643, 659, 660, 661, 663, 666, 667, 668, 669, 670, 671, 672, 675, 674, 677, 678, 679, 680, 681, 682, 683, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 701, 702, 703, 704, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 748, 756, 757, 758, 759, 760, 761, 762, 764, 765, 766, 767, 768, 769, 774, 787, 788, 789, 790, 798, 1234, 1235, 1237, 1239, 1240, 1251, 1254, 1280, 1281, 1282, 1285, 1284, 1286, 1287, 1288, 1289, 1291, 1292, 1293, 1294, 1307, 1308, 1315, 1346, 1347, 1348, 1349, 1356, 1357, 1358, 1359, 1371, 1373, 1377, 1378, 1379, 1386]&gt;
+
+JSON path name doesn&apos;t match.
+Expected: a collection containing &quot;RIP_PUNITH_rs6MspaNi7&quot;
+  Actual: &lt;[Top M˙sicas, Banner_Dynamic_URL_1, Banner_Static_ULR_1, SampleBanner, Banner-1, Banner-2, Banner-3, Banner-4, banner168_1, banner168_2, banner168_3, banner168_4, banner168_5, banner168_6, banner168_2, banner168_1, banner168_2, banner168_1, banner168_2, banner168_1, banner168_2, banner168_1, banner168_2, banner168_1, banner168_2, bannlang, banner_lang1, Special feature, VF-IND-5, QA_Banner, Banner5feb1, list_banner, Banner502_Rose, Feature_Content, Banner_Content, Music_Content_bannerPromotion_QA_vodafone, newuser, activevationpending, Banner_Azan_Shuffle_Voda, Grid_Album_promotion, Content_Music_Banner3, 7, 8, 2, Bookmark_FeaturePromotion_QA_Vodafone, MusicContent2_BannerPromotion_QA_Vodafone, Banner_Azan_Voda, Banner_Azan_shuffle_chart, Banner_Azan_chart, Bookmark_FeaturePromotion_QA_Vodafone, SpecialCaller_FeaturePromotion_QA_Vodafone, shuffle_for_Voda_banner, Ban1, Status_act_pending, Status_act_pending1, Status_dect_pending, Status_dect_pending1, Status_no, Status_no1, Status_new_hi, voltrongold, newuser, voltron+hindi, Status_active_eng, Status_active4, Status_active6, activeuserbannertest, xyz_activ, english banner test, kannadatest, onlyvoltrongold, voltrongold, activebanner2831, newuserbanner2381, COSvoltGold_Paid, COS_volt_goldFree, ACTIVEPAID2381, NEW_FREE, hindi2381, begnalgi2831, default2831, Ringback_promotion, abcd, banner_banner, InApp1, Inapp2, Inapp3, Banner_Name_test, vol-3245, vol-3245, banner_identification, testBanner, Banner_content_URL, Banner_Static_URL_Image, Banner_Dynamic_URL_Image, url_banner, CBanner, Banner123, sample bannerz, anytyhing, ÕabcÌÛ”˙cdR⁄¸‹, ÕabcÌÛ”˙cdR⁄¸‹, sd‡¿·¡ab„√df Á«È…Í , seema, seematest, hiii, see, test12, inapp, test1, PromoBanner1, today, Test1, HELLO, see, ban, english_banner, hindi_banner, tamil_banner, hello, english_banner, hindi, banner tamil, Banner_H1, Banner_H2, test, DefaultBanner, akash, gsvxh, akash, english_banner, regis_eng_banner, regis_active_eng_banner, regis_new_eng_banner, non_regis_Active, hello_banner_default, non_reg_deac_user, test1, unregistered, QA_Banner, QA_Banner1, QA_Banner2, QA_Banner_en, QA_Banner_en2, QA_Banner_en3, QA_Banner3, QA_banner4, QA_Banner5, banner1, QA_Banner6, QA_banner_new_user, QA_Banner_2.0, Banner_NEW_ACTIVE, df, any, PWAHIN1, PWAHIN2, PWAHIN3, PWAEN1, PWAEN2, PWAEN3, QA_contentId, QA_banner1, qa_contentid1, video002, Qa_video, QA_image, BAN1, BAN2, BAN3Banner3banner3banban, BAN4Banner4BabberBanner, PWAB1, PWAB2, PWAB3, PWAB4, BANNER120, QA_Banner13, QA_Banner_chart, QA_Banner2, Banner_Holiday, mak_1, sample banner, jjj, rt banner, rtchart, rt banner, new rt, rtbanner, rtchart, banner, rt chart, create chart, haha ddd, rt chart, rt banner, rt banner, vishal, english_active, rt banner, rtonmobile, rt  banner, static_url_eng, static_url_eng1, rt banner, dynamic_banner, dynamic_banner_2, rt banner, rt_banners, rt_banner2, rt3, RT_BAN_CHART, New, Active, mak_RT, Active, New001, BRT, rt vishal, banneronmo, rtBanner, rt banner, rt, RT_DESKTOP, bannernewspain, gif1, Video001, Ztestbanner, Ztestbanner2, Ztestbanner3, Test, testbanner, banner1, about, RTBANNERchart, Default1, testbanner1, testbanner2, testbanner3, testbanner4, testbanner5, Default002, Active_Tamil, testbanner6, testbanner6, new1, new111, new11, new11, Pwa_bnr, pwa_bnr2, pwa_bnr3, pwa_bnr4, pwa_bnr5, m1, HINDI_MAK, S_banner1, s_banner, s_banner2, s_banner3, s_banner4, s_banner5, s_banner6, s_banner7, s_banner8, s_banner9, s_banner10, s_banner11, s_banner12, s_bannertamil, s_banner_active&amp;deactive, s_banner, s_bannerActpending, S_banner_actp, w, ass, s_banner_new&amp;active, s_banner_act_new_paid, canceled, english, seemaenglish, seemahindi, seemadefault, seemasinghlishfree, seemahindifreeactive, seemahindiactive, v_banner1, v_banner, bannerRT, rt_banner1, rt_banner2, rt_banner3, dede, bannerVI, test, seema, seema, vishal, link_banner, LInkedBanner, withlink, epmptyurl, abcbanner, ALL, english, Ban1, sample12, Ban1, Test_VI_Default_Banner_2, Test_VI_DefaultBanner_1, Test_VI_Eng_Banner1, Test_VI_Eng_Banner2, Test_VI_Banner_Tam_1, banner_chart_en, banner_chart_hi, banner_chart_ta, banner_en, banner_hi, Redirection_Banner, Sample, hello, banner123, B1, b2, b3, bb, demo, RT_Banner_chart_en, RT_Banner_hi, banner1, Test_One, naveen, RIP_PUNITH, RIP_PUNITH_LPciiEc2Es, sample bannerz]&gt;
+
+JSON path store_id doesn&apos;t match.
+Expected: a collection containing &lt;390&gt;
+  Actual: &lt;[168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168, 168]&gt;
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.onmobile.vol.cataloghub.api.banner.GetAllBanner.getAllBanner(GetAllBanner.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.onmobile.vol.cataloghub.api.banner.GetAllBanner@4470fbd6</td></tr>
+<tr>
+<td title='com.onmobile.vol.cataloghub.api.banner.GetBannerById.getBannerByID()'><b>getBannerByID</b><br>Test class: com.onmobile.vol.cataloghub.api.banner.GetBannerById<br>Parameters: [Ljava.util.Map;@1827fc4e</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at com.onmobile.vol.cataloghub.api.banner.GetBannerById.getBannerByID(GetBannerById.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 42 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1664248378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1664248378'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at com.onmobile.vol.cataloghub.api.banner.GetBannerById.getBannerByID(GetBannerById.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.onmobile.vol.cataloghub.api.banner.GetBannerById@503f91c3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.onmobile.vol.cataloghub.api.banner.CreateBanner.NegativeScenarioCreateChat()'><b>NegativeScenarioCreateChat</b><br>Test class: com.onmobile.vol.cataloghub.api.banner.CreateBanner<br>Parameters: [Ljava.util.Map;@4c41a177</td>
+<td></td>
+<td>0</td>
+<td>com.onmobile.vol.cataloghub.api.banner.CreateBanner@448c8166</td></tr>
+<tr>
+<td title='com.onmobile.vol.cataloghub.api.banner.GetAllBanner.NegativeGetAllBanner()'><b>NegativeGetAllBanner</b><br>Test class: com.onmobile.vol.cataloghub.api.banner.GetAllBanner<br>Parameters: [Ljava.util.Map;@2faf6e4a</td>
+<td></td>
+<td>0</td>
+<td>com.onmobile.vol.cataloghub.api.banner.GetAllBanner@4470fbd6</td></tr>
+<tr>
+<td title='com.onmobile.vol.cataloghub.api.banner.CreateBanner.createChatByChatName()'><b>createChatByChatName</b><br>Test class: com.onmobile.vol.cataloghub.api.banner.CreateBanner<br>Parameters: [Ljava.util.Map;@43ab0659</td>
+<td></td>
+<td>0</td>
+<td>com.onmobile.vol.cataloghub.api.banner.CreateBanner@448c8166</td></tr>
+<tr>
+<td title='com.onmobile.vol.cataloghub.api.banner.UpdateBanner.updateTheme()'><b>updateTheme</b><br>Test class: com.onmobile.vol.cataloghub.api.banner.UpdateBanner<br>Parameters: [Ljava.util.Map;@644947ee</td>
+<td></td>
+<td>0</td>
+<td>com.onmobile.vol.cataloghub.api.banner.UpdateBanner@13526e59</td></tr>
+<tr>
+<td title='com.onmobile.vol.cataloghub.api.banner.GetBannerById.getBannerById_NegativeScenarios()'><b>getBannerById_NegativeScenarios</b><br>Test class: com.onmobile.vol.cataloghub.api.banner.GetBannerById<br>Parameters: [Ljava.util.Map;@25421809</td>
+<td></td>
+<td>0</td>
+<td>com.onmobile.vol.cataloghub.api.banner.GetBannerById@503f91c3</td></tr>
+<tr>
+<td title='com.onmobile.vol.cataloghub.api.banner.GetBannerById.getBannerById_NegativeScenarios()'><b>getBannerById_NegativeScenarios</b><br>Test class: com.onmobile.vol.cataloghub.api.banner.GetBannerById<br>Parameters: [Ljava.util.Map;@714bffd5</td>
+<td></td>
+<td>0</td>
+<td>com.onmobile.vol.cataloghub.api.banner.GetBannerById@503f91c3</td></tr>
+<tr>
+<td title='com.onmobile.vol.cataloghub.api.banner.GetAllBanner.NegativeGetAllBanner()'><b>NegativeGetAllBanner</b><br>Test class: com.onmobile.vol.cataloghub.api.banner.GetAllBanner<br>Parameters: [Ljava.util.Map;@6ac9b66b</td>
+<td></td>
+<td>0</td>
+<td>com.onmobile.vol.cataloghub.api.banner.GetAllBanner@4470fbd6</td></tr>
+<tr>
+<td title='com.onmobile.vol.cataloghub.api.banner.DeleteBannerById.getAttributes()'><b>getAttributes</b><br>Test class: com.onmobile.vol.cataloghub.api.banner.DeleteBannerById<br>Parameters: [Ljava.util.Map;@4491eaeb</td>
+<td></td>
+<td>0</td>
+<td>com.onmobile.vol.cataloghub.api.banner.DeleteBannerById@2235eaab</td></tr>
+</table><p>
+</body>
+</html>

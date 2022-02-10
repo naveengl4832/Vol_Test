@@ -60,7 +60,7 @@ public class GetAllThemes extends RestBaseClass implements Constants {
 		System.out.println(response.asPrettyString());
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(
-				PropertyReader.getProperty(CATALOG_HUB_THEMES_JSON_SCHEMA, GET_ALL_THEMES_SCHEMA)));
+				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_ALL_THEMES_SCHEMA)));
 
 		loggerReport.pass("Response \n" + response.prettyPrint());
 		loggerReport.pass("Veify the Theme_ID :  \n" + response.jsonPath().getString("theme_id"));

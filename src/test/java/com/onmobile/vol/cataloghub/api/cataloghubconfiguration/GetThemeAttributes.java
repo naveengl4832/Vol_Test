@@ -57,7 +57,7 @@ public class GetThemeAttributes extends RestBaseClass implements Constants {
 				.and().assertThat().statusCode(Integer.parseInt(testData.get("statusCode"))).and().extract().response();
 
 		response.then().body(matchesJsonSchemaInClasspath(
-				PropertyReader.getProperty(CATALOG_HUB_THEMES_JSON_SCHEMA, GET_THEME_ATTRIBUTES_SCHEMA)));
+				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_THEME_ATTRIBUTES_SCHEMA)));
 
 		loggerReport.info("Response" + response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());
