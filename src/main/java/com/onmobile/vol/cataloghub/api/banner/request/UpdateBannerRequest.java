@@ -52,117 +52,117 @@ public class UpdateBannerRequest {
 	private Boolean bannerSubscriptions;
 
 	public Integer getBannerId() {
-	return bannerId;
+		return bannerId;
 	}
 
 	public void setBannerId(Integer bannerId) {
-	this.bannerId = bannerId;
+		this.bannerId = bannerId;
 	}
 
 	public String getName() {
-	return name;
+		return name;
 	}
 
 	public void setName(String name) {
-	this.name = name;
+		this.name = name;
 	}
 
 	public String getLanguage() {
-	return language;
+		return language;
 	}
 
 	public void setLanguage(String language) {
-	this.language = language;
+		this.language = language;
 	}
 
 	public Integer getStoreId() {
-	return storeId;
+		return storeId;
 	}
 
 	public void setStoreId(Integer storeId) {
-	this.storeId = storeId;
+		this.storeId = storeId;
 	}
 
 	public String getType() {
-	return type;
+		return type;
 	}
 
 	public void setType(String type) {
-	this.type = type;
+		this.type = type;
 	}
 
 	public String getId() {
-	return id;
+		return id;
 	}
 
 	public void setId(String id) {
-	this.id = id;
+		this.id = id;
 	}
 
 	public String getImageUrl() {
-	return imageUrl;
+		return imageUrl;
 	}
 
 	public void setImageUrl(String imageUrl) {
-	this.imageUrl = imageUrl;
+		this.imageUrl = imageUrl;
 	}
 
 	public String getGifUrl() {
-	return gifUrl;
+		return gifUrl;
 	}
 
 	public void setGifUrl(String gifUrl) {
-	this.gifUrl = gifUrl;
+		this.gifUrl = gifUrl;
 	}
 
 	public String getVideoUrl() {
-	return videoUrl;
+		return videoUrl;
 	}
 
 	public void setVideoUrl(String videoUrl) {
-	this.videoUrl = videoUrl;
+		this.videoUrl = videoUrl;
 	}
 
 	public String getDescription() {
-	return description;
+		return description;
 	}
 
 	public void setDescription(String description) {
-	this.description = description;
+		this.description = description;
 	}
 
 	public String getNavigationDescription() {
-	return navigationDescription;
+		return navigationDescription;
 	}
 
 	public void setNavigationDescription(String navigationDescription) {
-	this.navigationDescription = navigationDescription;
+		this.navigationDescription = navigationDescription;
 	}
 
 	public List<BannerName> getBannerNames() {
-	return bannerNames;
+		return bannerNames;
 	}
 
 	public void setBannerNames(List<BannerName> bannerNames) {
-	this.bannerNames = bannerNames;
+		this.bannerNames = bannerNames;
 	}
 
 	public List<BannerBuildInfo> getBannerBuildInfos() {
-	return bannerBuildInfos;
+		return bannerBuildInfos;
 	}
 
 	public void setBannerBuildInfos(List<BannerBuildInfo> bannerBuildInfos) {
-	this.bannerBuildInfos = bannerBuildInfos;
+		this.bannerBuildInfos = bannerBuildInfos;
 	}
 
 	public Boolean getBannerSubscriptions() {
-	return bannerSubscriptions;
+		return bannerSubscriptions;
 	}
 
 	public void setBannerSubscriptions(Boolean bannerSubscriptions) {
-	this.bannerSubscriptions = bannerSubscriptions;
+		this.bannerSubscriptions = bannerSubscriptions;
 	}
-	
+
 	public String toString() {
 		Gson gson = new Gson();
 		return gson.toJson(this, UpdateBannerRequest.class);

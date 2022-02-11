@@ -1,9 +1,335 @@
-10/02/2022 18:27:53 devpinoyLogger {
-    "banner_collection_id": 305,
-    "banner_collection_name": "RIP PUNITH_Oh2pG8kbGZ",
-    "banner_collection_type": "promotional",
-    "storeId": 328
+11/02/2022 11:45:46 devpinoyLogger Negative Scenarios of  ---> {
+    "banner_id": 1404,
+    "name": "RIP_PUNITH",
+    "language": "English ",
+    "store_id": 390,
+    "type": "none",
+    "id": null,
+    "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=328",
+    "gif_url": "https://qa.onmobile.com/nstreaming/v3/gif?target=&item_type=banner_gif&store_id=328",
+    "video_url": "https://qa.onmobile.com/nstreaming/v3/video?target=&item_type=banner_video&store_id=328",
+    "description": null,
+    "navigation_description": null,
+    "banner_names": [
+        {
+            "language_name": "",
+            "name": "RIP_PUNITH"
+        }
+    ],
+    "banner_build_infos": null,
+    "banner_subscriptions": null
 }
-10/02/2022 18:27:53 devpinoyLogger 
-10/02/2022 18:27:54 devpinoyLogger 
-10/02/2022 18:27:54 devpinoyLogger 
+11/02/2022 11:45:47 devpinoyLogger {
+    "banner_id": 1405,
+    "name": "RIP_PUNITH_xYkOSEUbF9",
+    "language": "English ",
+    "store_id": 390,
+    "type": "none",
+    "id": null,
+    "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=328",
+    "gif_url": "https://qa.onmobile.com/nstreaming/v3/gif?target=&item_type=banner_gif&store_id=328",
+    "video_url": "https://qa.onmobile.com/nstreaming/v3/video?target=&item_type=banner_video&store_id=328",
+    "description": null,
+    "navigation_description": null,
+    "banner_names": [
+        {
+            "language_name": "",
+            "name": "RIP_PUNITH_xYkOSEUbF9"
+        }
+    ],
+    "banner_build_infos": null,
+    "banner_subscriptions": null
+}
+11/02/2022 11:45:47 devpinoyLogger 
+11/02/2022 11:45:48 devpinoyLogger 
+11/02/2022 11:45:49 devpinoyLogger [
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1387,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1380,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1381,
+        "name": "RIP_PUNITH_g6T4Ks5ngt"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1389,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1392,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1394,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1395,
+        "name": "RIP_PUNITH_jgDusmidFS"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1396,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1397,
+        "name": "RIP_PUNITH_hEYiHxpt4m"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1398,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1399,
+        "name": "RIP_PUNITH_yDHcfXhDqn"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1400,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1401,
+        "name": "RIP_PUNITH_7JgjcnYE5S"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1402,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1403,
+        "name": "RIP_PUNITH_tjmIljTu8s"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1404,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1405,
+        "name": "RIP_PUNITH_xYkOSEUbF9"
+    }
+]
+11/02/2022 11:45:50 devpinoyLogger 
+11/02/2022 11:45:50 devpinoyLogger 
+11/02/2022 11:45:50 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@3cad24ae
+11/02/2022 11:45:50 devpinoyLogger {
+    "banner_id": 1405,
+    "name": "RIP_PUNITH_xYkOSEUbF9",
+    "language": "English ",
+    "store_id": 390,
+    "type": "none",
+    "id": "null",
+    "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=328",
+    "gif_url": "https://qa.onmobile.com/nstreaming/v3/gif?target=&item_type=banner_gif&store_id=328",
+    "video_url": "https://qa.onmobile.com/nstreaming/v3/video?target=&item_type=banner_video&store_id=328",
+    "description": "null",
+    "navigation_description": "null",
+    "banner_names": [
+        {
+            "language_name": "",
+            "name": "RIP_PUNITH_xYkOSEUbF9"
+        },
+        {
+            "language_name": "english",
+            "name": "banner1"
+        },
+        {
+            "language_name": "kannada",
+            "name": "banner2"
+        }
+    ],
+    "banner_build_infos": [
+        {
+            "banner_attribute": "userStatus",
+            "banner_attribute_value": "NEW_USER"
+        },
+        {
+            "banner_attribute": "userStatus",
+            "banner_attribute_value": "NEW_USER1"
+        }
+    ],
+    "banner_subscriptions": null
+}
+11/02/2022 11:45:50 devpinoyLogger 200
+11/02/2022 11:45:51 devpinoyLogger {
+    "total_item_count": 1,
+    "offset": 0,
+    "item_count": 1,
+    "banners": [
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=328",
+            "banner_id": 1405,
+            "name": "RIP_PUNITH_xYkOSEUbF9",
+            "type": "none",
+            "language": "English "
+        }
+    ]
+}
+11/02/2022 11:45:51 devpinoyLogger 
+11/02/2022 11:45:51 devpinoyLogger {
+    "total_item_count": 4,
+    "offset": 0,
+    "item_count": 4,
+    "banners": [
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F416.jpg&item_type=banner&store_id=168",
+            "banner_id": 416,
+            "name": "abcd",
+            "type": "none",
+            "language": null
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
+            "banner_id": 451,
+            "name": "ÍabcíóÓúcdRÚüÜ",
+            "type": "none",
+            "language": "en"
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
+            "banner_id": 452,
+            "name": "ÍabcíóÓúcdRÚüÜ",
+            "type": "none",
+            "language": "pt"
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
+            "banner_id": 1240,
+            "name": "abcbanner",
+            "type": "tp_static_url",
+            "language": "en"
+        }
+    ]
+}
+11/02/2022 11:45:52 devpinoyLogger {
+    "total_item_count": 334,
+    "offset": 0,
+    "item_count": 10,
+    "banners": [
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
+            "banner_id": 450,
+            "name": "Top Músicas",
+            "type": "realtone",
+            "language": "en"
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F433.jpg&item_type=banner&store_id=168",
+            "banner_id": 433,
+            "name": "Banner_Dynamic_URL_1",
+            "type": "realtone",
+            "language": null
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F432.jpg&item_type=banner&store_id=168",
+            "banner_id": 432,
+            "name": "Banner_Static_ULR_1",
+            "type": "realtone",
+            "language": null
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F430.jpg&item_type=banner&store_id=168",
+            "banner_id": 430,
+            "name": "SampleBanner",
+            "type": "realtone",
+            "language": ""
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F64.jpg&item_type=banner&store_id=168",
+            "banner_id": 64,
+            "name": "Banner-1",
+            "type": "ringback",
+            "language": ""
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F65.jpg&item_type=banner&store_id=168",
+            "banner_id": 65,
+            "name": "Banner-2",
+            "type": "ringback",
+            "language": "ma"
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F66.jpg&item_type=banner&store_id=168",
+            "banner_id": 66,
+            "name": "Banner-3",
+            "type": "ringback",
+            "language": ""
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F67.jpg&item_type=banner&store_id=168",
+            "banner_id": 67,
+            "name": "Banner-4",
+            "type": "realtone",
+            "language": "hi"
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2Fbanner1.jpg&item_type=banner&store_id=168",
+            "banner_id": 170,
+            "name": "banner168_1",
+            "type": "none",
+            "language": null
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2Fbanner2.jpg&item_type=banner&store_id=168",
+            "banner_id": 172,
+            "name": "banner168_2",
+            "type": "none",
+            "language": null
+        }
+    ]
+}
+11/02/2022 11:45:52 devpinoyLogger Banner ID is deleted ----> 

@@ -33,8 +33,10 @@ public interface Constants {
 	String GET_ALL_CHART_COLLECTION_JSON_SCHEMA = "GET_ALL_CHART_COLLECTION_JSON_SCHEMA";
 	String SEARCH_BY_CHART_COLLECTIONNAME_JSON_SCHEMA = "SEARCH_BY_CHART_COLLECTIONNAME_JSON_SCHEMA";
 	String SEARCH_BY_CHART_NAME_JSON_SCHEMA = "SEARCH_BY_CHART_NAME_JSON_SCHEMA";
-	
-	String GET_COLLECTION_BANNER_BY_ID_JSON_SCHEMA="GET_COLLECTION_BANNER_BY_ID_JSON_SCHEMA";
+	String GET_ALL_COLLECTION_BANNERS_JSON_SCHEMA = "GET_ALL_COLLECTION_BANNERS_JSON_SCHEMA";
+	String GET_COLLECTION_BANNER_BY_ID_JSON_SCHEMA = "GET_COLLECTION_BANNER_BY_ID_JSON_SCHEMA";
+	String SEARCH_BY_BANNER_COLLECTION_NAME_JSON_SCHEMA="SEARCH_BY_BANNER_COLLECTION_NAME_JSON_SCHEMA";
+	String SEARCH_BANNER_BY_NAME_JSON_SCHEMA="SEARCH_BANNER_BY_NAME_JSON_SCHEMA";
 
 	/*************** Get Theme BY ID **************/
 	String GET_CATALOG_HUB_THEAMS = "/catalog-hub/{store_id}/themes/{theme_id}";
@@ -169,6 +171,13 @@ public interface Constants {
 
 	String UPDATE_BANNER_POSITIVE_SHEET = "UPDATE_BANNER_POSITIVE_SHEET";
 	String UPDATE_BANNER_BY_ID = "catalog-hub/{store_id}/banners";
+	
+	
+	/************SEARCH BANNER_BY NAME*********************************/
+	String SEARCH_BANNER_BY_NAME_POSITIVE_SHEET="SEARCH_BANNER_BY_NAME_POSITIVE_";
+	String SEARCH_BANNER_BY_NAME_NEGATIVE_SHEET="SEARCH_BANNER_BY_NAME_NEGATIVE_";
+	String SEARCH_BANNER_BY_NAME="/catalog-hub/{store_id}/search/banner/banner_name";
+	
 
 	/********************************************************************************************************/
 
@@ -231,5 +240,16 @@ public interface Constants {
 	String GET_BANNER_COLLECTION_BY_ID_POSITIVE_SHEET = "GET_BANNER_COLLECTION_BY_ID_POS";
 	String GET_BANNER_COLLECTION_BY_ID_NEGATIVE_SHEET = "GET_BANNER_COLLECTION_BY_ID_NEG";
 	String GET_COLLECTION_BY_ID = "/catalog-hub/{store_id}/bannerGroups/{banner_collection_id}";
+
+	/************** GET All Banner Collection ****************************/
+	String GET_ALL_BANNER_COLLECTION_POSITIVE_SHEET = "GET_ALL_BANNER_COLLECTION_POSIT";
+	String GET_ALL_BANNER_COLLECTION_NEGATIVE_SHEET = "GET_ALL_BANNER_COLLECTION_NEGAT";
+	String GET_ALL_BANNER_COLLECTION = "/catalog-hub/{store_id}/bannerGroups";
+
+	/***************** Search By Banner Collection Name ***************************/
+	
+	String SEARCH_BY_BANNER_COLLECTION_NAME_POSITIVE_SHEET = "SEARCH_BANNER_COLLECTION_POSITI";
+	String SEARCH_BY_BANNER_COLLECTION_NAME_NEGATIVE_SHEET = "SEARCH_BANNER_COLLECTION_NEGATI";
+	String SEARCH_BY_BANNER_COLLECTION_NAME = "/catalog-hub/{store_id}/search/banner/banner_collection_name";
 
 }

@@ -63,7 +63,7 @@ public class CreateBannerCollection extends RestBaseClass implements Constants {
 		CommonValues.bannerCollectionValues.put("banner_collection_id", response.jsonPath().getString("banner_collection_id"));
 		CommonValues.bannerCollectionValues.put("banner_collection_name", response.jsonPath().getString("banner_collection_name"));
 		CommonValues.bannerCollectionValues.put("banner_collection_type", response.jsonPath().getString("banner_collection_type"));
-		CommonValues.bannerCollectionValues.put("store_id", response.jsonPath().getString("store_id"));
+		CommonValues.bannerCollectionValues.put("store_id", response.jsonPath().getString("storeId"));
 
 		loggerReport.info("Banner Collection ID is created ---> " + response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());

@@ -60,12 +60,12 @@ public class GetBannerById extends RestBaseClass implements Constants {
 		queryParam.put("response", testData.get("response"));
 
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", testData.get("store_id"));
+		pathParam.put("store_id", CommonValues.bannerValues.get("store_id"));
 		pathParam.put("banner_id", CommonValues.bannerValues.get("banner_id"));
 
 		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when().get(GET_BANNER_BY_ID)
 				.then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
-				.body("store_id", equalTo(Integer.parseInt(testData.get("store_id"))), "name",
+				.body("store_id", equalTo(Integer.parseInt(CommonValues.bannerValues.get("store_id"))), "name",
 						equalTo(CommonValues.bannerValues.get("name")), "banner_id",
 						equalTo(Integer.parseInt(CommonValues.bannerValues.get("banner_id"))), "banner_names.name",
 						hasItem(CommonValues.bannerValues.get("name")))

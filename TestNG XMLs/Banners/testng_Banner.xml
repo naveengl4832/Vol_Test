@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-	<test thread-count="1" name="Theme">
+	<test thread-count="1" name="Banner">
 		<classes>
 			<class
 				name="com.onmobile.vol.cataloghub.api.banner.CreateBanner" />
@@ -13,6 +13,8 @@
 			<class
 				name="com.onmobile.vol.cataloghub.api.banner.UpdateBanner" />
 
+			<class
+				name="com.onmobile.vol.cataloghub.api.banner.SearchByBannerName" />
 			<class
 				name="com.onmobile.vol.cataloghub.api.banner.DeleteBannerById" />
 		</classes>

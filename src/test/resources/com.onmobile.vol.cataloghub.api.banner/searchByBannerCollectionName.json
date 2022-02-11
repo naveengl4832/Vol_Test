@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "total_item_count": {
+      "type": "integer"
+    },
+    "offset": {
+      "type": "integer"
+    },
+    "item_count": {
+      "type": "integer"
+    },
+    "banner_collections": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "banner_collection_id": {
+              "type": "integer"
+            },
+            "banner_collection_name": {
+              "type": "string"
+            },
+            "banner_collection_type": {
+              "type": "string"
+            },
+            "store_id": {
+              "type": "integer"
+            },
+            "banners": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "banner_collection_id",
+            "banner_collection_name",
+            "banner_collection_type",
+            "store_id",
+            "banners"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "total_item_count",
+    "offset",
+    "item_count",
+    "banner_collections"
+  ]
+}

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Banner Collection(failed)">
+  <test thread-count="5" name="Banner(failed)">
     <classes>
-      <class name="com.onmobile.vol.cataloghub.api.bannerCollection.DeleteBannerCollecion">
+      <class name="com.onmobile.vol.cataloghub.api.banner.GetAllBanner">
         <methods>
+          <include name="getAllBanner" invocation-numbers="0"/>
           <include name="init"/>
           <include name="initLogger"/>
           <include name="generateToken"/>
           <include name="close"/>
           <include name="afterSuite"/>
-          <include name="getAttributes"/>
         </methods>
-      </class> <!-- com.onmobile.vol.cataloghub.api.bannerCollection.DeleteBannerCollecion -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.banner.GetAllBanner -->
     </classes>
-  </test> <!-- Banner Collection(failed) -->
+  </test> <!-- Banner(failed) -->
 </suite> <!-- Failed suite [Suite] -->

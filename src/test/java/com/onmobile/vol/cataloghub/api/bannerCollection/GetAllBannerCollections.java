@@ -1,7 +1,7 @@
-package com.onmobile.vol.cataloghub.api.banner;
+package com.onmobile.vol.cataloghub.api.bannerCollection;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.hasItem;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,7 +18,7 @@ import com.onmobile.api.helper.RestBaseClass;
 
 import io.restassured.response.Response;
 
-public class GetAllBanner extends RestBaseClass implements Constants {
+public class GetAllBannerCollections extends RestBaseClass implements Constants {
 
 	public RequestGenerator requestGenarator = new RequestGenerator();
 	public Map<String, String> pathParam;
@@ -28,7 +28,8 @@ public class GetAllBanner extends RestBaseClass implements Constants {
 	public Object[][] getPositiveTestData() {
 		sourceMethod = "getTestData";
 		LOGGER.entering(sourceClass, sourceMethod);
-		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_BANNER_XL_PATH, GET_BANNER_POSTIVE_SHEET);
+		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_BANNER_XL_PATH,
+				GET_ALL_BANNER_COLLECTION_POSITIVE_SHEET);
 		LOGGER.entering(sourceClass, sourceMethod);
 		return testData;
 	}
@@ -37,7 +38,8 @@ public class GetAllBanner extends RestBaseClass implements Constants {
 	public Object[][] getNegativeTestdata() {
 		sourceMethod = "getTestData";
 		LOGGER.entering(sourceClass, sourceMethod);
-		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_BANNER_XL_PATH, GET_BANNER_NEGATIVE_SHEET);
+		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_BANNER_XL_PATH,
+				GET_ALL_BANNER_COLLECTION_NEGATIVE_SHEET);
 		LOGGER.entering(sourceClass, sourceMethod);
 		return testData;
 	}
@@ -49,22 +51,22 @@ public class GetAllBanner extends RestBaseClass implements Constants {
 			;
 
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", CommonValues.bannerValues.get("store_id"));
+		pathParam.put("store_id", STORE_ID);
 
 		queryParam = new HashMap<String, String>();
 		queryParam.put("response", testData.get("response"));
 
-		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when().get(GET_ALL_BANNER)
-				.then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
-				.body("banner_id", hasItem(Integer.parseInt(CommonValues.bannerValues.get("banner_id"))), "name",
-						hasItem(CommonValues.bannerValues.get("name")), "store_id",
-						hasItem(Integer.parseInt(CommonValues.bannerValues.get("store_id"))))
+		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when()
+				.get(GET_ALL_BANNER_COLLECTION).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
+				.body("banner_collection_id",
+						hasItem(Integer.parseInt(CommonValues.bannerCollectionValues.get("banner_collection_id"))),
+						"banner_collection_name",
+						hasItem(CommonValues.bannerCollectionValues.get("banner_collection_name")), "store_id",
+						hasItem(Integer.parseInt(CommonValues.bannerCollectionValues.get("store_id"))))
 				.extract().response();
 
-		System.out.println(response.asPrettyString());
-
-		response.then().assertThat().body(matchesJsonSchemaInClasspath(
-				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_ALL_BANNER_JSON_SCHEMA)));
+		response.then().assertThat().body(matchesJsonSchemaInClasspath(PropertyReader
+				.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_ALL_COLLECTION_BANNERS_JSON_SCHEMA)));
 
 		loggerReport.pass("Response" + response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());
@@ -84,8 +86,9 @@ public class GetAllBanner extends RestBaseClass implements Constants {
 		queryParam = new HashMap<String, String>();
 		queryParam.put("response", testData.get("response"));
 
-		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when().get(GET_ALL_BANNER)
-				.then().statusCode(Integer.parseInt(testData.get("statusCode"))).and().extract().response();
+		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when()
+				.get(GET_ALL_BANNER_COLLECTION).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
+				.extract().response();
 
 		loggerReport.pass("Response" + response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());
