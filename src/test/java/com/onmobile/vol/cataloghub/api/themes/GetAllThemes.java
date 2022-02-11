@@ -47,17 +47,16 @@ public class GetAllThemes extends RestBaseClass implements Constants {
 			;
 
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", testData.get("StoreID"));
+		pathParam.put("store_id", CommonValues.themeValues.get("store_id"));
 
 		queryParam = new HashMap<String, String>();
 		queryParam.put("response", testData.get("response"));
 
 		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when().get(GET_ALL_THEMES)
 				.then().statusCode(Integer.parseInt(testData.get("statusCode"))).and().body("theme_id",
-						hasItem(Integer.parseInt(CommonValues.theme_Id)), "image_url", hasItem(CommonValues.image_url))
+						hasItem(Integer.parseInt(CommonValues.themeValues.get("theme_id"))), "image_url", hasItem(CommonValues.themeValues.get("image_url")))
 				.extract().response();
 
-		System.out.println(response.asPrettyString());
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(
 				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_ALL_THEMES_SCHEMA)));

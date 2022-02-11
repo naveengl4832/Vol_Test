@@ -45,7 +45,7 @@ public class GetAllBannerCollections extends RestBaseClass implements Constants 
 	}
 
 	@Test(dataProvider = "getPositiveTestdata")
-	public void getAllBanner(Map<String, String> testDatList[]) {
+	public void getAllBannerCollections(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;

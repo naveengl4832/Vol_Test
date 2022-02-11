@@ -34,12 +34,12 @@ public class DeleteBannerById extends RestBaseClass implements Constants {
 	}
 
 	@Test(dataProvider = "getPositiveTestdata")
-	public void getAttributes(Map<String, String> testDatList[]) {
+	public void deleteBannerByID(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", testData.get("store_id"));
+		pathParam.put("store_id", CommonValues.bannerValues.get("store_id"));
 		pathParam.put("banner_id", CommonValues.bannerValues.get("banner_id"));
 
 		Response response = requestGenarator.getRequest_PathParam_URL(BASE_URL, pathParam).when()
@@ -47,7 +47,7 @@ public class DeleteBannerById extends RestBaseClass implements Constants {
 				.extract().response();
 
 		LOGGER.info(" Banner ID is deleted --> " + CommonValues.bannerValues.get("banner_id") + "  ---> \n" + response.getStatusCode());
-		loggerReport.pass("statucode : " + response.getStatusCode() + "Theme_id is deleted");
+		loggerReport.pass("statucode : " + response.getStatusCode() + "Banner ID is deleted");
 		log.debug("Banner ID is deleted ----> "+ response.asPrettyString());
 
 	}

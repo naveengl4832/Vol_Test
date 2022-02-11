@@ -53,12 +53,12 @@ public class CreateBanner extends RestBaseClass implements Constants {
 	}
 
 	@Test(dataProvider = "getPositiveTestdata")
-	public void createChatByChatName(Map<String, String> testDatList[]) {
+	public void createBanner(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
 		PathParam = new HashMap<String, String>();
-		PathParam.put("store_id", testData.get("store_id"));
+		PathParam.put("store_id", STORE_ID);
 
 		requestBody = new HashMap<String, String>();
 
@@ -67,7 +67,7 @@ public class CreateBanner extends RestBaseClass implements Constants {
 
 		Response response = requestGenarator.getRequestWithPathReqobject(BASE_URL, PathParam, requestBody).when()
 				.post(CREATE_BANNER).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
-				.body("store_id", equalTo(Integer.parseInt(testData.get("store_id"))), "name",
+				.body("store_id", equalTo(Integer.parseInt(STORE_ID)), "name",
 						containsString(testData.get("name")), "language", equalTo(testData.get("language")),
 						"image_url", is(notNullValue()), "gif_url", is(notNullValue()), "video_url", is(notNullValue()),
 						"banner_names", is(not(empty())))
@@ -86,7 +86,7 @@ public class CreateBanner extends RestBaseClass implements Constants {
 	}
 
 	@Test(dataProvider = "getNegativeTestdata")
-	public void NegativeScenarioCreateChat(Map<String, String> testDatList[]) {
+	public void createBannerNegative(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;

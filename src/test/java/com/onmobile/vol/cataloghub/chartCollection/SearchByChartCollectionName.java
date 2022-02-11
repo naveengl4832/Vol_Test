@@ -79,7 +79,7 @@ public class SearchByChartCollectionName extends RestBaseClass implements Consta
 	}
 	
 	@Test(dataProvider = "getNegativeTestdata")
-	public void getThemeByThemeid_NegativeScenarios(Map<String, String> testDatList[]) {
+	public void getChartCollectionsNegativeTest(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;

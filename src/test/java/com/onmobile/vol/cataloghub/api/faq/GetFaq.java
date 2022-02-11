@@ -48,7 +48,7 @@ public class GetFaq extends RestBaseClass implements Constants {
 	}
 
 	@Test(dataProvider = "getPositiveTestdata")
-	public void getBannerByID(Map<String, String> testDatList[]) {
+	public void getFaqByFaqId(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
@@ -77,7 +77,7 @@ public class GetFaq extends RestBaseClass implements Constants {
 	}
 
 	@Test(dataProvider = "getNegativeTestdata")
-	public void getBannerById_NegativeScenarios(Map<String, String> testDatList[]) {
+	public void getFaqByFaqIdNegativeTest(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;

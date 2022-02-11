@@ -34,19 +34,19 @@ public class DeleteThemeByID extends RestBaseClass implements Constants {
 	}
 
 	@Test(dataProvider = "getPositiveTestdata")
-	public void getAttributes(Map<String, String> testDatList[]) {
+	public void deleteThemeID(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", testData.get("store_id"));
-		pathParam.put("theme_id", CommonValues.theme_Id);
+		pathParam.put("store_id", CommonValues.themeValues.get("store_id"));
+		pathParam.put("theme_id", CommonValues.themeValues.get("theme_id"));
 
 		Response response = requestGenarator.getRequest_PathParam_URL(BASE_URL, pathParam).when()
 				.delete(DELETE_THEME_BY_THEME_ID).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
 				.extract().response();
 
-		LOGGER.info(" Theme_id is deleted --> " + CommonValues.theme_Id + "  ---> \n" + response.getStatusCode());
+		LOGGER.info(" Theme_id is deleted --> " + CommonValues.themeValues.get("Theme_id") + "  ---> \n" + response.getStatusCode());
 		loggerReport.pass("statucode : " + response.getStatusCode() + "Theme_id is deleted");
 		
 			log.debug(response.asPrettyString());

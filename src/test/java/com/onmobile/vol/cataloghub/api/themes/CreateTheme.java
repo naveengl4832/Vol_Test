@@ -65,16 +65,17 @@ public class CreateTheme extends RestBaseClass implements Constants {
 		createThemeRequest.setThemeName(testData.get("theme_Name") + " _ " + RandomStringUtils.randomAlphanumeric(10));
 
 		PathParam = new HashMap<String, String>();
-		PathParam.put("store_id", testData.get("store_id"));
+		PathParam.put("store_id", STORE_ID);
 
 		Response response = requestGenarator.getRequest(BASE_URL, PathParam, createThemeRequest.toString()).when()
 				.post(CREATE_THEME_BY_THEME_NAME).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
 				.body("$", hasKey("theme_id"), "$", hasKey("store_id"), "$", hasKey("theme_name")).and().extract()
 				.response();
 
-		CommonValues.theme_Id = response.jsonPath().getString("theme_id");
-		CommonValues.theme_Name = response.jsonPath().getString("theme_name");
-
+		CommonValues.themeValues.put("theme_id", response.jsonPath().getString("theme_id"));
+		CommonValues.themeValues.put("theme_name",response.jsonPath().getString("theme_name"));
+		CommonValues.themeValues.put("store_id",response.jsonPath().getString("store_id"));
+		
 		loggerReport.info("Theme ID is created for the given themeName - \n " + createThemeRequest.getThemeName() + "  "
 				+ response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());

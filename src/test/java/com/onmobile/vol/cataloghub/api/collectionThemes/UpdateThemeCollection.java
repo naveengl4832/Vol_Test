@@ -61,16 +61,18 @@ public class UpdateThemeCollection extends RestBaseClass implements Constants {
 		}
 
 		PathParam = new HashMap<String, String>();
-		PathParam.put("store_id", testData.get("store_id"));
+		PathParam.put("store_id", CommonValues.themeCollectionValues.get("store_id"));
 
 		updateCollectionThemeRequest.setStartDatetime(CommonValues.getDateAndTime());
 		updateCollectionThemeRequest.setEndDatetime(CommonValues.getDateAndTime());
-		updateCollectionThemeRequest.setStoreId(Integer.parseInt(testData.get("store_id")));
-		updateCollectionThemeRequest.setThemeCollectionId(Integer.parseInt(CommonValues.theme_Collection_Id));
-		updateCollectionThemeRequest.setThemeCollectionName(CommonValues.theme_Collection_Name);
+		updateCollectionThemeRequest.setStoreId(Integer.parseInt(CommonValues.themeCollectionValues.get("store_id")));
+		updateCollectionThemeRequest
+				.setThemeCollectionId(Integer.parseInt(CommonValues.themeCollectionValues.get("theme_collection_id")));
+		updateCollectionThemeRequest
+				.setThemeCollectionName(CommonValues.themeCollectionValues.get("theme_collection_name"));
 
-		themeCollectionTheme.setThemeId(CommonValues.theme_Id);
-		themeCollectionTheme.setThemeName(CommonValues.theme_Name);
+		themeCollectionTheme.setThemeId(CommonValues.themeValues.get("theme_id"));
+		themeCollectionTheme.setThemeName(CommonValues.themeValues.get("theme_name"));
 
 		List<ThemeCollectionTheme> themeCollectionThemeList = new ArrayList<ThemeCollectionTheme>();
 		themeCollectionThemeList.add(themeCollectionTheme);
@@ -79,19 +81,18 @@ public class UpdateThemeCollection extends RestBaseClass implements Constants {
 
 		Response response = requestGenarator.getRequest(BASE_URL, PathParam, updateCollectionThemeRequest.toString())
 				.when().put(UPDATE_THEME_COLLECTION).then().statusCode(Integer.parseInt(testData.get("statusCode")))
-				.body("theme_collection_name", equalTo(CommonValues.theme_Collection_Name), "theme_collection_id",
-						equalTo(Integer.parseInt(CommonValues.theme_Collection_Id)))
+				.body("theme_collection_name", equalTo(CommonValues.themeCollectionValues.get("theme_collection_name")),
+						"theme_collection_id",
+						equalTo(Integer.parseInt(CommonValues.themeCollectionValues.get("theme_collection_id"))))
 				.extract().response();
-
-		System.out.println(response.asPrettyString());
 
 		List<Object> list = response.jsonPath().getList("theme_collection_themes");
 
 		for (int i = 0; i < list.size(); i++) {
 			Assert.assertEquals(response.jsonPath().get("theme_collection_themes[" + i + "].theme_id"),
-					Integer.parseInt(CommonValues.theme_Id));
+					Integer.parseInt(CommonValues.themeValues.get("theme_id")));
 			Assert.assertEquals(response.jsonPath().get("theme_collection_themes[" + i + "].theme_name"),
-					CommonValues.theme_Name);
+					CommonValues.themeValues.get("theme_name"));
 		}
 		loggerReport.info("Theme is updated with the given - \n " + response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());

@@ -43,7 +43,7 @@ public class GetAllBanner extends RestBaseClass implements Constants {
 	}
 
 	@Test(dataProvider = "getPositiveTestdata")
-	public void getAllBanner(Map<String, String> testDatList[]) {
+	public void getAllBanners(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
@@ -61,7 +61,6 @@ public class GetAllBanner extends RestBaseClass implements Constants {
 						hasItem(Integer.parseInt(CommonValues.bannerValues.get("store_id"))))
 				.extract().response();
 
-		System.out.println(response.asPrettyString());
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(
 				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_ALL_BANNER_JSON_SCHEMA)));

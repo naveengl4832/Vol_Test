@@ -45,7 +45,7 @@ public class GetAllChartCollections extends RestBaseClass implements Constants {
 	}
 
 	@Test(dataProvider = "getPositiveTestdata")
-	public void getAllBanner(Map<String, String> testDatList[]) {
+	public void getAllChartCollection(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;

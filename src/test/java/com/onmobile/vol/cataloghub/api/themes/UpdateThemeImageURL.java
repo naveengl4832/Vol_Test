@@ -62,16 +62,16 @@ public class UpdateThemeImageURL extends RestBaseClass implements Constants {
 		}
 
 		PathParam = new HashMap<String, String>();
-		PathParam.put("store_id", testData.get("store_id"));
-		PathParam.put("theme_id", CommonValues.theme_Id);
+		PathParam.put("store_id", CommonValues.themeValues.get("store_id"));
+		PathParam.put("theme_id", CommonValues.themeValues.get("theme_id"));
 
 		queryParam = new HashMap<String, String>();
-		queryParam.put("image_url", testData.get("image_url") + CommonValues.theme_Id + ".jpeg");
+		queryParam.put("image_url", testData.get("image_url") + CommonValues.themeValues.get("theme_id") + ".jpeg");
 
 		updateThemeRequest.setImageUrl(testData.get("image_url_1"));
-		updateThemeRequest.setStoreId(Integer.parseInt(testData.get("store_id")));
-		updateThemeRequest.setThemeId(Integer.parseInt(testData.get("theme_id")));
-		updateThemeRequest.setThemeName(testData.get("theme_name"));
+		updateThemeRequest.setStoreId(Integer.parseInt(CommonValues.themeValues.get("store_id")));
+		updateThemeRequest.setThemeId(Integer.parseInt(CommonValues.themeValues.get("theme_id")));
+		updateThemeRequest.setThemeName(CommonValues.themeValues.get("theme_name"));
 
 		themeAttribute.setAttributeId(Integer.parseInt(testData.get("attribute_id")));
 		themeAttribute.setAttributeName(testData.get("attribute_name"));
@@ -86,9 +86,10 @@ public class UpdateThemeImageURL extends RestBaseClass implements Constants {
 				.getRequestWithPathQueryReqobject(queryParam, BASE_URL, PathParam, updateThemeRequest.toString()).when()
 				.put(UPDATE_THEME_BY_THEME_ID).then().body("$", hasKey("image_url")).extract().response();
 
-		CommonValues.image_url = response.jsonPath().get("image_url");
+		CommonValues.themeValues.put("image_url", response.jsonPath().getString("image_url"));
 
-		Assert.assertTrue(response.jsonPath().get("image_url").toString().contains(CommonValues.theme_Id + ".jpeg"));
+		Assert.assertTrue(response.jsonPath().get("image_url").toString()
+				.contains(CommonValues.themeValues.get("theme_id") + ".jpeg"));
 		loggerReport.info("Image URL is updated  - \n " + response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());
 

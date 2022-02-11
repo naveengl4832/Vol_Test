@@ -59,13 +59,13 @@ public class GetThemeByID extends RestBaseClass implements Constants {
 		queryParam.put("response", testData.get("response"));
 
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", testData.get("StoreID"));
-		pathParam.put("theme_id", CommonValues.theme_Id);
+		pathParam.put("store_id", CommonValues.themeValues.get("store_id"));
+		pathParam.put("theme_id", CommonValues.themeValues.get("theme_id"));
 
 		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when()
 				.get(GET_CATALOG_HUB_THEAMS).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
-				.body("store_id", equalTo(Integer.parseInt(testData.get("StoreID"))), "theme_id",
-						equalTo(Integer.parseInt(CommonValues.theme_Id)))
+				.body("store_id", equalTo(Integer.parseInt(CommonValues.themeValues.get("store_id"))), "theme_id",
+						equalTo(Integer.parseInt(CommonValues.themeValues.get("theme_id"))))
 				.extract().response();
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(

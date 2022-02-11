@@ -38,14 +38,13 @@ public class SearchByChartName extends RestBaseClass implements Constants {
 	public Object[][] getNegativeTestdata() {
 		sourceMethod = "getTestData";
 		LOGGER.entering(sourceClass, sourceMethod);
-		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_CHART_XL_PATH,
-				SEARCH_CHART_BY_CHARTNAME_NEGATIVE_SHEET);
+		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_CHART_XL_PATH, SEARCH_CHART_BY_CHARTNAME_NEGATIVE_SHEET);
 		LOGGER.entering(sourceClass, sourceMethod);
 		return testData;
 	}
 
 	@Test(dataProvider = "getPositiveTestdata")
-	public void searchChartByCollectionName(Map<String, String> testDatList[]) {
+	public void searchByChartName(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
@@ -59,25 +58,22 @@ public class SearchByChartName extends RestBaseClass implements Constants {
 		queryParam.put("searchItem", CommonValues.chartValues.get("chart_name"));
 
 		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when()
-				.get(SEARCH_CHART_BY_CHARTNAME).then().statusCode(Integer.parseInt(testData.get("statusCode")))
-				.and()
-				.body("charts.chart_id",
-						hasItem(Integer.parseInt(CommonValues.chartValues.get("chart_id"))),
-						"charts.chart_name",
-						hasItem(CommonValues.chartValues.get("chart_name")))
+				.get(SEARCH_CHART_BY_CHARTNAME).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
+				.body("charts.chart_id", hasItem(Integer.parseInt(CommonValues.chartValues.get("chart_id"))),
+						"charts.chart_name", hasItem(CommonValues.chartValues.get("chart_name")))
 				.extract().response();
 
-		response.then().assertThat().body(matchesJsonSchemaInClasspath(PropertyReader
-				.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, SEARCH_BY_CHART_NAME_JSON_SCHEMA)));
+		response.then().assertThat().body(matchesJsonSchemaInClasspath(
+				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, SEARCH_BY_CHART_NAME_JSON_SCHEMA)));
 
 		loggerReport.pass("Response" + response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());
 		log.debug(response.asPrettyString());
 
 	}
-	
+
 	@Test(dataProvider = "getNegativeTestdata")
-	public void getThemeByThemeid_NegativeScenarios(Map<String, String> testDatList[]) {
+	public void searchByChartNameNegativeTest(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
@@ -88,8 +84,9 @@ public class SearchByChartName extends RestBaseClass implements Constants {
 		pathParam = new HashMap<String, String>();
 		pathParam.put("store_id", testData.get("store_id"));
 
-		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when().get(SEARCH_CHART_BY_CHARTNAME)
-				.then().statusCode(Integer.parseInt(testData.get("statusCode"))).extract().response();
+		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when()
+				.get(SEARCH_CHART_BY_CHARTNAME).then().statusCode(Integer.parseInt(testData.get("statusCode")))
+				.extract().response();
 
 		loggerReport.info("Response \n" + response.asString());
 		LOGGER.info("Response : " + response.asString());

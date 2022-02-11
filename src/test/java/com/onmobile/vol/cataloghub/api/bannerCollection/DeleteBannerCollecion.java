@@ -34,12 +34,12 @@ public class DeleteBannerCollecion extends RestBaseClass implements Constants {
 	}
 
 	@Test(dataProvider = "getPositiveTestdata")
-	public void getAttributes(Map<String, String> testDatList[]) {
+	public void deleteBannerCollectionByID(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", STORE_ID);
+		pathParam.put("store_id", CommonValues.bannerCollectionValues.get("store_id"));
 		pathParam.put("banner_collection_id", CommonValues.bannerCollectionValues.get("banner_collection_id"));
 
 		Response response = requestGenarator.getRequest_PathParam_URL(BASE_URL, pathParam).when()

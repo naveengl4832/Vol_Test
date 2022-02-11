@@ -61,7 +61,7 @@ public class GetBannerCollectionByID extends RestBaseClass implements Constants 
 		queryParam.put("response", testData.get("response"));
 
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", STORE_ID);
+		pathParam.put("store_id", CommonValues.bannerCollectionValues.get("store_id"));
 		pathParam.put("banner_collection_id", CommonValues.bannerCollectionValues.get("banner_collection_id"));
 
 		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when().get(GET_COLLECTION_BY_ID)

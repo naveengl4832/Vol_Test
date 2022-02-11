@@ -39,15 +39,15 @@ public class DeleteThemeCollectionByID extends RestBaseClass implements Constant
 		while (testData.values().remove(""))
 			;
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", testData.get("store_id"));
-		pathParam.put("theme_collection_id", CommonValues.theme_Collection_Id);
+		pathParam.put("store_id", CommonValues.themeCollectionValues.get("store_id"));
+		pathParam.put("theme_collection_id", CommonValues.themeCollectionValues.get("theme_collection_id"));
 
 		Response response = requestGenarator.getRequest_PathParam_URL(BASE_URL, pathParam).when()
 				.delete(DELETE_THEME_COLLECTION).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
 				.extract().response();
 
-		LOGGER.info(" Theme_Collection_ID is deleted --> \n " + CommonValues.theme_Collection_Id + "  ---> "
-				+ response.getStatusCode());
+		LOGGER.info(" Theme_Collection_ID is deleted --> \n "
+				+ CommonValues.themeCollectionValues.get("theme_collection_id") + "  ---> " + response.getStatusCode());
 		loggerReport.pass("statuscode : " + response.getStatusCode() + "Theme_id is deleted");
 	}
 

@@ -21,7 +21,7 @@
 	<test thread-count="1" name="Image Upload">
 		<classes>
 			<class
-				name="com.onmobile.vol.cataloghub.api.imageupload.UploadThemeImage" />
+				name="com.onmobile.vol.cataloghub.api.themes.UploadThemeImage" />
 		</classes>
 	</test> <!-- Test -->
 
@@ -44,9 +44,9 @@
 	<test thread-count="1" name="Theme Search">
 		<classes>
 			<class
-				name="com.onmobile.vol.cataloghub.api.themes.themeSearch.SearchByThemeName" />
+				name="com.onmobile.vol.cataloghub.api.themes.SearchByThemeName" />
 			<class
-				name="com.onmobile.vol.cataloghub.api.themes.themeSearch.SearchByThemeCollectionName" />
+				name="com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName" />
 			<class
 				name="com.onmobile.vol.cataloghub.api.themes.DeleteThemeByID" />
 			<class
@@ -58,7 +58,7 @@
 	<test thread-count="1" name="CatalogHub Configuration">
 		<classes>
 			<class
-				name="com.onmobile.vol.cataloghub.api.cataloghubconfiguration.GetThemeAttributes" />
+				name="com.onmobile.vol.cataloghub.api.themes.GetThemeAttributes" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

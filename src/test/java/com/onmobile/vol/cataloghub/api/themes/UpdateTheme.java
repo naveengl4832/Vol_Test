@@ -60,12 +60,12 @@ public class UpdateTheme extends RestBaseClass implements Constants {
 		}
 
 		PathParam = new HashMap<String, String>();
-		PathParam.put("store_id", testData.get("store_id"));
+		PathParam.put("store_id", CommonValues.themeValues.get("store_id"));
 
-		updateThemeRequest.setImageUrl(CommonValues.image_url);
-		updateThemeRequest.setStoreId(Integer.parseInt(testData.get("store_id")));
-		updateThemeRequest.setThemeId(Integer.parseInt(CommonValues.theme_Id));
-		updateThemeRequest.setThemeName(CommonValues.theme_Name);
+		updateThemeRequest.setImageUrl(CommonValues.themeValues.get("image_url"));
+		updateThemeRequest.setStoreId(Integer.parseInt(CommonValues.themeValues.get("store_id")));
+		updateThemeRequest.setThemeId(Integer.parseInt(CommonValues.themeValues.get("theme_id")));
+		updateThemeRequest.setThemeName(CommonValues.themeValues.get("theme_name"));
 
 		themeAttribute.setAttributeId(Integer.parseInt(testData.get("attribute_id")));
 		themeAttribute.setAttributeName(testData.get("attribute_name"));
@@ -78,8 +78,9 @@ public class UpdateTheme extends RestBaseClass implements Constants {
 
 		Response response = requestGenarator.getRequest(BASE_URL, PathParam, updateThemeRequest.toString()).when()
 				.put(UPDATE_THEME).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
-				.body("theme_name", equalTo(CommonValues.theme_Name), "theme_id",
-						equalTo(Integer.parseInt(CommonValues.theme_Id)), "image_url", equalTo(CommonValues.image_url))
+				.body("theme_name", equalTo(CommonValues.themeValues.get("theme_name")), "theme_id",
+						equalTo(Integer.parseInt(CommonValues.themeValues.get("theme_id"))), "image_url",
+						equalTo(CommonValues.themeValues.get("image_url")))
 				.and().extract().response();
 
 		List<Object> list = response.jsonPath().getList("theme_attributes");

@@ -1,6 +1,5 @@
-package com.onmobile.vol.cataloghub.api.themes.themeSearch;
+package com.onmobile.vol.cataloghub.api.collectionThemes;
 
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.greaterThan;
 
@@ -14,17 +13,15 @@ import org.testng.annotations.Test;
 import com.onmobile.api.config.Constants;
 import com.onmobile.api.config.ExcelConfig;
 import com.onmobile.api.helper.CommonValues;
-import com.onmobile.api.helper.PropertyReader;
 import com.onmobile.api.helper.RequestGenerator;
 import com.onmobile.api.helper.RestBaseClass;
 
 import io.restassured.response.Response;
 
-public class SearchByThemeName extends RestBaseClass implements Constants {
-
+public class SearchByThemeCollectionName extends RestBaseClass implements Constants {
 	/**
 	 * 
-	 * API Is to get the details of themes by passing theme Name
+	 * API Is to get the details of themes by passing theme collection Name
 	 * 
 	 */
 
@@ -36,7 +33,8 @@ public class SearchByThemeName extends RestBaseClass implements Constants {
 	public Object[][] getPositiveTestData() {
 		sourceMethod = "getTestData";
 		LOGGER.entering(sourceClass, sourceMethod);
-		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_THEME_XL_PATH, SEARCH_THEME_BY_THEMENAME_POSITIVE_SHEET);
+		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_THEME_XL_PATH,
+				SEARCH_THEME_COLLECTION_BY_THEMENAME_POSITIVE_SHEET);
 		LOGGER.entering(sourceClass, sourceMethod);
 		return testData;
 	}
@@ -45,62 +43,58 @@ public class SearchByThemeName extends RestBaseClass implements Constants {
 	public Object[][] getNegativeTestData() {
 		sourceMethod = "getTestData";
 		LOGGER.entering(sourceClass, sourceMethod);
-		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_THEME_XL_PATH, SEARCH_THEME_BY_THEMENAME_NEGATIVE_SHEET);
+		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_THEME_XL_PATH,
+				SEARCH_THEME_BY_COLLECECTION_THEMENAME_NEGATIVE_SHEET);
 
 		LOGGER.entering(sourceClass, sourceMethod);
 		return testData;
 	}
 
 	@Test(dataProvider = "getPositiveTestdata")
-	public void validateSearchThemeByThemeName(Map<String, String> testDatList[]) {
+	public void searchThemeCollection(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
 
 		queryParam = new HashMap<String, String>();
-		queryParam.put("searchItem", CommonValues.theme_Name);
+		queryParam.put("searchItem", CommonValues.themeCollectionValues.get("theme_collection_name"));
 
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", testData.get("StoreID"));
+		pathParam.put("store_id", CommonValues.themeCollectionValues.get("store_id"));
 
 		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when()
-				.get(SEARCH_BY_THEME_NAME).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
-				.body("total_item_count", greaterThan(0)).extract().response();
+				.get(SEARCH_THEME_COLLECTION_BY_COLLECTION_THEME_NAME).then()
+				.statusCode(Integer.parseInt(testData.get("statusCode"))).and().body("total_item_count", greaterThan(0))
+				.extract().response();
 
-		List<Object> list = response.jsonPath().getList("themes");
+		List<Object> list = response.jsonPath().getList("theme_collections");
 
-		if (!testData.get("Test case").equalsIgnoreCase("Blank Search")) {
-
-			for (int i = 0; i < list.size(); i++) {
-
-				response.then().body("themes[" + i + "].theme_name", containsString(CommonValues.theme_Name));
-
-			}
+		for (int i = 0; i < list.size(); i++) {
+			response.then().body("theme_collections[" + i + "].theme_collection_name",
+					containsString(CommonValues.themeCollectionValues.get("theme_collection_name")));
 		}
 
-		response.then().assertThat().body(matchesJsonSchemaInClasspath(
-				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, SEARCH_THEME_BY_THEME_NAME_SCHEMA)));
-
 		loggerReport.pass("Response" + response.prettyPrint());
+		loggerReport.pass("Total count of the matched objects : --> " + response.jsonPath().get("total_item_count"));
 		LOGGER.info("Response : " + response.prettyPrint());
 
 	}
 
 	@Test(dataProvider = "getNegativeTestdata")
-	public void searchThemeByThemeNameNegativeScenarioes(Map<String, String> testDatList[]) {
+	public void searchThemeCollectionNegativeScenarioes(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
 
 		queryParam = new HashMap<String, String>();
-		queryParam.put("searchItem", testData.get("search_Item"));
+		queryParam.put("searchItem", testData.get("searchItem"));
 
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", testData.get("StoreID"));
+		pathParam.put("store_id", testData.get("store_id"));
 
 		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when()
-				.get(SEARCH_BY_THEME_NAME).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
-				.extract().response();
+				.get(SEARCH_THEME_COLLECTION_BY_COLLECTION_THEME_NAME).then()
+				.statusCode(Integer.parseInt(testData.get("statusCode"))).and().extract().response();
 		loggerReport.pass("Response" + response.prettyPrint());
 		LOGGER.info("Response : " + response.prettyPrint());
 	}

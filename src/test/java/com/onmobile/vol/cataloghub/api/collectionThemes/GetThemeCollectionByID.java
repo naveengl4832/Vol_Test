@@ -58,14 +58,14 @@ public class GetThemeCollectionByID extends RestBaseClass implements Constants {
 		queryParam.put("response", testData.get("response"));
 
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", testData.get("store_id"));
-		pathParam.put("theme_collection_id", CommonValues.theme_Collection_Id);
+		pathParam.put("store_id", CommonValues.themeCollectionValues.get("store_id"));
+		pathParam.put("theme_collection_id", CommonValues.themeCollectionValues.get("theme_collection_id"));
 
 		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when()
 				.get(GET_THEME_COLLECTION).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
-				.body("store_id", equalTo(Integer.parseInt(testData.get("store_id"))), "theme_collection_id",
-						equalTo(Integer.parseInt(CommonValues.theme_Collection_Id)), "theme_collection_name",
-						equalTo(CommonValues.theme_Collection_Name))
+				.body("store_id", equalTo(Integer.parseInt(CommonValues.themeCollectionValues.get("store_id"))), "theme_collection_id",
+						equalTo(Integer.parseInt(CommonValues.themeCollectionValues.get("theme_collection_id"))), "theme_collection_name",
+						equalTo(CommonValues.themeCollectionValues.get("theme_collection_name")))
 				.extract().response();
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(

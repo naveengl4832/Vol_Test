@@ -6,18 +6,18 @@
 		<classes>
 			<class
 				name="com.onmobile.vol.cataloghub.api.bannerCollection.CreateBannerCollection" />
-				
-			<!-- <class name="com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID" 
-				/> -->
-			<!-- <class
-				name="com.onmobile.vol.cataloghub.api.bannerCollection.GetAllBannerCollections" /> -->
+
+			<class
+				name="com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.bannerCollection.GetAllBannerCollections" />
 
 			<class
 				name="com.onmobile.vol.cataloghub.api.bannerCollection.SearchBannerCollectionByName" />
 
 
-			<!-- <class name="com.onmobile.vol.cataloghub.api.bannerCollection.DeleteBannerCollecion" 
-				/> -->
+			<class
+				name="com.onmobile.vol.cataloghub.api.bannerCollection.DeleteBannerCollecion" />
 		</classes>
 
 	</test> <!-- Test -->

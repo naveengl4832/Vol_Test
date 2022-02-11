@@ -34,7 +34,7 @@ public class DeleteChartByID extends   RestBaseClass implements Constants {
 	}
 
 	@Test(dataProvider = "getPositiveTestdata")
-	public void getAttributes(Map<String, String> testDatList[]) {
+	public void deleteChartById(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
@@ -46,9 +46,9 @@ public class DeleteChartByID extends   RestBaseClass implements Constants {
 				.delete(DELETE_CHART_BY_ID).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
 				.extract().response();
 
-		LOGGER.info(" Banner ID is deleted --> " + CommonValues.bannerValues.get("banner_id") + "  ---> \n" + response.getStatusCode());
-		loggerReport.pass("statucode : " + response.getStatusCode() + "Theme_id is deleted");
-		log.debug("Banner ID is deleted ----> "+ response.asPrettyString());
+		LOGGER.info(" chart  ID is deleted --> " + CommonValues.chartValues.get("chart_id") + "  ---> \n" + response.getStatusCode());
+		loggerReport.pass("statucode : " + response.getStatusCode() + "chart_id is deleted");
+		log.debug("chart  ID is delete ----> "+ CommonValues.chartValues.get("chart_id"));
 
 	}
 

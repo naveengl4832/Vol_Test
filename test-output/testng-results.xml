@@ -1,867 +1,1683 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="10" total="24" passed="14" failed="0" skipped="0">
+<testng-results ignored="20" total="47" passed="27" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-11T11:45:42 IST" name="Suite" finished-at="2022-02-11T11:45:52 IST" duration-ms="9674">
+  <suite started-at="2022-02-11T15:22:42 IST" name="Suite" finished-at="2022-02-11T15:23:17 IST" duration-ms="35358">
     <groups>
     </groups>
-    <test started-at="2022-02-11T11:45:42 IST" name="Banner" finished-at="2022-02-11T11:45:52 IST" duration-ms="9674">
-      <class name="com.onmobile.vol.cataloghub.api.banner.SearchByBannerName">
-        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55]" started-at="2022-02-11T11:45:50 IST" name="initLogger" finished-at="2022-02-11T11:45:50 IST" duration-ms="0" status="PASS">
+    <test started-at="2022-02-11T15:22:42 IST" name="Theme" finished-at="2022-02-11T15:22:47 IST" duration-ms="5668">
+      <class name="com.onmobile.vol.cataloghub.api.themes.UpdateTheme">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UpdateTheme@1500b2f3]" started-at="2022-02-11T15:22:45 IST" name="initLogger" finished-at="2022-02-11T15:22:45 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initLogger -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55]" started-at="2022-02-11T11:45:50 IST" name="init" finished-at="2022-02-11T11:45:50 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UpdateTheme@1500b2f3]" started-at="2022-02-11T15:22:45 IST" name="init" finished-at="2022-02-11T15:22:45 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.SearchByBannerName.searchBannerCollectionByname(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.UpdateTheme.updateTheme(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@57afe44b]]>
+                <![CDATA[[Ljava.lang.Object;@729a9c3d]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="searchBannerCollectionByname([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55]" started-at="2022-02-11T11:45:50 IST" name="searchBannerCollectionByname" data-provider="getPositiveTestdata" finished-at="2022-02-11T11:45:51 IST" duration-ms="497" status="PASS">
+        <test-method signature="updateTheme([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UpdateTheme@1500b2f3]" started-at="2022-02-11T15:22:45 IST" name="updateTheme" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:22:46 IST" duration-ms="479" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.util.Map;@ab2009f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchBannerCollectionByname -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55]" started-at="2022-02-11T11:45:51 IST" name="close" finished-at="2022-02-11T11:45:51 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.SearchByBannerName.searchBannerCollectionByname(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@57afe44b]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=searchBannerCollectionByname status=SUCCESS method=SearchByBannerName.searchBannerCollectionByname([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55]" started-at="2022-02-11T11:45:51 IST" name="init" finished-at="2022-02-11T11:45:51 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.SearchByBannerName.searchBannerCollectionBynameNegative(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@18887028]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="searchBannerCollectionBynameNegative([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55]" started-at="2022-02-11T11:45:51 IST" name="searchBannerCollectionBynameNegative" data-provider="getNegativeTestdata" finished-at="2022-02-11T11:45:51 IST" duration-ms="216" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@3d718248]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchBannerCollectionBynameNegative -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55]" started-at="2022-02-11T11:45:51 IST" name="close" finished-at="2022-02-11T11:45:51 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.SearchByBannerName.searchBannerCollectionBynameNegative(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@18887028]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=searchBannerCollectionBynameNegative status=SUCCESS method=SearchByBannerName.searchBannerCollectionBynameNegative([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55]" started-at="2022-02-11T11:45:51 IST" name="init" finished-at="2022-02-11T11:45:51 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.SearchByBannerName.searchBannerCollectionBynameNegative(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@28f8ce2e]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="searchBannerCollectionBynameNegative([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55]" started-at="2022-02-11T11:45:51 IST" name="searchBannerCollectionBynameNegative" data-provider="getNegativeTestdata" finished-at="2022-02-11T11:45:51 IST" duration-ms="244" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@2cdb5974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchBannerCollectionBynameNegative -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55]" started-at="2022-02-11T11:45:51 IST" name="close" finished-at="2022-02-11T11:45:51 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.SearchByBannerName.searchBannerCollectionBynameNegative(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@28f8ce2e]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=searchBannerCollectionBynameNegative status=SUCCESS method=SearchByBannerName.searchBannerCollectionBynameNegative([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55]" started-at="2022-02-11T11:45:51 IST" name="init" finished-at="2022-02-11T11:45:51 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.SearchByBannerName.searchBannerCollectionBynameNegative(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@2c0a3826]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="searchBannerCollectionBynameNegative([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55]" started-at="2022-02-11T11:45:51 IST" name="searchBannerCollectionBynameNegative" data-provider="getNegativeTestdata" finished-at="2022-02-11T11:45:52 IST" duration-ms="519" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@14b5325f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchBannerCollectionBynameNegative -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55]" started-at="2022-02-11T11:45:52 IST" name="close" finished-at="2022-02-11T11:45:52 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.SearchByBannerName.searchBannerCollectionBynameNegative(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@2c0a3826]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=searchBannerCollectionBynameNegative status=SUCCESS method=SearchByBannerName.searchBannerCollectionBynameNegative([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.SearchByBannerName@6a4f1a55] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.onmobile.vol.cataloghub.api.banner.SearchByBannerName -->
-      <class name="com.onmobile.vol.cataloghub.api.banner.CreateBanner">
-        <test-method is-config="true" signature="generateToken()[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.CreateBanner@28cda624]" started-at="2022-02-11T11:45:42 IST" name="generateToken" finished-at="2022-02-11T11:45:42 IST" duration-ms="132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateToken -->
-        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.CreateBanner@28cda624]" started-at="2022-02-11T11:45:43 IST" name="initLogger" finished-at="2022-02-11T11:45:43 IST" duration-ms="800" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initLogger -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.CreateBanner@28cda624]" started-at="2022-02-11T11:45:44 IST" name="init" finished-at="2022-02-11T11:45:44 IST" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.CreateBanner.NegativeScenarioCreateChat(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@4a5fab78]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="NegativeScenarioCreateChat([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.CreateBanner@28cda624]" started-at="2022-02-11T11:45:44 IST" name="NegativeScenarioCreateChat" data-provider="getNegativeTestdata" finished-at="2022-02-11T11:45:46 IST" duration-ms="1831" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@1e4d8770]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NegativeScenarioCreateChat -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.CreateBanner@28cda624]" started-at="2022-02-11T11:45:46 IST" name="close" finished-at="2022-02-11T11:45:46 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.CreateBanner.NegativeScenarioCreateChat(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@4a5fab78]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=NegativeScenarioCreateChat status=SUCCESS method=CreateBanner.NegativeScenarioCreateChat([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.CreateBanner@28cda624] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.CreateBanner@28cda624]" started-at="2022-02-11T11:45:46 IST" name="init" finished-at="2022-02-11T11:45:46 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.CreateBanner.createChatByChatName(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@2cebf82f]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="createChatByChatName([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.CreateBanner@28cda624]" started-at="2022-02-11T11:45:46 IST" name="createChatByChatName" data-provider="getPositiveTestdata" finished-at="2022-02-11T11:45:47 IST" duration-ms="1051" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@2a11ae0b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createChatByChatName -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.CreateBanner@28cda624]" started-at="2022-02-11T11:45:47 IST" name="close" finished-at="2022-02-11T11:45:47 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.CreateBanner.createChatByChatName(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@2cebf82f]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=createChatByChatName status=SUCCESS method=CreateBanner.createChatByChatName([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.CreateBanner@28cda624] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.CreateBanner@28cda624]" started-at="2022-02-11T11:45:52 IST" name="afterSuite" finished-at="2022-02-11T11:45:55 IST" duration-ms="2324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.onmobile.vol.cataloghub.api.banner.CreateBanner -->
-      <class name="com.onmobile.vol.cataloghub.api.banner.UpdateBanner">
-        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.UpdateBanner@1b919693]" started-at="2022-02-11T11:45:50 IST" name="initLogger" finished-at="2022-02-11T11:45:50 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initLogger -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.UpdateBanner@1b919693]" started-at="2022-02-11T11:45:50 IST" name="init" finished-at="2022-02-11T11:45:50 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.UpdateBanner.updateTheme(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@505a8582]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="updateTheme([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.UpdateBanner@1b919693]" started-at="2022-02-11T11:45:50 IST" name="updateTheme" data-provider="getPositiveTestdata" finished-at="2022-02-11T11:45:50 IST" duration-ms="449" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@5b5b9521]]>
+                <![CDATA[[Ljava.util.Map;@857f74a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateTheme -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.UpdateBanner@1b919693]" started-at="2022-02-11T11:45:50 IST" name="close" finished-at="2022-02-11T11:45:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UpdateTheme@1500b2f3]" started-at="2022-02-11T15:22:46 IST" name="close" finished-at="2022-02-11T15:22:46 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.UpdateBanner.updateTheme(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.UpdateTheme.updateTheme(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@505a8582]]>
+                <![CDATA[[Ljava.lang.Object;@729a9c3d]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[[TestResult name=updateTheme status=SUCCESS method=UpdateBanner.updateTheme([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.UpdateBanner@1b919693] output={null}]]]>
+                <![CDATA[[TestResult name=updateTheme status=SUCCESS method=UpdateTheme.updateTheme([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UpdateTheme@1500b2f3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- com.onmobile.vol.cataloghub.api.banner.UpdateBanner -->
-      <class name="com.onmobile.vol.cataloghub.api.banner.GetAllBanner">
-        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetAllBanner@71687585]" started-at="2022-02-11T11:45:47 IST" name="initLogger" finished-at="2022-02-11T11:45:47 IST" duration-ms="0" status="PASS">
+      </class> <!-- com.onmobile.vol.cataloghub.api.themes.UpdateTheme -->
+      <class name="com.onmobile.vol.cataloghub.api.themes.GetThemeByID">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeByID@7eecb5b8]" started-at="2022-02-11T15:22:46 IST" name="initLogger" finished-at="2022-02-11T15:22:46 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initLogger -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetAllBanner@71687585]" started-at="2022-02-11T11:45:47 IST" name="init" finished-at="2022-02-11T11:45:47 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeByID@7eecb5b8]" started-at="2022-02-11T15:22:46 IST" name="init" finished-at="2022-02-11T15:22:46 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.GetAllBanner.NegativeGetAllBanner(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.GetThemeByID.getThemeByThemeID(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@34fc315d]]>
+                <![CDATA[[Ljava.lang.Object;@574327ed]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="NegativeGetAllBanner([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetAllBanner@71687585]" started-at="2022-02-11T11:45:47 IST" name="NegativeGetAllBanner" data-provider="getNegativeTestdata" finished-at="2022-02-11T11:45:47 IST" duration-ms="300" status="PASS">
+        <test-method signature="getThemeByThemeID([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeByID@7eecb5b8]" started-at="2022-02-11T15:22:46 IST" name="getThemeByThemeID" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:22:46 IST" duration-ms="675" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.util.Map;@13404f75]]>
+                <![CDATA[[Ljava.util.Map;@5b1ff8cd]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NegativeGetAllBanner -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetAllBanner@71687585]" started-at="2022-02-11T11:45:47 IST" name="close" finished-at="2022-02-11T11:45:47 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- getThemeByThemeID -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeByID@7eecb5b8]" started-at="2022-02-11T15:22:46 IST" name="close" finished-at="2022-02-11T15:22:46 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.GetAllBanner.NegativeGetAllBanner(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.GetThemeByID.getThemeByThemeID(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@34fc315d]]>
+                <![CDATA[[Ljava.lang.Object;@574327ed]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[[TestResult name=NegativeGetAllBanner status=SUCCESS method=GetAllBanner.NegativeGetAllBanner([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetAllBanner@71687585] output={null}]]]>
+                <![CDATA[[TestResult name=getThemeByThemeID status=SUCCESS method=GetThemeByID.getThemeByThemeID([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeByID@7eecb5b8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetAllBanner@71687585]" started-at="2022-02-11T11:45:47 IST" name="init" finished-at="2022-02-11T11:45:47 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeByID@7eecb5b8]" started-at="2022-02-11T15:22:46 IST" name="init" finished-at="2022-02-11T15:22:46 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.GetAllBanner.NegativeGetAllBanner(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.GetThemeByID.getThemeByThemeid_NegativeScenarios(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@34f48d1]]>
+                <![CDATA[[Ljava.lang.Object;@4c7f2fdb]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="NegativeGetAllBanner([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetAllBanner@71687585]" started-at="2022-02-11T11:45:47 IST" name="NegativeGetAllBanner" data-provider="getNegativeTestdata" finished-at="2022-02-11T11:45:48 IST" duration-ms="263" status="PASS">
+        <test-method signature="getThemeByThemeid_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeByID@7eecb5b8]" started-at="2022-02-11T15:22:46 IST" name="getThemeByThemeid_NegativeScenarios" data-provider="getNegativeTestdata" finished-at="2022-02-11T15:22:47 IST" duration-ms="272" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.util.Map;@6b6fd0]]>
+                <![CDATA[[Ljava.util.Map;@780ee3ad]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NegativeGetAllBanner -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetAllBanner@71687585]" started-at="2022-02-11T11:45:48 IST" name="close" finished-at="2022-02-11T11:45:48 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- getThemeByThemeid_NegativeScenarios -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeByID@7eecb5b8]" started-at="2022-02-11T15:22:47 IST" name="close" finished-at="2022-02-11T15:22:47 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.GetAllBanner.NegativeGetAllBanner(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.GetThemeByID.getThemeByThemeid_NegativeScenarios(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@34f48d1]]>
+                <![CDATA[[Ljava.lang.Object;@4c7f2fdb]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[[TestResult name=NegativeGetAllBanner status=SUCCESS method=GetAllBanner.NegativeGetAllBanner([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetAllBanner@71687585] output={null}]]]>
+                <![CDATA[[TestResult name=getThemeByThemeid_NegativeScenarios status=SUCCESS method=GetThemeByID.getThemeByThemeid_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeByID@7eecb5b8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetAllBanner@71687585]" started-at="2022-02-11T11:45:48 IST" name="init" finished-at="2022-02-11T11:45:48 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeByID@7eecb5b8]" started-at="2022-02-11T15:22:47 IST" name="init" finished-at="2022-02-11T15:22:47 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.GetAllBanner.getAllBanner(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.GetThemeByID.getThemeByThemeid_NegativeScenarios(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@36a1fd20]]>
+                <![CDATA[[Ljava.lang.Object;@1b5cf611]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="getAllBanner([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetAllBanner@71687585]" started-at="2022-02-11T11:45:48 IST" name="getAllBanner" data-provider="getPositiveTestdata" finished-at="2022-02-11T11:45:49 IST" duration-ms="789" status="PASS">
+        <test-method signature="getThemeByThemeid_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeByID@7eecb5b8]" started-at="2022-02-11T15:22:47 IST" name="getThemeByThemeid_NegativeScenarios" data-provider="getNegativeTestdata" finished-at="2022-02-11T15:22:47 IST" duration-ms="273" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.util.Map;@53e4a19e]]>
+                <![CDATA[[Ljava.util.Map;@2c2aab92]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAllBanner -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetAllBanner@71687585]" started-at="2022-02-11T11:45:49 IST" name="close" finished-at="2022-02-11T11:45:49 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- getThemeByThemeid_NegativeScenarios -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeByID@7eecb5b8]" started-at="2022-02-11T15:22:47 IST" name="close" finished-at="2022-02-11T15:22:47 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.GetAllBanner.getAllBanner(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.GetThemeByID.getThemeByThemeid_NegativeScenarios(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@36a1fd20]]>
+                <![CDATA[[Ljava.lang.Object;@1b5cf611]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[[TestResult name=getAllBanner status=SUCCESS method=GetAllBanner.getAllBanner([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetAllBanner@71687585] output={null}]]]>
+                <![CDATA[[TestResult name=getThemeByThemeid_NegativeScenarios status=SUCCESS method=GetThemeByID.getThemeByThemeid_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeByID@7eecb5b8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- com.onmobile.vol.cataloghub.api.banner.GetAllBanner -->
-      <class name="com.onmobile.vol.cataloghub.api.banner.GetBannerById">
-        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetBannerById@1807f5a7]" started-at="2022-02-11T11:45:49 IST" name="initLogger" finished-at="2022-02-11T11:45:49 IST" duration-ms="1" status="PASS">
+      </class> <!-- com.onmobile.vol.cataloghub.api.themes.GetThemeByID -->
+      <class name="com.onmobile.vol.cataloghub.api.themes.GetAllThemes">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetAllThemes@126253fd]" started-at="2022-02-11T15:22:47 IST" name="initLogger" finished-at="2022-02-11T15:22:47 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initLogger -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetBannerById@1807f5a7]" started-at="2022-02-11T11:45:49 IST" name="init" finished-at="2022-02-11T11:45:49 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetAllThemes@126253fd]" started-at="2022-02-11T15:22:47 IST" name="init" finished-at="2022-02-11T15:22:47 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.GetBannerById.getBannerByID(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.GetAllThemes.getAllThemes(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@45f8415b]]>
+                <![CDATA[[Ljava.lang.Object;@3d01ea33]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="getBannerByID([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetBannerById@1807f5a7]" started-at="2022-02-11T11:45:49 IST" name="getBannerByID" data-provider="getPositiveTestdata" finished-at="2022-02-11T11:45:49 IST" duration-ms="480" status="PASS">
+        <test-method signature="getAllThemes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetAllThemes@126253fd]" started-at="2022-02-11T15:22:47 IST" name="getAllThemes" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:22:47 IST" duration-ms="307" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.util.Map;@6cc90398]]>
+                <![CDATA[[Ljava.util.Map;@1308ef19]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getBannerByID -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetBannerById@1807f5a7]" started-at="2022-02-11T11:45:49 IST" name="close" finished-at="2022-02-11T11:45:49 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- getAllThemes -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetAllThemes@126253fd]" started-at="2022-02-11T15:22:47 IST" name="close" finished-at="2022-02-11T15:22:47 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.GetBannerById.getBannerByID(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.GetAllThemes.getAllThemes(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@45f8415b]]>
+                <![CDATA[[Ljava.lang.Object;@3d01ea33]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[[TestResult name=getBannerByID status=SUCCESS method=GetBannerById.getBannerByID([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetBannerById@1807f5a7] output={null}]]]>
+                <![CDATA[[TestResult name=getAllThemes status=SUCCESS method=GetAllThemes.getAllThemes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetAllThemes@126253fd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetBannerById@1807f5a7]" started-at="2022-02-11T11:45:49 IST" name="init" finished-at="2022-02-11T11:45:49 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.GetBannerById.getBannerById_NegativeScenarios(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@10dbf660]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="getBannerById_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetBannerById@1807f5a7]" started-at="2022-02-11T11:45:49 IST" name="getBannerById_NegativeScenarios" data-provider="getNegativeTestdata" finished-at="2022-02-11T11:45:50 IST" duration-ms="238" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@41f7c02d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getBannerById_NegativeScenarios -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetBannerById@1807f5a7]" started-at="2022-02-11T11:45:50 IST" name="close" finished-at="2022-02-11T11:45:50 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.GetBannerById.getBannerById_NegativeScenarios(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@10dbf660]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=getBannerById_NegativeScenarios status=SUCCESS method=GetBannerById.getBannerById_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetBannerById@1807f5a7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetBannerById@1807f5a7]" started-at="2022-02-11T11:45:50 IST" name="init" finished-at="2022-02-11T11:45:50 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.GetBannerById.getBannerById_NegativeScenarios(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@69ab2d6a]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="getBannerById_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetBannerById@1807f5a7]" started-at="2022-02-11T11:45:50 IST" name="getBannerById_NegativeScenarios" data-provider="getNegativeTestdata" finished-at="2022-02-11T11:45:50 IST" duration-ms="219" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.util.Map;@8aa5ab4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getBannerById_NegativeScenarios -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetBannerById@1807f5a7]" started-at="2022-02-11T11:45:50 IST" name="close" finished-at="2022-02-11T11:45:50 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.GetBannerById.getBannerById_NegativeScenarios(java.util.Map[])]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@69ab2d6a]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name=getBannerById_NegativeScenarios status=SUCCESS method=GetBannerById.getBannerById_NegativeScenarios([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.GetBannerById@1807f5a7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.onmobile.vol.cataloghub.api.banner.GetBannerById -->
-      <class name="com.onmobile.vol.cataloghub.api.banner.DeleteBannerById">
-        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.DeleteBannerById@7dfd3c81]" started-at="2022-02-11T11:45:52 IST" name="initLogger" finished-at="2022-02-11T11:45:52 IST" duration-ms="1" status="PASS">
+      </class> <!-- com.onmobile.vol.cataloghub.api.themes.GetAllThemes -->
+      <class name="com.onmobile.vol.cataloghub.api.themes.UpdateThemeImageURL">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UpdateThemeImageURL@28cda624]" started-at="2022-02-11T15:22:45 IST" name="initLogger" finished-at="2022-02-11T15:22:45 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initLogger -->
-        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.DeleteBannerById@7dfd3c81]" started-at="2022-02-11T11:45:52 IST" name="init" finished-at="2022-02-11T11:45:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UpdateThemeImageURL@28cda624]" started-at="2022-02-11T15:22:45 IST" name="init" finished-at="2022-02-11T15:22:45 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.DeleteBannerById.getAttributes(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.UpdateThemeImageURL.updateThemeImageURL(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@4af0c50]]>
+                <![CDATA[[Ljava.lang.Object;@4e933cf1]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="getAttributes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.DeleteBannerById@7dfd3c81]" started-at="2022-02-11T11:45:52 IST" name="getAttributes" data-provider="getPositiveTestdata" finished-at="2022-02-11T11:45:52 IST" duration-ms="273" status="PASS">
+        <test-method signature="updateThemeImageURL([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UpdateThemeImageURL@28cda624]" started-at="2022-02-11T15:22:45 IST" name="updateThemeImageURL" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:22:45 IST" duration-ms="382" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.util.Map;@66314fee]]>
+                <![CDATA[[Ljava.util.Map;@6cee903a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateThemeImageURL -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UpdateThemeImageURL@28cda624]" started-at="2022-02-11T15:22:45 IST" name="close" finished-at="2022-02-11T15:22:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.UpdateThemeImageURL.updateThemeImageURL(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4e933cf1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=updateThemeImageURL status=SUCCESS method=UpdateThemeImageURL.updateThemeImageURL([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UpdateThemeImageURL@28cda624] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.themes.UpdateThemeImageURL -->
+      <class name="com.onmobile.vol.cataloghub.api.themes.CreateTheme">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.CreateTheme@58e1d9d]" started-at="2022-02-11T15:22:42 IST" name="initLogger" finished-at="2022-02-11T15:22:42 IST" duration-ms="515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogger -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.CreateTheme@58e1d9d]" started-at="2022-02-11T15:22:43 IST" name="init" finished-at="2022-02-11T15:22:43 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.CreateTheme.createThemByThemeName(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@31b289da]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="createThemByThemeName([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.CreateTheme@58e1d9d]" started-at="2022-02-11T15:22:43 IST" name="createThemByThemeName" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:22:45 IST" duration-ms="1841" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@14201a90]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createThemByThemeName -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.CreateTheme@58e1d9d]" started-at="2022-02-11T15:22:45 IST" name="close" finished-at="2022-02-11T15:22:45 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.CreateTheme.createThemByThemeName(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@31b289da]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58486deb]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=createThemByThemeName status=SUCCESS method=CreateTheme.createThemByThemeName([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.CreateTheme@58e1d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.themes.CreateTheme -->
+    </test> <!-- Theme -->
+    <test started-at="2022-02-11T15:22:47 IST" name="Image Upload" finished-at="2022-02-11T15:23:11 IST" duration-ms="23491">
+      <class name="com.onmobile.vol.cataloghub.api.themes.UploadThemeImage">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UploadThemeImage@2fb0623e]" started-at="2022-02-11T15:22:47 IST" name="initLogger" finished-at="2022-02-11T15:22:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogger -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UploadThemeImage@2fb0623e]" started-at="2022-02-11T15:22:47 IST" name="init" finished-at="2022-02-11T15:22:47 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.UploadThemeImage.uploadThemeImage(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@73b3ce31]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@4687366b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="uploadThemeImage([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UploadThemeImage@2fb0623e]" started-at="2022-02-11T15:22:47 IST" name="uploadThemeImage" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:23:11 IST" duration-ms="23448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@6d31f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadThemeImage -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UploadThemeImage@2fb0623e]" started-at="2022-02-11T15:23:11 IST" name="close" finished-at="2022-02-11T15:23:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.UploadThemeImage.uploadThemeImage(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@73b3ce31]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@4687366b]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=uploadThemeImage status=SUCCESS method=UploadThemeImage.uploadThemeImage([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.UploadThemeImage@2fb0623e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.themes.UploadThemeImage -->
+    </test> <!-- Image Upload -->
+    <test started-at="2022-02-11T15:23:11 IST" name="Theme collection" finished-at="2022-02-11T15:23:14 IST" duration-ms="3135">
+      <class name="com.onmobile.vol.cataloghub.api.collectionThemes.GetAllCollectionThemes">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetAllCollectionThemes@17503f6b]" started-at="2022-02-11T15:23:14 IST" name="initLogger" finished-at="2022-02-11T15:23:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogger -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetAllCollectionThemes@17503f6b]" started-at="2022-02-11T15:23:14 IST" name="init" finished-at="2022-02-11T15:23:14 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetAllCollectionThemes.validateThemesRequest(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@44ae6b66]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="validateThemesRequest([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetAllCollectionThemes@17503f6b]" started-at="2022-02-11T15:23:14 IST" name="validateThemesRequest" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:23:14 IST" duration-ms="294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@4b56b517]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateThemesRequest -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetAllCollectionThemes@17503f6b]" started-at="2022-02-11T15:23:14 IST" name="close" finished-at="2022-02-11T15:23:14 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetAllCollectionThemes.validateThemesRequest(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@44ae6b66]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=validateThemesRequest status=SUCCESS method=GetAllCollectionThemes.validateThemesRequest([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetAllCollectionThemes@17503f6b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.collectionThemes.GetAllCollectionThemes -->
+      <class name="com.onmobile.vol.cataloghub.api.collectionThemes.UpdateThemeCollection">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.UpdateThemeCollection@13526e59]" started-at="2022-02-11T15:23:11 IST" name="initLogger" finished-at="2022-02-11T15:23:11 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogger -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.UpdateThemeCollection@13526e59]" started-at="2022-02-11T15:23:11 IST" name="init" finished-at="2022-02-11T15:23:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.UpdateThemeCollection.updateTheme(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@65da1cbe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="updateTheme([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.UpdateThemeCollection@13526e59]" started-at="2022-02-11T15:23:11 IST" name="updateTheme" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:23:12 IST" duration-ms="422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@1ea96ff2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTheme -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.UpdateThemeCollection@13526e59]" started-at="2022-02-11T15:23:12 IST" name="close" finished-at="2022-02-11T15:23:12 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.UpdateThemeCollection.updateTheme(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@65da1cbe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=updateTheme status=SUCCESS method=UpdateThemeCollection.updateTheme([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.UpdateThemeCollection@13526e59] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.collectionThemes.UpdateThemeCollection -->
+      <class name="com.onmobile.vol.cataloghub.api.collectionThemes.CreateThemeCollection">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.CreateThemeCollection@503f91c3]" started-at="2022-02-11T15:23:11 IST" name="initLogger" finished-at="2022-02-11T15:23:11 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogger -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.CreateThemeCollection@503f91c3]" started-at="2022-02-11T15:23:11 IST" name="init" finished-at="2022-02-11T15:23:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.CreateThemeCollection.createThemByThemeName(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3a17acd4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="createThemByThemeName([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.CreateThemeCollection@503f91c3]" started-at="2022-02-11T15:23:11 IST" name="createThemByThemeName" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:23:11 IST" duration-ms="415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@335cdd2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createThemByThemeName -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.CreateThemeCollection@503f91c3]" started-at="2022-02-11T15:23:11 IST" name="close" finished-at="2022-02-11T15:23:11 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.CreateThemeCollection.createThemByThemeName(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3a17acd4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=createThemByThemeName status=SUCCESS method=CreateThemeCollection.createThemByThemeName([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.CreateThemeCollection@503f91c3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.collectionThemes.CreateThemeCollection -->
+      <class name="com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:12 IST" name="initLogger" finished-at="2022-02-11T15:23:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogger -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:12 IST" name="init" finished-at="2022-02-11T15:23:12 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID.InvalidThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1a914a00]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="InvalidThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:12 IST" name="InvalidThemeCollection" data-provider="getNegativeTestdata" finished-at="2022-02-11T15:23:12 IST" duration-ms="286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@60a99f3d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidThemeCollection -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:12 IST" name="close" finished-at="2022-02-11T15:23:12 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID.InvalidThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1a914a00]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=InvalidThemeCollection status=SUCCESS method=GetThemeCollectionByID.InvalidThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:12 IST" name="init" finished-at="2022-02-11T15:23:12 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID.InvalidThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1d67348a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="InvalidThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:12 IST" name="InvalidThemeCollection" data-provider="getNegativeTestdata" finished-at="2022-02-11T15:23:12 IST" duration-ms="281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@1124dd79]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidThemeCollection -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:12 IST" name="close" finished-at="2022-02-11T15:23:12 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID.InvalidThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1d67348a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=InvalidThemeCollection status=SUCCESS method=GetThemeCollectionByID.InvalidThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:12 IST" name="init" finished-at="2022-02-11T15:23:12 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID.InvalidThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@39f8adc0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="InvalidThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:12 IST" name="InvalidThemeCollection" data-provider="getNegativeTestdata" finished-at="2022-02-11T15:23:13 IST" duration-ms="268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@7a274521]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidThemeCollection -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:13 IST" name="init" finished-at="2022-02-11T15:23:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID.InvalidThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@c7269ad]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:13 IST" name="close" finished-at="2022-02-11T15:23:13 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID.InvalidThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@39f8adc0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=InvalidThemeCollection status=SUCCESS method=GetThemeCollectionByID.InvalidThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method signature="InvalidThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:13 IST" name="InvalidThemeCollection" data-provider="getNegativeTestdata" finished-at="2022-02-11T15:23:13 IST" duration-ms="263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@2fa47368]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidThemeCollection -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:13 IST" name="close" finished-at="2022-02-11T15:23:13 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID.InvalidThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@c7269ad]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=InvalidThemeCollection status=SUCCESS method=GetThemeCollectionByID.InvalidThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:13 IST" name="init" finished-at="2022-02-11T15:23:13 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID.InvalidThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1c23e369]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="InvalidThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:13 IST" name="InvalidThemeCollection" data-provider="getNegativeTestdata" finished-at="2022-02-11T15:23:13 IST" duration-ms="316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@57515944]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidThemeCollection -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:13 IST" name="close" finished-at="2022-02-11T15:23:13 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID.InvalidThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1c23e369]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=InvalidThemeCollection status=SUCCESS method=GetThemeCollectionByID.InvalidThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:13 IST" name="init" finished-at="2022-02-11T15:23:13 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID.getThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@38445703]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="getThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:13 IST" name="getThemeCollection" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:23:14 IST" duration-ms="388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@35841d6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getThemeCollection -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab]" started-at="2022-02-11T15:23:14 IST" name="close" finished-at="2022-02-11T15:23:14 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID.getThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@38445703]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@8f589d7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=getThemeCollection status=SUCCESS method=GetThemeCollectionByID.getThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID@2235eaab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID -->
+    </test> <!-- Theme collection -->
+    <test started-at="2022-02-11T15:23:14 IST" name="Theme Search" finished-at="2022-02-11T15:23:17 IST" duration-ms="2667">
+      <class name="com.onmobile.vol.cataloghub.api.collectionThemes.DeleteThemeCollectionByID">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.DeleteThemeCollectionByID@2438dcd]" started-at="2022-02-11T15:23:16 IST" name="initLogger" finished-at="2022-02-11T15:23:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogger -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.DeleteThemeCollectionByID@2438dcd]" started-at="2022-02-11T15:23:16 IST" name="init" finished-at="2022-02-11T15:23:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.DeleteThemeCollectionByID.getAttributes(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1f3aa970]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="getAttributes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.DeleteThemeCollectionByID@2438dcd]" started-at="2022-02-11T15:23:16 IST" name="getAttributes" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:23:17 IST" duration-ms="260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@4c5e4bfa]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAttributes -->
-        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.DeleteBannerById@7dfd3c81]" started-at="2022-02-11T11:45:52 IST" name="close" finished-at="2022-02-11T11:45:52 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.DeleteThemeCollectionByID@2438dcd]" started-at="2022-02-11T15:23:17 IST" name="close" finished-at="2022-02-11T15:23:17 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.onmobile.vol.cataloghub.api.banner.DeleteBannerById.getAttributes(java.util.Map[])]]>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.DeleteThemeCollectionByID.getAttributes(java.util.Map[])]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@4af0c50]]>
+                <![CDATA[[Ljava.lang.Object;@1f3aa970]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@77a85e76]]>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[[TestResult name=getAttributes status=SUCCESS method=DeleteBannerById.getAttributes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.banner.DeleteBannerById@7dfd3c81] output={null}]]]>
+                <![CDATA[[TestResult name=getAttributes status=SUCCESS method=DeleteThemeCollectionByID.getAttributes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.DeleteThemeCollectionByID@2438dcd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- com.onmobile.vol.cataloghub.api.banner.DeleteBannerById -->
-    </test> <!-- Banner -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.collectionThemes.DeleteThemeCollectionByID -->
+      <class name="com.onmobile.vol.cataloghub.api.themes.SearchByThemeName">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.SearchByThemeName@769a1df5]" started-at="2022-02-11T15:23:14 IST" name="initLogger" finished-at="2022-02-11T15:23:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogger -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.SearchByThemeName@769a1df5]" started-at="2022-02-11T15:23:14 IST" name="init" finished-at="2022-02-11T15:23:14 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.SearchByThemeName.searchThemeByThemeNameNegativeScenarioes(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5b0e5d5f]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="searchThemeByThemeNameNegativeScenarioes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.SearchByThemeName@769a1df5]" started-at="2022-02-11T15:23:14 IST" name="searchThemeByThemeNameNegativeScenarioes" data-provider="getNegativeTestdata" finished-at="2022-02-11T15:23:14 IST" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@49f6c25e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchThemeByThemeNameNegativeScenarioes -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.SearchByThemeName@769a1df5]" started-at="2022-02-11T15:23:14 IST" name="close" finished-at="2022-02-11T15:23:14 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.SearchByThemeName.searchThemeByThemeNameNegativeScenarioes(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5b0e5d5f]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=searchThemeByThemeNameNegativeScenarioes status=SUCCESS method=SearchByThemeName.searchThemeByThemeNameNegativeScenarioes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.SearchByThemeName@769a1df5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.SearchByThemeName@769a1df5]" started-at="2022-02-11T15:23:14 IST" name="init" finished-at="2022-02-11T15:23:14 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.SearchByThemeName.searchThemeByThemeNameNegativeScenarioes(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@42536da6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="searchThemeByThemeNameNegativeScenarioes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.SearchByThemeName@769a1df5]" started-at="2022-02-11T15:23:14 IST" name="searchThemeByThemeNameNegativeScenarioes" data-provider="getNegativeTestdata" finished-at="2022-02-11T15:23:14 IST" duration-ms="241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@6c13019c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchThemeByThemeNameNegativeScenarioes -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.SearchByThemeName@769a1df5]" started-at="2022-02-11T15:23:14 IST" name="close" finished-at="2022-02-11T15:23:14 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.SearchByThemeName.searchThemeByThemeNameNegativeScenarioes(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@42536da6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=searchThemeByThemeNameNegativeScenarioes status=SUCCESS method=SearchByThemeName.searchThemeByThemeNameNegativeScenarioes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.SearchByThemeName@769a1df5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.SearchByThemeName@769a1df5]" started-at="2022-02-11T15:23:15 IST" name="init" finished-at="2022-02-11T15:23:15 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.SearchByThemeName.validateSearchThemeByThemeName(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7591cbd1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="validateSearchThemeByThemeName([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.SearchByThemeName@769a1df5]" started-at="2022-02-11T15:23:15 IST" name="validateSearchThemeByThemeName" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:23:15 IST" duration-ms="307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@62a41279]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearchThemeByThemeName -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.SearchByThemeName@769a1df5]" started-at="2022-02-11T15:23:15 IST" name="close" finished-at="2022-02-11T15:23:15 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.SearchByThemeName.validateSearchThemeByThemeName(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7591cbd1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=validateSearchThemeByThemeName status=SUCCESS method=SearchByThemeName.validateSearchThemeByThemeName([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.SearchByThemeName@769a1df5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.themes.SearchByThemeName -->
+      <class name="com.onmobile.vol.cataloghub.api.themes.DeleteThemeByID">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.DeleteThemeByID@7975d1d8]" started-at="2022-02-11T15:23:16 IST" name="initLogger" finished-at="2022-02-11T15:23:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogger -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.DeleteThemeByID@7975d1d8]" started-at="2022-02-11T15:23:16 IST" name="init" finished-at="2022-02-11T15:23:16 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.DeleteThemeByID.deleteThemeID(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3023f157]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="deleteThemeID([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.DeleteThemeByID@7975d1d8]" started-at="2022-02-11T15:23:16 IST" name="deleteThemeID" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:23:16 IST" duration-ms="296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@3835b281]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteThemeID -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.DeleteThemeByID@7975d1d8]" started-at="2022-02-11T15:23:16 IST" name="close" finished-at="2022-02-11T15:23:16 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.DeleteThemeByID.deleteThemeID(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3023f157]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=deleteThemeID status=SUCCESS method=DeleteThemeByID.deleteThemeID([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.DeleteThemeByID@7975d1d8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.themes.DeleteThemeByID -->
+      <class name="com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName">
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84]" started-at="2022-02-11T15:23:15 IST" name="initLogger" finished-at="2022-02-11T15:23:15 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogger -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84]" started-at="2022-02-11T15:23:15 IST" name="init" finished-at="2022-02-11T15:23:15 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName.searchThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5cdc8499]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="searchThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84]" started-at="2022-02-11T15:23:15 IST" name="searchThemeCollection" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:23:15 IST" duration-ms="319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@146fa9c0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchThemeCollection -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84]" started-at="2022-02-11T15:23:15 IST" name="close" finished-at="2022-02-11T15:23:15 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName.searchThemeCollection(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5cdc8499]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=searchThemeCollection status=SUCCESS method=SearchByThemeCollectionName.searchThemeCollection([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84]" started-at="2022-02-11T15:23:15 IST" name="init" finished-at="2022-02-11T15:23:15 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName.searchThemeCollectionNegativeScenarioes(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2a30b0cb]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="searchThemeCollectionNegativeScenarioes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84]" started-at="2022-02-11T15:23:15 IST" name="searchThemeCollectionNegativeScenarioes" data-provider="getNegativeTestdata" finished-at="2022-02-11T15:23:15 IST" duration-ms="252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@2e66f1bd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchThemeCollectionNegativeScenarioes -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84]" started-at="2022-02-11T15:23:15 IST" name="close" finished-at="2022-02-11T15:23:15 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName.searchThemeCollectionNegativeScenarioes(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2a30b0cb]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=searchThemeCollectionNegativeScenarioes status=SUCCESS method=SearchByThemeCollectionName.searchThemeCollectionNegativeScenarioes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84]" started-at="2022-02-11T15:23:15 IST" name="init" finished-at="2022-02-11T15:23:15 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName.searchThemeCollectionNegativeScenarioes(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@73d7d676]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="searchThemeCollectionNegativeScenarioes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84]" started-at="2022-02-11T15:23:15 IST" name="searchThemeCollectionNegativeScenarioes" data-provider="getNegativeTestdata" finished-at="2022-02-11T15:23:16 IST" duration-ms="266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@552cb0d5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchThemeCollectionNegativeScenarioes -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84]" started-at="2022-02-11T15:23:16 IST" name="close" finished-at="2022-02-11T15:23:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName.searchThemeCollectionNegativeScenarioes(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@73d7d676]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=searchThemeCollectionNegativeScenarioes status=SUCCESS method=SearchByThemeCollectionName.searchThemeCollectionNegativeScenarioes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84]" started-at="2022-02-11T15:23:16 IST" name="init" finished-at="2022-02-11T15:23:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName.searchThemeCollectionNegativeScenarioes(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@8e3449e]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="searchThemeCollectionNegativeScenarioes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84]" started-at="2022-02-11T15:23:16 IST" name="searchThemeCollectionNegativeScenarioes" data-provider="getNegativeTestdata" finished-at="2022-02-11T15:23:16 IST" duration-ms="264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@47ae6c18]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchThemeCollectionNegativeScenarioes -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84]" started-at="2022-02-11T15:23:16 IST" name="close" finished-at="2022-02-11T15:23:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName.searchThemeCollectionNegativeScenarioes(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@8e3449e]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5d5fc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=searchThemeCollectionNegativeScenarioes status=SUCCESS method=SearchByThemeCollectionName.searchThemeCollectionNegativeScenarioes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName@41f69e84] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName -->
+    </test> <!-- Theme Search -->
+    <test started-at="2022-02-11T15:23:17 IST" name="CatalogHub Configuration" finished-at="2022-02-11T15:23:17 IST" duration-ms="336">
+      <class name="com.onmobile.vol.cataloghub.api.themes.GetThemeAttributes">
+        <test-method is-config="true" signature="generateToken()[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeAttributes@50029372]" started-at="2022-02-11T15:22:42 IST" name="generateToken" finished-at="2022-02-11T15:22:42 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateToken -->
+        <test-method is-config="true" signature="initLogger()[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeAttributes@50029372]" started-at="2022-02-11T15:23:17 IST" name="initLogger" finished-at="2022-02-11T15:23:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogger -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeAttributes@50029372]" started-at="2022-02-11T15:23:17 IST" name="init" finished-at="2022-02-11T15:23:17 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.GetThemeAttributes.getAttributes(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5213b887]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@40c6d1ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="getAttributes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeAttributes@50029372]" started-at="2022-02-11T15:23:17 IST" name="getAttributes" data-provider="getPositiveTestdata" finished-at="2022-02-11T15:23:17 IST" duration-ms="303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.util.Map;@5de243bb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAttributes -->
+        <test-method is-config="true" signature="close(java.lang.reflect.Method,[Ljava.lang.Object;,org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeAttributes@50029372]" started-at="2022-02-11T15:23:17 IST" name="close" finished-at="2022-02-11T15:23:17 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.onmobile.vol.cataloghub.api.themes.GetThemeAttributes.getAttributes(java.util.Map[])]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5213b887]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@40c6d1ef]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=getAttributes status=SUCCESS method=GetThemeAttributes.getAttributes([Ljava.util.Map;)[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeAttributes@50029372] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.onmobile.vol.cataloghub.api.themes.GetThemeAttributes@50029372]" started-at="2022-02-11T15:23:17 IST" name="afterSuite" finished-at="2022-02-11T15:23:19 IST" duration-ms="2244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.themes.GetThemeAttributes -->
+    </test> <!-- CatalogHub Configuration -->
   </suite> <!-- Suite -->
 </testng-results>

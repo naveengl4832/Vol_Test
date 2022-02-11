@@ -81,7 +81,7 @@ public class GetChartCollectionByID extends RestBaseClass implements Constants {
 	}
 
 	@Test(dataProvider = "getNegativeTestdata")
-	public void getChartCollectionById_NegativeScenarios(Map<String, String> testDatList[]) {
+	public void getChartCollectionById_NegativeTest(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;

@@ -1,4 +1,4 @@
-package com.onmobile.vol.cataloghub.api.cataloghubconfiguration;
+package com.onmobile.vol.cataloghub.api.themes;
 
 import java.util.ArrayList;
 import java.util.List;

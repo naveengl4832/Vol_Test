@@ -59,7 +59,7 @@ public class GetChartByID extends RestBaseClass implements Constants {
 		queryParam.put("response", testData.get("response"));
 
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", testData.get("store_id"));
+		pathParam.put("store_id", CommonValues.chartValues.get("store_id"));
 		pathParam.put("chart_id", CommonValues.chartValues.get("chart_id"));
 
 		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when().get(GET_CHART_BY_ID)
@@ -79,7 +79,7 @@ public class GetChartByID extends RestBaseClass implements Constants {
 	}
 
 	@Test(dataProvider = "getNegativeTestdata")
-	public void getThemeByThemeid_NegativeScenarios(Map<String, String> testDatList[]) {
+	public void getCahrtById_NegativeTest(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;

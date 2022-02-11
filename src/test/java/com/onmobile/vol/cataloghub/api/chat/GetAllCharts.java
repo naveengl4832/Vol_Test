@@ -61,7 +61,6 @@ public class GetAllCharts extends RestBaseClass implements Constants {
 						hasItem(CommonValues.chartValues.get("type")))
 				.extract().response();
 
-		System.out.println(response.asPrettyString());
 
 		response.then().assertThat().body(matchesJsonSchemaInClasspath(
 				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_ALL_CHART_JSON_SCHEMA)));

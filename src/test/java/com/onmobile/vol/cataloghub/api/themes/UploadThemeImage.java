@@ -1,4 +1,4 @@
-package com.onmobile.vol.cataloghub.api.imageupload;
+package com.onmobile.vol.cataloghub.api.themes;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -40,15 +40,14 @@ public class UploadThemeImage extends RestBaseClass implements Constants {
 			;
 
 		pathParam = new HashMap<String, String>();
-		pathParam.put("store_id", testData.get("store_id"));
-		pathParam.put("theme_id", CommonValues.theme_Id);
+		pathParam.put("store_id", CommonValues.themeValues.get("store_id"));
+		pathParam.put("theme_id", CommonValues.themeValues.get("theme_id"));
 
 		Response response = requestGenarator
 				.getRequestWithMultiPart(BASE_URL, pathParam, FORM_DATA_KEY, THEME_IMAGE,
 						ImageExtensions.IMAGE + "/" + ImageExtensions.JPEG)
 				.when().post(UPLOAD_THEME_IMAGE).then().extract().response();
 
-		System.out.println(response.asPrettyString());
 
 		loggerReport.info("Theme Image has been uploaded..." + response.prettyPrint());
 

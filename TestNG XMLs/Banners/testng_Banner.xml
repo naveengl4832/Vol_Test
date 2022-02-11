@@ -12,7 +12,6 @@
 				name="com.onmobile.vol.cataloghub.api.banner.GetBannerById" />
 			<class
 				name="com.onmobile.vol.cataloghub.api.banner.UpdateBanner" />
-
 			<class
 				name="com.onmobile.vol.cataloghub.api.banner.SearchByBannerName" />
 			<class

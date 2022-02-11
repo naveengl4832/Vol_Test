@@ -21,7 +21,6 @@ public class CreateThemeCollection extends RestBaseClass implements Constants {
 
 	public RequestGenerator requestGenarator = new RequestGenerator();
 	public Map<String, String> PathParam;
-	public Map<String, String> headers;
 	public Map<String, String> requestObject;
 
 	@DataProvider(name = "getPositiveTestdata")
@@ -40,22 +39,22 @@ public class CreateThemeCollection extends RestBaseClass implements Constants {
 			;
 
 		PathParam = new HashMap<String, String>();
-		PathParam.put("store_id", testData.get("store_id"));
+		PathParam.put("store_id", STORE_ID);
 
 		requestObject = new HashMap<String, String>();
 		requestObject.put("theme_collection_name",
 				testData.get("theme_collection_name") + "_" + RandomStringUtils.randomAlphanumeric(10));
-
-		headers = new HashMap<String, String>();
-		headers.put("Content-Type", APPLICATION_JSON);
 
 		Response response = requestGenarator.getRequestWithPathReqobject(BASE_URL, PathParam, requestObject).when()
 				.post(CREATE_THEME_COLLECTION).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
 				.body("$", hasKey("theme_collection_id"), "$", hasKey("store_id"), "$", hasKey("theme_collection_name"))
 				.and().extract().response();
 
-		CommonValues.theme_Collection_Id = response.jsonPath().getString("theme_collection_id");
-		CommonValues.theme_Collection_Name = response.jsonPath().getString("theme_collection_name");
+		CommonValues.themeCollectionValues.put("theme_collection_id",
+				response.jsonPath().getString("theme_collection_id"));
+		CommonValues.themeCollectionValues.put("theme_collection_name",
+				response.jsonPath().getString("theme_collection_name"));
+		CommonValues.themeCollectionValues.put("store_id", response.jsonPath().getString("store_id"));
 
 		loggerReport.info("Theme Collection ID is created for the given theme Collection Name ----     "
 				+ requestObject.get("theme_collection_name") + "\n" + response.prettyPrint());
