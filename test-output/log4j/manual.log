@@ -1,32 +1,690 @@
-11/02/2022 15:22:43 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@1e8ab90f
-11/02/2022 15:22:45 devpinoyLogger {
-    "theme_id": 224,
-    "store_id": 328,
-    "theme_name": "RIP Punith _ djYCbH7Nqf"
+14/02/2022 12:43:39 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@227a47
+14/02/2022 12:43:41 devpinoyLogger {
+    "theme_id": 225,
+    "store_id": 390,
+    "theme_name": "RIP Punith _ RxzfEpohfj"
 }
-11/02/2022 15:22:45 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@5e9bf744
-11/02/2022 15:22:46 devpinoyLogger {
-    "theme_id": 224,
-    "store_id": 328,
-    "theme_name": "RIP Punith _ djYCbH7Nqf",
-    "image_url": "http://qa.onmobile.com/nstreaming/v3/image?width=100&target=theme_url%2F224.jpeg&item_type=theme&store_id=328",
+14/02/2022 12:43:42 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@59e7564b
+14/02/2022 12:43:42 devpinoyLogger {
+    "theme_id": 225,
+    "store_id": 390,
+    "theme_name": "RIP Punith _ RxzfEpohfj",
+    "image_url": "http://qa.onmobile.com/nstreaming/v3/image?width=100&target=theme_url%2F225.jpeg&item_type=theme&store_id=328",
     "theme_attributes": [
         {
-            "entity_id": 131,
+            "entity_id": 132,
             "attribute_id": 2,
             "attribute_name": "display_style",
             "attribute_value": "Front"
         }
     ]
 }
-11/02/2022 15:22:46 devpinoyLogger 200
-11/02/2022 15:22:47 devpinoyLogger [
+14/02/2022 12:43:42 devpinoyLogger 200
+14/02/2022 12:43:44 devpinoyLogger [
     {
-        "store_id": 328,
-        "image_url": "http://qa.onmobile.com/nstreaming/v3/image?width=100&target=theme_url%2F224.jpeg&item_type=theme&store_id=328",
-        "theme_id": 224,
-        "theme_name": "RIP Punith _ djYCbH7Nqf"
+        "store_id": 390,
+        "image_url": "http://qa.onmobile.com/nstreaming/v3/image?width=100&target=theme_url%2F225.jpeg&item_type=theme&store_id=328",
+        "theme_id": 225,
+        "theme_name": "RIP Punith _ RxzfEpohfj"
     }
 ]
-11/02/2022 15:23:11 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@2aa07d80
-11/02/2022 15:23:16 devpinoyLogger 
+14/02/2022 12:44:10 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@d180961
+14/02/2022 12:44:17 devpinoyLogger 
+14/02/2022 12:44:19 devpinoyLogger {
+    "banner_id": 1409,
+    "name": "RIP_PUNITH_5lVDdXOaHE",
+    "language": "English ",
+    "store_id": 390,
+    "type": "none",
+    "id": null,
+    "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=328",
+    "gif_url": "https://qa.onmobile.com/nstreaming/v3/gif?target=&item_type=banner_gif&store_id=328",
+    "video_url": "https://qa.onmobile.com/nstreaming/v3/video?target=&item_type=banner_video&store_id=328",
+    "description": null,
+    "navigation_description": null,
+    "banner_names": [
+        {
+            "language_name": "",
+            "name": "RIP_PUNITH_5lVDdXOaHE"
+        }
+    ],
+    "banner_build_infos": null,
+    "banner_subscriptions": null
+}
+14/02/2022 12:44:20 devpinoyLogger Negative Scenarios of  ---> {
+    "banner_id": 1410,
+    "name": "RIP_PUNITH",
+    "language": "English ",
+    "store_id": 390,
+    "type": "none",
+    "id": null,
+    "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=328",
+    "gif_url": "https://qa.onmobile.com/nstreaming/v3/gif?target=&item_type=banner_gif&store_id=328",
+    "video_url": "https://qa.onmobile.com/nstreaming/v3/video?target=&item_type=banner_video&store_id=328",
+    "description": null,
+    "navigation_description": null,
+    "banner_names": [
+        {
+            "language_name": "",
+            "name": "RIP_PUNITH"
+        }
+    ],
+    "banner_build_infos": null,
+    "banner_subscriptions": null
+}
+14/02/2022 12:44:20 devpinoyLogger 
+14/02/2022 12:44:20 devpinoyLogger 
+14/02/2022 12:44:20 devpinoyLogger [
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1387,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1380,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1381,
+        "name": "RIP_PUNITH_g6T4Ks5ngt"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1389,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1392,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1394,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1395,
+        "name": "RIP_PUNITH_jgDusmidFS"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1396,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1397,
+        "name": "RIP_PUNITH_hEYiHxpt4m"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1398,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1399,
+        "name": "RIP_PUNITH_yDHcfXhDqn"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1400,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1401,
+        "name": "RIP_PUNITH_7JgjcnYE5S"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1402,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1403,
+        "name": "RIP_PUNITH_tjmIljTu8s"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1404,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1407,
+        "name": "RIP_PUNITH"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1409,
+        "name": "RIP_PUNITH_5lVDdXOaHE"
+    },
+    {
+        "store_id": 390,
+        "type": "none",
+        "id": null,
+        "banner_id": 1410,
+        "name": "RIP_PUNITH"
+    }
+]
+14/02/2022 12:44:22 devpinoyLogger 
+14/02/2022 12:44:22 devpinoyLogger 
+14/02/2022 12:44:22 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@2c4eae94
+14/02/2022 12:44:22 devpinoyLogger {
+    "banner_id": 1409,
+    "name": "RIP_PUNITH_5lVDdXOaHE",
+    "language": "English ",
+    "store_id": 390,
+    "type": "none",
+    "id": "null",
+    "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=328",
+    "gif_url": "https://qa.onmobile.com/nstreaming/v3/gif?target=&item_type=banner_gif&store_id=328",
+    "video_url": "https://qa.onmobile.com/nstreaming/v3/video?target=&item_type=banner_video&store_id=328",
+    "description": "null",
+    "navigation_description": "null",
+    "banner_names": [
+        {
+            "language_name": "",
+            "name": "RIP_PUNITH_5lVDdXOaHE"
+        },
+        {
+            "language_name": "english",
+            "name": "banner1"
+        },
+        {
+            "language_name": "kannada",
+            "name": "banner2"
+        }
+    ],
+    "banner_build_infos": [
+        {
+            "banner_attribute": "userStatus",
+            "banner_attribute_value": "NEW_USER"
+        },
+        {
+            "banner_attribute": "userStatus",
+            "banner_attribute_value": "NEW_USER1"
+        }
+    ],
+    "banner_subscriptions": null
+}
+14/02/2022 12:44:22 devpinoyLogger 200
+14/02/2022 12:44:23 devpinoyLogger {
+    "total_item_count": 1,
+    "offset": 0,
+    "item_count": 1,
+    "banners": [
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=328",
+            "banner_id": 1409,
+            "name": "RIP_PUNITH_5lVDdXOaHE",
+            "type": "none",
+            "language": "English "
+        }
+    ]
+}
+14/02/2022 12:44:24 devpinoyLogger 
+14/02/2022 12:44:24 devpinoyLogger {
+    "total_item_count": 4,
+    "offset": 0,
+    "item_count": 4,
+    "banners": [
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F416.jpg&item_type=banner&store_id=168",
+            "banner_id": 416,
+            "name": "abcd",
+            "type": "none",
+            "language": null
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
+            "banner_id": 451,
+            "name": "ÍabcíóÓúcdRÚüÜ",
+            "type": "none",
+            "language": "en"
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
+            "banner_id": 452,
+            "name": "ÍabcíóÓúcdRÚüÜ",
+            "type": "none",
+            "language": "pt"
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
+            "banner_id": 1240,
+            "name": "abcbanner",
+            "type": "tp_static_url",
+            "language": "en"
+        }
+    ]
+}
+14/02/2022 12:44:25 devpinoyLogger {
+    "total_item_count": 334,
+    "offset": 0,
+    "item_count": 10,
+    "banners": [
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
+            "banner_id": 450,
+            "name": "Top Músicas",
+            "type": "realtone",
+            "language": "en"
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F433.jpg&item_type=banner&store_id=168",
+            "banner_id": 433,
+            "name": "Banner_Dynamic_URL_1",
+            "type": "realtone",
+            "language": null
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F432.jpg&item_type=banner&store_id=168",
+            "banner_id": 432,
+            "name": "Banner_Static_ULR_1",
+            "type": "realtone",
+            "language": null
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F430.jpg&item_type=banner&store_id=168",
+            "banner_id": 430,
+            "name": "SampleBanner",
+            "type": "realtone",
+            "language": ""
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F64.jpg&item_type=banner&store_id=168",
+            "banner_id": 64,
+            "name": "Banner-1",
+            "type": "ringback",
+            "language": ""
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F65.jpg&item_type=banner&store_id=168",
+            "banner_id": 65,
+            "name": "Banner-2",
+            "type": "ringback",
+            "language": "ma"
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F66.jpg&item_type=banner&store_id=168",
+            "banner_id": 66,
+            "name": "Banner-3",
+            "type": "ringback",
+            "language": ""
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F67.jpg&item_type=banner&store_id=168",
+            "banner_id": 67,
+            "name": "Banner-4",
+            "type": "realtone",
+            "language": "hi"
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2Fbanner1.jpg&item_type=banner&store_id=168",
+            "banner_id": 170,
+            "name": "banner168_1",
+            "type": "none",
+            "language": null
+        },
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2Fbanner2.jpg&item_type=banner&store_id=168",
+            "banner_id": 172,
+            "name": "banner168_2",
+            "type": "none",
+            "language": null
+        }
+    ]
+}
+14/02/2022 12:44:26 devpinoyLogger Banner ID is deleted ----> 
+14/02/2022 12:44:26 devpinoyLogger {
+    "banner_collection_id": 316,
+    "banner_collection_name": "RIP PUNITH_hXEbLIRfKM",
+    "banner_collection_type": "promotional",
+    "storeId": 390
+}
+14/02/2022 12:44:26 devpinoyLogger 
+14/02/2022 12:44:26 devpinoyLogger 
+14/02/2022 12:44:27 devpinoyLogger 
+14/02/2022 12:44:27 devpinoyLogger 
+14/02/2022 12:44:27 devpinoyLogger 
+14/02/2022 12:44:27 devpinoyLogger [
+    {
+        "store_id": 390,
+        "banner_collection_id": 316,
+        "banner_collection_name": "RIP PUNITH_hXEbLIRfKM",
+        "banner_collection_type": "promotional"
+    }
+]
+14/02/2022 12:44:28 devpinoyLogger {
+    "total_item_count": 1,
+    "offset": 0,
+    "item_count": 1,
+    "banner_collections": [
+        {
+            "banner_collection_id": 316,
+            "banner_collection_name": "RIP PUNITH_hXEbLIRfKM",
+            "banner_collection_type": "promotional",
+            "store_id": 390,
+            "banners": null
+        }
+    ]
+}
+14/02/2022 12:44:28 devpinoyLogger 
+14/02/2022 12:44:28 devpinoyLogger {
+    "code": "VOL_CTLG_0037",
+    "sub_code": "VOL_CTLG_BNNR_003",
+    "summary": "SEARCH_BY_BANNER_COLLECTION_NAME:SEARCH_BY_BANNER_COLLECTION_NAME",
+    "description": "storeId must not be null or blank.",
+    "status_code": "USECASE_ILLEGAL_ARGUMENT_EXCEPTION"
+}
+14/02/2022 12:44:28 devpinoyLogger Banner collection ID is deleted ----> 
+14/02/2022 12:44:28 devpinoyLogger Negative Scenarios of  ---> 
+14/02/2022 12:44:29 devpinoyLogger Negative Scenarios of  ---> {
+    "code": "chart_name",
+    "sub_code": "request_body",
+    "summary": "VOL_CTLG_CHART_001:CHART:CHART:CREATE_CHART",
+    "description": "must not be null or blank.",
+    "status_code": "ENTRYWAY_REQUEST_VALIDATION_EXCEPTION"
+}
+14/02/2022 12:44:29 devpinoyLogger Negative Scenarios of  ---> <html lang="en">
+  <head>
+    <title>HTTP Status 500 – Internal Server Error</title>
+    <style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style>
+  </head>
+  <body>
+    <h1>HTTP Status 500 – Internal Server Error</h1>
+  </body>
+</html>
+14/02/2022 12:44:29 devpinoyLogger {
+    "chart_id": 1234622,
+    "chart_name": "RIP_Punith_z5QFQRVaO9",
+    "store_id": 390,
+    "type": "chart",
+    "language": "en",
+    "locale_chart_names": [
+        {
+            "language": "",
+            "chart_name": "RIP_Punith_z5QFQRVaO9",
+            "description": null
+        }
+    ]
+}
+14/02/2022 12:44:29 devpinoyLogger 
+14/02/2022 12:44:29 devpinoyLogger 
+14/02/2022 12:44:30 devpinoyLogger 
+14/02/2022 12:44:30 devpinoyLogger 
+14/02/2022 12:44:32 devpinoyLogger 
+14/02/2022 12:44:32 devpinoyLogger [
+    {
+        "language": null,
+        "purchasable": false,
+        "store_id": 390,
+        "chart_id": 0,
+        "chart_name": "New_Store_Id_Test",
+        "type": "chart",
+        "primary_image": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=328"
+    },
+    {
+        "language": "en",
+        "purchasable": false,
+        "store_id": 390,
+        "chart_id": 1234568,
+        "chart_name": "NEW_STORE_ID_TEST",
+        "type": "chart",
+        "primary_image": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=328"
+    },
+    {
+        "language": "en",
+        "purchasable": false,
+        "store_id": 390,
+        "chart_id": 1234575,
+        "chart_name": "RIP_Punith_0pC9GSjuta",
+        "type": "chart",
+        "primary_image": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=328"
+    },
+    {
+        "language": "en",
+        "purchasable": false,
+        "store_id": 390,
+        "chart_id": 1234576,
+        "chart_name": "RIP_Punith_PJNWaUId8o",
+        "type": "chart",
+        "primary_image": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=328"
+    },
+    {
+        "language": "en",
+        "purchasable": false,
+        "store_id": 390,
+        "chart_id": 1234577,
+        "chart_name": "RIP_Punith_OUwDA5f9et",
+        "type": "chart",
+        "primary_image": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=328"
+    },
+    {
+        "language": "en",
+        "purchasable": false,
+        "store_id": 390,
+        "chart_id": 1234578,
+        "chart_name": "RIP_Punith_4ey7i76UCb",
+        "type": "chart",
+        "primary_image": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=328"
+    },
+    {
+        "language": "en",
+        "purchasable": false,
+        "store_id": 390,
+        "chart_id": 1234580,
+        "chart_name": "RIP_Punith_QFn2hisnHG",
+        "type": "chart",
+        "primary_image": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=328"
+    },
+    {
+        "language": "en",
+        "purchasable": false,
+        "store_id": 390,
+        "chart_id": 1234581,
+        "chart_name": "RIP_Punith_CuJMMFQT58",
+        "type": "chart",
+        "primary_image": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=328"
+    },
+    {
+        "language": "en",
+        "purchasable": false,
+        "store_id": 390,
+        "chart_id": 1234582,
+        "chart_name": "RIP_Punith_Na6R5OtlbF",
+        "type": "chart",
+        "primary_image": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=328"
+    },
+    {
+        "language": "en",
+        "purchasable": false,
+        "store_id": 390,
+        "chart_id": 1234583,
+        "chart_name": "RIP_Punith_nf03Fs0icA",
+        "type": "chart",
+        "primary_image": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=328"
+    },
+    {
+        "language": "en",
+        "purchasable": false,
+        "store_id": 390,
+        "chart_id": 1234586,
+        "chart_name": "RIP_Punith_hUW66B9vWV",
+        "type": "chart",
+        "primary_image": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=328"
+    },
+    {
+        "language": "en",
+        "purchasable": false,
+        "store_id": 390,
+        "chart_id": 1234622,
+        "chart_name": "RIP_Punith_z5QFQRVaO9",
+        "type": "chart",
+        "primary_image": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=328"
+    }
+]
+14/02/2022 12:44:32 devpinoyLogger {
+    "total_item_count": 1,
+    "offset": 0,
+    "item_count": 1,
+    "charts": [
+        {
+            "image_url": "https://qa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=328",
+            "chart_id": 1234622,
+            "chart_name": "RIP_Punith_z5QFQRVaO9",
+            "purchasable": false,
+            "type": "chart",
+            "language": "en"
+        }
+    ]
+}
+14/02/2022 12:44:32 devpinoyLogger 
+14/02/2022 12:44:32 devpinoyLogger {
+    "total_item_count": 0,
+    "offset": 0,
+    "item_count": 0,
+    "charts": [
+        
+    ]
+}
+14/02/2022 12:44:33 devpinoyLogger chart  ID is delete ----> 1234622
+14/02/2022 12:44:33 devpinoyLogger Negative Scenarios of  ---> 
+14/02/2022 12:44:33 devpinoyLogger Negative Scenarios of  ---> {
+    "code": "chart_collection_name",
+    "sub_code": "request_body",
+    "summary": "VOL_CTLG_CHART_002:CHART:CHART_COLLECTION:CREATE_CHART_COLLECTION",
+    "description": "must not be null or blank.",
+    "status_code": "ENTRYWAY_REQUEST_VALIDATION_EXCEPTION"
+}
+14/02/2022 12:44:33 devpinoyLogger {
+    "chart_collection_id": 382,
+    "chart_collection_name": "RIP_PUNITH_fUpucHDnbX",
+    "store_id": 390
+}
+14/02/2022 12:44:34 devpinoyLogger 
+14/02/2022 12:44:34 devpinoyLogger {
+    "code": "VOL_CTLG_0004",
+    "sub_code": "VOL_CTLG_CHART_002",
+    "summary": "GET_CHART_COLLECTION:GET_CHART_COLLECTION_BY_ID",
+    "description": "invalid chart collection id",
+    "status_code": "INVALID_CHART_COLLECTION_ID"
+}
+14/02/2022 12:44:34 devpinoyLogger 
+14/02/2022 12:44:34 devpinoyLogger 
+14/02/2022 12:44:34 devpinoyLogger 
+14/02/2022 12:44:34 devpinoyLogger 
+14/02/2022 12:44:34 devpinoyLogger [
+    {
+        "store_id": 390,
+        "chart_collection_name": "RIP_PUNITH_Ek8he4krVr",
+        "chart_collection_id": 345
+    },
+    {
+        "store_id": 390,
+        "chart_collection_name": "hmm1235",
+        "chart_collection_id": 374
+    },
+    {
+        "store_id": 390,
+        "chart_collection_name": "RIP_PUNITH_boqQt7zaDS",
+        "chart_collection_id": 378
+    },
+    {
+        "store_id": 390,
+        "chart_collection_name": "RIP_PUNITH_fUpucHDnbX",
+        "chart_collection_id": 382
+    }
+]
+14/02/2022 12:44:35 devpinoyLogger 
+14/02/2022 12:44:35 devpinoyLogger {
+    "code": "VOL_CTLG_0037",
+    "sub_code": "VOL_CTLG_BNNR_003",
+    "summary": "SEARCH_BY_BANNER_COLLECTION_NAME:SEARCH_BY_BANNER_COLLECTION_NAME",
+    "description": "chart collections not found168",
+    "status_code": "SEARCH_CHART_COLLECTION_NAMES_NOT_FOUND"
+}
+14/02/2022 12:44:35 devpinoyLogger {
+    "total_item_count": 1,
+    "offset": 0,
+    "item_count": 1,
+    "chart_collections": [
+        {
+            "chart_collection_id": 382,
+            "chart_collection_name": "RIP_PUNITH_fUpucHDnbX",
+            "store_id": 390,
+            "chart_collection_charts": null
+        }
+    ]
+}
+14/02/2022 12:44:35 devpinoyLogger Chart collection ID is deleted ----> 
+14/02/2022 12:44:36 devpinoyLogger {
+    "faq_id": 159,
+    "text": "sample text",
+    "url": "url with modified data",
+    "language": "kannada_kn",
+    "last_updated": "2022-02-14T07:11:14.119"
+}
+14/02/2022 12:44:36 devpinoyLogger 
+14/02/2022 12:44:36 devpinoyLogger {
+    "code": "VOL_CTLG_0027",
+    "sub_code": "VOL_CTLG_FAQ_001",
+    "summary": "GET_FAQ:GET_FAQ",
+    "description": "FAQ not found for store_id: 168",
+    "status_code": "NO_CONTENT_FOUND"
+}
+14/02/2022 12:44:36 devpinoyLogger {
+    "faqs": [
+        {
+            "language": "",
+            "text": "",
+            "url": "http://172.19.113.32:8833/faq/App_FAQ_Final_updated.html",
+            "last_updated": "2021-07-26T11:55:50",
+            "faq_id": 107
+        }
+    ]
+}
+14/02/2022 12:44:36 devpinoyLogger 

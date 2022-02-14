@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- ################### Theme ########################## -->
+
+	<test thread-count="1" name="Theme">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.CreateTheme" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.UpdateThemeImageURL" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.UpdateTheme" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.GetThemeByID" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.GetAllThemes" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test thread-count="1" name="Image Upload">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.UploadThemeImage" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test thread-count="1" name="Theme collection">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.api.collectionThemes.CreateThemeCollection" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.collectionThemes.UpdateThemeCollection" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.collectionThemes.GetThemeCollectionByID" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.collectionThemes.GetAllCollectionThemes" />
+		</classes>
+	</test> <!-- Test -->
+
+
+
+	<test thread-count="1" name="Theme Search">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.SearchByThemeName" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.DeleteThemeByID" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.collectionThemes.DeleteThemeCollectionByID" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<!-- ################### CatalogHub Configuration ########################## -->
+
+	<test thread-count="1" name="CatalogHub Configuration">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.api.themes.GetThemeAttributes" />
+		</classes>
+
+	</test>
+
+	<!-- ################### Banner ############################### -->
+
+
+	<test thread-count="1" name="Banner">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.api.banner.CreateBanner" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.banner.GetAllBanner" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.banner.GetBannerById" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.banner.UpdateBanner" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.banner.SearchByBannerName" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.banner.DeleteBannerById" />
+		</classes>
+
+	</test> <!-- Test -->
+
+	<!-- ################### Banner Collection ############################### -->
+
+	<test thread-count="1" name="Banner Collection">
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.api.bannerCollection.CreateBannerCollection" />
+
+			<class
+				name="com.onmobile.vol.cataloghub.api.bannerCollection.GetBannerCollectionByID" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.bannerCollection.GetAllBannerCollections" />
+
+			<class
+				name="com.onmobile.vol.cataloghub.api.bannerCollection.SearchBannerCollectionByName" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.bannerCollection.DeleteBannerCollecion" />
+		</classes>
+	</test> <!-- Test -->
+
+	<!-- ################### Chart ############################### -->
+
+	<test thread-count="1" name="Chart">
+		<classes>
+			<class name="com.onmobile.vol.cataloghub.api.chat.CreateChat" />
+			<class name="com.onmobile.vol.cataloghub.api.chat.GetChartByID" />
+			<class name="com.onmobile.vol.cataloghub.api.chat.GetAllCharts" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.chat.SearchByChartName" />
+			<class
+				name="com.onmobile.vol.cataloghub.api.chat.DeleteChartByID" />
+		</classes>
+	</test> <!-- Test -->
+
+	<!-- ################### Chart Collection ############################### -->
+
+	<test thread-count="1" name="Chart Collection">
+
+		<classes>
+			<class
+				name="com.onmobile.vol.cataloghub.chartCollection.CreateChartCollection" />
+			<class
+				name="com.onmobile.vol.cataloghub.chartCollection.GetChartCollectionByID" />
+
+			<class
+				name="com.onmobile.vol.cataloghub.chartCollection.GetAllChartCollections" />
+
+			<class
+				name="com.onmobile.vol.cataloghub.chartCollection.SearchByChartCollectionName" />
+
+			<class
+				name="com.onmobile.vol.cataloghub.chartCollection.DeleteChartCollectionByID" />
+
+		</classes>
+	</test> <!-- Test -->
+
+	<!-- ################### Faq ############################### -->
+
+	<test thread-count="1" name="Faq">
+		<classes>
+			<class name="com.onmobile.vol.cataloghub.api.faq.CreateFaq" />
+			<class name="com.onmobile.vol.cataloghub.api.faq.GetFaq" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
