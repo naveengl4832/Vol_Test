@@ -127,18 +127,18 @@
 
 		<classes>
 			<class
-				name="com.onmobile.vol.cataloghub.chartCollection.CreateChartCollection" />
+				name="com.onmobile.vol.cataloghub.api.chartCollection.CreateChartCollection" />
 			<class
-				name="com.onmobile.vol.cataloghub.chartCollection.GetChartCollectionByID" />
+				name="com.onmobile.vol.cataloghub.api.chartCollection.GetChartCollectionByID" />
 
 			<class
-				name="com.onmobile.vol.cataloghub.chartCollection.GetAllChartCollections" />
+				name="com.onmobile.vol.cataloghub.api.chartCollection.GetAllChartCollections" />
 
 			<class
-				name="com.onmobile.vol.cataloghub.chartCollection.SearchByChartCollectionName" />
+				name="com.onmobile.vol.cataloghub.api.chartCollection.SearchByChartCollectionName" />
 
 			<class
-				name="com.onmobile.vol.cataloghub.chartCollection.DeleteChartCollectionByID" />
+				name="com.onmobile.vol.cataloghub.api.chartCollection.DeleteChartCollectionByID" />
 
 		</classes>
 	</test> <!-- Test -->
