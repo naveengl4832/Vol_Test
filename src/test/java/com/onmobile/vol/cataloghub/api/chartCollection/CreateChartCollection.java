@@ -1,4 +1,4 @@
-package com.onmobile.vol.cataloghub.chartCollection;
+package com.onmobile.vol.cataloghub.api.chartCollection;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;

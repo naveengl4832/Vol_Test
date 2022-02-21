@@ -1,4 +1,4 @@
-package com.onmobile.vol.cataloghub.chartCollection;
+package com.onmobile.vol.cataloghub.api.chartCollection;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,7 +1,7 @@
-package com.onmobile.vol.cataloghub.chartCollection;
+package com.onmobile.vol.cataloghub.api.chartCollection;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,88 +18,83 @@ import com.onmobile.api.helper.RestBaseClass;
 
 import io.restassured.response.Response;
 
-public class GetChartCollectionByID extends RestBaseClass implements Constants {
-
-	/**
-	 * 
-	 * Get Request with Catalog-Hub Api
-	 * 
-	 */
+public class SearchByChartCollectionName extends RestBaseClass implements Constants {
 
 	public RequestGenerator requestGenarator = new RequestGenerator();
-	public Map<String, String> queryParam;
 	public Map<String, String> pathParam;
+	public Map<String, String> queryParam;
 
 	@DataProvider(name = "getPositiveTestdata")
 	public Object[][] getPositiveTestData() {
 		sourceMethod = "getTestData";
 		LOGGER.entering(sourceClass, sourceMethod);
-		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_CHART_XL_PATH, GET_CHART_COLLECTION_BY_ID_POSITIVE_SHEET);
+		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_CHART_XL_PATH,
+				SEARCH_BY_CHART_COLLECTION_NAME_POSTIVE_SHEET);
 		LOGGER.entering(sourceClass, sourceMethod);
 		return testData;
 	}
 
 	@DataProvider(name = "getNegativeTestdata")
-	public Object[][] getNegativeTestData() {
+	public Object[][] getNegativeTestdata() {
 		sourceMethod = "getTestData";
 		LOGGER.entering(sourceClass, sourceMethod);
-		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_CHART_XL_PATH, GET_CHART_COLLECTION_BY_ID_NEGATIVE_SHEET);
-
+		Object[][] testData = ExcelConfig.getTestDataAsMap(GET_CHART_XL_PATH,
+				SEARCH_BY_CHART_COLLECTION_NAME_NEGATIVE_SHEET);
 		LOGGER.entering(sourceClass, sourceMethod);
 		return testData;
 	}
 
 	@Test(dataProvider = "getPositiveTestdata")
-	public void getChartCollectionByID(Map<String, String> testDatList[]) {
+	public void searchChartByCollectionName(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
-
-		queryParam = new HashMap<String, String>();
-		queryParam.put("response", testData.get("response"));
 
 		pathParam = new HashMap<String, String>();
 		pathParam.put("store_id", CommonValues.chartCollectionValues.get("store_id"));
-		pathParam.put("chart_collection_id", CommonValues.chartCollectionValues.get("chart_collection_id"));
 
+		queryParam = new HashMap<String, String>();
+		// queryParam.put("searchItem", testData.get("searchItem"));
+
+		queryParam.put("searchItem", CommonValues.chartCollectionValues.get("chart_collection_name"));
 
 		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when()
-				.get(GET_CHART_COLLECTION_BY_ID).then().statusCode(Integer.parseInt(testData.get("statusCode"))).and()
-				.body("store_id", equalTo(Integer.parseInt(CommonValues.chartCollectionValues.get("store_id"))),
-						"chart_collection_name",
-						equalTo(CommonValues.chartCollectionValues.get("chart_collection_name")), "chart_collection_id",
-						equalTo(Integer.parseInt(CommonValues.chartCollectionValues.get("chart_collection_id"))))
+				.get(SEARCH_BY_CHART_COLLECTION_NAME).then().statusCode(Integer.parseInt(testData.get("statusCode")))
+				.and()
+				.body("chart_collections.chart_collection_id",
+						hasItem(Integer.parseInt(CommonValues.chartCollectionValues.get("chart_collection_id"))),
+						"chart_collections.chart_collection_name",
+						hasItem(CommonValues.chartCollectionValues.get("chart_collection_name")),
+						"chart_collections.store_id",
+						hasItem(Integer.parseInt(CommonValues.chartCollectionValues.get("store_id"))))
 				.extract().response();
 
-		response.then().assertThat().body(matchesJsonSchemaInClasspath(
-				PropertyReader.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, GET_CHART_COLLECTION_BY_ID_JSON_SCHEMA)));
+		response.then().assertThat().body(matchesJsonSchemaInClasspath(PropertyReader
+				.getProperty(CATALOG_HUB_JSON_SCHEMA_PROPERTY_FILE, SEARCH_BY_CHART_COLLECTIONNAME_JSON_SCHEMA)));
 
 		loggerReport.pass("Response" + response.prettyPrint());
-		loggerReport.pass("Veified the Chart collection id : " + response.jsonPath().getString("chart_id"));
 		LOGGER.info("Response : " + response.prettyPrint());
+		log.debug(response.asPrettyString());
 
 	}
-
+	
 	@Test(dataProvider = "getNegativeTestdata")
-	public void getChartCollectionById_NegativeTest(Map<String, String> testDatList[]) {
+	public void getChartCollectionsNegativeTest(Map<String, String> testDatList[]) {
 		Map<String, String> testData = testDatList[0];
 		while (testData.values().remove(""))
 			;
 
 		queryParam = new HashMap<String, String>();
-		queryParam.put("response", testData.get("response"));
+		queryParam.put("searchItem", testData.get("searchItem"));
 
 		pathParam = new HashMap<String, String>();
 		pathParam.put("store_id", testData.get("store_id"));
-		pathParam.put("chart_collection_id", testData.get("chart_collection_id"));
 
-		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when()
-				.get(GET_CHART_COLLECTION_BY_ID).then().statusCode(Integer.parseInt(testData.get("statusCode")))
-				.extract().response();
+		Response response = requestGenarator.getRequest(queryParam, pathParam, BASE_URL).when().get(SEARCH_BY_CHART_COLLECTION_NAME)
+				.then().statusCode(Integer.parseInt(testData.get("statusCode"))).extract().response();
 
 		loggerReport.info("Response \n" + response.asString());
 		LOGGER.info("Response : " + response.asString());
 		log.debug(response.prettyPrint());
 	}
-
 }

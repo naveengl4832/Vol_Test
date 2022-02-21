@@ -1,4 +1,4 @@
-package com.onmobile.vol.cataloghub.chartCollection;
+package com.onmobile.vol.cataloghub.api.chartCollection;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.hasItem;
