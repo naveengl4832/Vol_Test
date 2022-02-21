@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Theme Search(failed)">
+  <test thread-count="5" name="Banner(failed)">
     <classes>
-      <class name="com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName">
+      <class name="com.onmobile.vol.cataloghub.api.banner.CreateBanner">
         <methods>
+          <include name="createBannerNegative" invocation-numbers="0"/>
           <include name="init"/>
           <include name="initLogger"/>
           <include name="generateToken"/>
           <include name="close"/>
-          <include name="searchThemeCollection" invocation-numbers="0"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- com.onmobile.vol.cataloghub.api.collectionThemes.SearchByThemeCollectionName -->
+      </class> <!-- com.onmobile.vol.cataloghub.api.banner.CreateBanner -->
     </classes>
-  </test> <!-- Theme Search(failed) -->
+  </test> <!-- Banner(failed) -->
 </suite> <!-- Failed suite [Suite] -->

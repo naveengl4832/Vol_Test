@@ -8,7 +8,7 @@ public interface Constants {
 	String FORM_DATA_TYPE = "multipart/form-data";
 	String BASE_URL = "BASE_URL";
 	String ENVIRONMENT = System.getProperty("env");
-	String STORE_ID = System.getProperty("store_id");
+	String STORE_ID = System.getProperty("storeId");
 
 	/********** URL PATH PROPERTIES **************/
 	String URL_PROPERTIES_PATH = "./src/main/java/com/onmobile/api/config/URL_Config.properties";
