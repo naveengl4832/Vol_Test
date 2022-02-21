@@ -1,11 +1,249 @@
-21/02/2022 17:13:55 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@302edb74
-21/02/2022 17:13:56 devpinoyLogger {
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href='https://cdn.rawgit.com/extent-framework/extent-github-cdn/39026ad/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Onmobile -Automation</title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent dark default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'>API Automation</span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Feb 21, 2022 05:13:53 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m12 l12 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Tests</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>89</span> test(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateTheme - createThemByThemeName-Create Tme ID</span>
+						<span class='test-time'>Feb 21, 2022 05:13:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:13:55 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:13:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:13:56 PM</td>
+				<td class='step-details'>
+						Theme ID is created for the given themeName - 
+ RIP Punith _ mnPDvdS3AB  {
     "theme_id": 229,
     "store_id": 168,
     "theme_name": "RIP Punith _ mnPDvdS3AB"
 }
-21/02/2022 17:13:57 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@3de79067
-21/02/2022 17:13:57 devpinoyLogger {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:13:56 PM</td>
+				<td class='step-details'>
+						createThemByThemeName Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>UpdateThemeImageURL - updateThemeImageURL-Update Theme_url by Theme_id</span>
+						<span class='test-time'>Feb 21, 2022 05:13:56 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:13:56 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:13:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:13:57 PM</td>
+				<td class='step-details'>
+						Image URL is updated  - 
+ {
+    "image_url": "http://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=theme_url%2F229.jpeg&item_type=theme&store_id=168"
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:13:57 PM</td>
+				<td class='step-details'>
+						updateThemeImageURL Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>UpdateTheme - updateTheme-Update Theme_url by Theme_id</span>
+						<span class='test-time'>Feb 21, 2022 05:13:57 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:13:57 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:13:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:13:57 PM</td>
+				<td class='step-details'>
+						Theme is updated with the latest image url and theme ID ---->  
+{
     "theme_id": 229,
     "store_id": 168,
     "theme_name": "RIP Punith _ mnPDvdS3AB",
@@ -19,8 +257,201 @@
         }
     ]
 }
-21/02/2022 17:13:57 devpinoyLogger 200
-21/02/2022 17:14:01 devpinoyLogger [
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:13:57 PM</td>
+				<td class='step-details'>
+						updateTheme Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>GetThemeByID - getThemeByThemeID-Get Theme by Theme_ID</span>
+						<span class='test-time'>Feb 21, 2022 05:13:57 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:13:57 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:13:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:13:58 PM</td>
+				<td class='step-details'>
+						Response{
+    "theme_id": 229,
+    "store_id": 168,
+    "image_url": "http://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=theme_url%2F229.jpeg&item_type=theme&store_id=168",
+    "theme_attributes": [
+        {
+            "entity_id": 136,
+            "attribute_name": "display_style",
+            "attribute_value": "Front",
+            "attribute_id": 2
+        }
+    ],
+    "theme_name": "RIP Punith _ mnPDvdS3AB"
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:13:58 PM</td>
+				<td class='step-details'>
+						Veify the Theme_ID : 229
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:13:58 PM</td>
+				<td class='step-details'>
+						getThemeByThemeID Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>GetThemeByID - getThemeByThemeid_NegativeScenarios-Invalid ThemeID</span>
+						<span class='test-time'>Feb 21, 2022 05:13:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:13:58 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:13:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:13:58 PM</td>
+				<td class='step-details'>
+						Response 
+{"code":"VOL_CTLG_0087","sub_code":"VOL_CTLG_THEME_001","summary":"GET_THEME:GET_THEME","description":"Invalid theme_id","status_code":"INVALID_THEME_ID"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:13:58 PM</td>
+				<td class='step-details'>
+						getThemeByThemeid_NegativeScenarios Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>GetThemeByID - getThemeByThemeid_NegativeScenarios-Invalid StoreID</span>
+						<span class='test-time'>Feb 21, 2022 05:13:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:13:58 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:13:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:13:58 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:13:58 PM</td>
+				<td class='step-details'>
+						getThemeByThemeid_NegativeScenarios Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllThemes - getAllThemes-Get All themes</span>
+						<span class='test-time'>Feb 21, 2022 05:13:59 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:13:59 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:13:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:01 PM</td>
+				<td class='step-details'>
+						Response 
+[
     {
         "theme_id": 1,
         "store_id": 168,
@@ -640,9 +1071,1264 @@
         "theme_name": "RIP Punith _ mnPDvdS3AB"
     }
 ]
-21/02/2022 17:14:08 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@68479e8b
-21/02/2022 17:14:12 devpinoyLogger 
-21/02/2022 17:14:13 devpinoyLogger {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:01 PM</td>
+				<td class='step-details'>
+						Veify the Theme_ID :  
+[1, 4, 6, 7, 8, 11, 12, 13, 14, 15, 19, 20, 23, 24, 27, 28, 29, 32, 34, 35, 37, 38, 39, 43, 44, 48, 49, 50, 51, 52, 53, 54, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 113, 150, 151, 152, 153, 154, 164, 165, 170, 172, 173, 176, 177, 179, 181, 182, 183, 186, 190, 193, 194, 199, 200, 201, 209, 219, 221, 229]
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:01 PM</td>
+				<td class='step-details'>
+						getAllThemes Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>UploadThemeImage - uploadThemeImage-Upload Theme Image</span>
+						<span class='test-time'>Feb 21, 2022 05:14:01 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:01 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:01 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:07 PM</td>
+				<td class='step-details'>
+						Theme Image has been uploaded...theme_url/theme_229.jpg
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:07 PM</td>
+				<td class='step-details'>
+						uploadThemeImage Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateThemeCollection - createThemByThemeName-Create Theme collection</span>
+						<span class='test-time'>Feb 21, 2022 05:14:07 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:07 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:08 PM</td>
+				<td class='step-details'>
+						Theme Collection ID is created for the given theme Collection Name ----     Naveen_collection_dv99JKmix8
+{
+    "theme_collection_id": 106,
+    "theme_collection_name": "Naveen_collection_dv99JKmix8",
+    "store_id": 168
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:08 PM</td>
+				<td class='step-details'>
+						createThemByThemeName Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>UpdateThemeCollection - updateTheme-Update Theme Collection by Collection Theme ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:08 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:08 PM</td>
+				<td class='step-details'>
+						Theme is updated with the given - 
+ {
+    "theme_collection_id": 106,
+    "theme_collection_name": "Naveen_collection_dv99JKmix8",
+    "store_id": 168,
+    "start_datetime": "2022-02-21T11:44:08.3609237Z",
+    "end_datetime": "2022-02-21T11:44:08.3609237Z",
+    "theme_collection_themes": [
+        {
+            "theme_id": 229,
+            "theme_name": "RIP Punith _ mnPDvdS3AB",
+            "image_url": "http://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=theme_url%2F229.jpeg&item_type=theme&store_id=168"
+        }
+    ]
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:08 PM</td>
+				<td class='step-details'>
+						updateTheme Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>GetThemeCollectionByID - InvalidThemeCollection-Invalid Theme Collection ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:08 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:08 PM</td>
+				<td class='step-details'>
+						Response 
+{"code":"VOL_CTLG_0082","sub_code":"VOL_CTLG_THEME_002","summary":"GET_THEME_COLLECTION:GET_THEME_COLLECTION","description":"invalid theme collection id","status_code":"INVALID_THEME_COLLECTION_ID"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:08 PM</td>
+				<td class='step-details'>
+						InvalidThemeCollection Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>GetThemeCollectionByID - InvalidThemeCollection-Invalid StoreID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:08 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:09 PM</td>
+				<td class='step-details'>
+						Response 
+{"code":"VOL_CTLG_0082","sub_code":"VOL_CTLG_THEME_002","summary":"GET_THEME_COLLECTION:GET_THEME_COLLECTION","description":"invalid theme collection id","status_code":"INVALID_THEME_COLLECTION_ID"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:09 PM</td>
+				<td class='step-details'>
+						InvalidThemeCollection Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>GetThemeCollectionByID - InvalidThemeCollection-Invalid StoreID and Collection ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:09 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:09 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:09 PM</td>
+				<td class='step-details'>
+						Response 
+{"code":"VOL_CTLG_0082","sub_code":"VOL_CTLG_THEME_002","summary":"GET_THEME_COLLECTION:GET_THEME_COLLECTION","description":"invalid theme collection id","status_code":"INVALID_THEME_COLLECTION_ID"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:09 PM</td>
+				<td class='step-details'>
+						InvalidThemeCollection Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>GetThemeCollectionByID - InvalidThemeCollection-Invalid query param</span>
+						<span class='test-time'>Feb 21, 2022 05:14:09 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:09 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:09 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:09 PM</td>
+				<td class='step-details'>
+						InvalidThemeCollection Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>GetThemeCollectionByID - InvalidThemeCollection-Blank query param</span>
+						<span class='test-time'>Feb 21, 2022 05:14:09 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:09 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:09 PM</td>
+				<td class='step-details'>
+						Response 
+{"code":"VOL_CTLG_0082","sub_code":"VOL_CTLG_THEME_002","summary":"GET_THEME_COLLECTION:GET_THEME_COLLECTION","description":"invalid theme collection id","status_code":"INVALID_THEME_COLLECTION_ID"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:09 PM</td>
+				<td class='step-details'>
+						InvalidThemeCollection Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>GetThemeCollectionByID - getThemeCollection-Get theme Collection By Collection Theme ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:09 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:09 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:10 PM</td>
+				<td class='step-details'>
+						Response{
+    "start_datetime": "2022-02-21T11:44:08Z",
+    "end_datetime": "2022-02-21T11:44:08Z",
+    "store_id": 168,
+    "theme_collection_name": "Naveen_collection_dv99JKmix8",
+    "theme_collection_themes": [
+        {
+            "theme_id": 229,
+            "image_url": "http://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=theme_url%2F229.jpeg&item_type=theme&store_id=168",
+            "theme_name": "RIP Punith _ mnPDvdS3AB"
+        }
+    ],
+    "theme_collection_id": 106
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:10 PM</td>
+				<td class='step-details'>
+						Veify the Theme collection ID : 106
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:10 PM</td>
+				<td class='step-details'>
+						getThemeCollection Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllCollectionThemes - validateThemesRequest-Get all Theme collections</span>
+						<span class='test-time'>Feb 21, 2022 05:14:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:10 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:10 PM</td>
+				<td class='step-details'>
+						Response 
+[
+    {
+        "start_datetime": "2020-12-28T17:35:00Z",
+        "end_datetime": "2020-12-29T15:40:14Z",
+        "store_id": 168,
+        "theme_collection_name": "nature",
+        "theme_collection_id": 3
+    },
+    {
+        "start_datetime": "2021-03-01T18:00:00Z",
+        "end_datetime": "2021-03-05T19:00:00Z",
+        "store_id": 168,
+        "theme_collection_name": "seemasingh",
+        "theme_collection_id": 5
+    },
+    {
+        "start_datetime": "2021-11-30T10:12:20Z",
+        "end_datetime": "2021-11-30T10:12:20Z",
+        "store_id": 168,
+        "theme_collection_name": "Vodafone Rakshabandhan collection",
+        "theme_collection_id": 6
+    },
+    {
+        "start_datetime": "2021-01-08T10:51:00Z",
+        "end_datetime": "2021-01-09T13:38:00Z",
+        "store_id": 168,
+        "theme_collection_name": "Festival",
+        "theme_collection_id": 7
+    },
+    {
+        "start_datetime": "2021-04-03T15:39:00Z",
+        "end_datetime": "2021-04-10T18:00:00Z",
+        "store_id": 168,
+        "theme_collection_name": "pongal fest",
+        "theme_collection_id": 8
+    },
+    {
+        "start_datetime": "2021-01-10T14:00:00Z",
+        "end_datetime": "2021-01-11T18:00:00Z",
+        "store_id": 168,
+        "theme_collection_name": "ABC",
+        "theme_collection_id": 9
+    },
+    {
+        "start_datetime": "2021-01-12T15:39:00Z",
+        "end_datetime": "2021-01-28T13:02:57Z",
+        "store_id": 168,
+        "theme_collection_name": "Republicday",
+        "theme_collection_id": 10
+    },
+    {
+        "start_datetime": "2021-02-04T18:05:00Z",
+        "end_datetime": "2021-02-26T17:59:00Z",
+        "store_id": 168,
+        "theme_collection_name": "xyz",
+        "theme_collection_id": 15
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": "2021-02-11T15:18:00Z",
+        "store_id": 168,
+        "theme_collection_name": "valentine",
+        "theme_collection_id": 18
+    },
+    {
+        "start_datetime": "2021-04-14T19:36:00Z",
+        "end_datetime": "2021-04-15T21:32:00Z",
+        "store_id": 168,
+        "theme_collection_name": "theme123",
+        "theme_collection_id": 24
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_Collection",
+        "theme_collection_id": 25
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_lj7zxSIkPP",
+        "theme_collection_id": 29
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_I37jE50ywD",
+        "theme_collection_id": 30
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_563OkyDMfY",
+        "theme_collection_id": 31
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_iVuaKvvfQL",
+        "theme_collection_id": 32
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_CGYPqDaYY8",
+        "theme_collection_id": 33
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_8O8x4hMez1",
+        "theme_collection_id": 34
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_AiTb4ZFFlD",
+        "theme_collection_id": 35
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_wjxjRUi5VH",
+        "theme_collection_id": 36
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_6Opv9pHy4Z",
+        "theme_collection_id": 37
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_es9Mux4G4H",
+        "theme_collection_id": 38
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_Collection11r",
+        "theme_collection_id": 39
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_JeFPB68vyY",
+        "theme_collection_id": 40
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_tq0fwvlr4I",
+        "theme_collection_id": 43
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_P7xJGvtSqY",
+        "theme_collection_id": 44
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_wTOyxsbj6t",
+        "theme_collection_id": 45
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_9Nc6OZFMmg",
+        "theme_collection_id": 46
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_zQbsSxJeRY",
+        "theme_collection_id": 48
+    },
+    {
+        "start_datetime": "2021-12-01T08:05:22Z",
+        "end_datetime": "2021-12-01T08:05:22Z",
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_B7cTl6a0vz",
+        "theme_collection_id": 60
+    },
+    {
+        "start_datetime": null,
+        "end_datetime": null,
+        "store_id": 168,
+        "theme_collection_name": "Naveen_Collec",
+        "theme_collection_id": 99
+    },
+    {
+        "start_datetime": "2022-02-21T11:44:08Z",
+        "end_datetime": "2022-02-21T11:44:08Z",
+        "store_id": 168,
+        "theme_collection_name": "Naveen_collection_dv99JKmix8",
+        "theme_collection_id": 106
+    }
+]
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:10 PM</td>
+				<td class='step-details'>
+						validateThemesRequest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByThemeName - searchThemeByThemeNameNegativeScenarioes-Inavlid Search_Iteam</span>
+						<span class='test-time'>Feb 21, 2022 05:14:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:10 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:10 PM</td>
+				<td class='step-details'>
+						Response{
+    "code": "VOL_CTLG_0093",
+    "sub_code": "VOL_CTLG_THEME_003",
+    "summary": "SEARCH_BY_THEME_NAME:SEARCH_BY_THEME_NAME",
+    "description": "themes not found",
+    "status_code": "SEARCH_THEME_NAMES_NOT_FOUND"
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:10 PM</td>
+				<td class='step-details'>
+						searchThemeByThemeNameNegativeScenarioes Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByThemeName - searchThemeByThemeNameNegativeScenarioes-invalid store ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:10 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:10 PM</td>
+				<td class='step-details'>
+						Response{
+    "code": "VOL_CTLG_0093",
+    "sub_code": "VOL_CTLG_THEME_003",
+    "summary": "SEARCH_BY_THEME_NAME:SEARCH_BY_THEME_NAME",
+    "description": "themes not found",
+    "status_code": "SEARCH_THEME_NAMES_NOT_FOUND"
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:10 PM</td>
+				<td class='step-details'>
+						searchThemeByThemeNameNegativeScenarioes Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByThemeName - validateSearchThemeByThemeName-Get Theme By Theme Name</span>
+						<span class='test-time'>Feb 21, 2022 05:14:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:10 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:11 PM</td>
+				<td class='step-details'>
+						Response{
+    "total_item_count": 1,
+    "offset": 0,
+    "item_count": 1,
+    "themes": [
+        {
+            "theme_id": 229,
+            "store_id": 168,
+            "theme_name": "RIP Punith _ mnPDvdS3AB",
+            "image_url": "http://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=theme_url%2F229.jpeg&item_type=theme&store_id=168",
+            "theme_attributes": null
+        }
+    ]
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:11 PM</td>
+				<td class='step-details'>
+						validateSearchThemeByThemeName Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByThemeCollectionName - searchThemeCollection-Search Theme Collection by Collection Theme Name</span>
+						<span class='test-time'>Feb 21, 2022 05:14:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:11 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:11 PM</td>
+				<td class='step-details'>
+						Response{
+    "total_item_count": 1,
+    "offset": 0,
+    "item_count": 1,
+    "theme_collections": [
+        {
+            "theme_collection_id": 106,
+            "theme_collection_name": "Naveen_collection_dv99JKmix8",
+            "store_id": 168,
+            "start_datetime": "2022-02-21T11:44:08Z",
+            "end_datetime": "2022-02-21T11:44:08Z",
+            "theme_collection_themes": null
+        }
+    ]
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:11 PM</td>
+				<td class='step-details'>
+						Total count of the matched objects : --> 1
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:11 PM</td>
+				<td class='step-details'>
+						searchThemeCollection Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByThemeCollectionName - searchThemeCollectionNegativeScenarioes-Invalid Store_id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:11 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:11 PM</td>
+				<td class='step-details'>
+						Response{
+    "code": "VOL_CTLG_0092",
+    "sub_code": "VOL_CTLG_THEME_003",
+    "summary": "SEARCH_BY_THEME_COLLECTION_NAME:SEARCH_BY_THEME_NAME",
+    "description": "theme collections not found",
+    "status_code": "SEARCH_THEME_COLLECTION_NAMES_NOT_FOUND"
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:11 PM</td>
+				<td class='step-details'>
+						searchThemeCollectionNegativeScenarioes Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByThemeCollectionName - searchThemeCollectionNegativeScenarioes-Invalid Search</span>
+						<span class='test-time'>Feb 21, 2022 05:14:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:11 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:11 PM</td>
+				<td class='step-details'>
+						Response{
+    "code": "VOL_CTLG_0092",
+    "sub_code": "VOL_CTLG_THEME_003",
+    "summary": "SEARCH_BY_THEME_COLLECTION_NAME:SEARCH_BY_THEME_NAME",
+    "description": "theme collections not found",
+    "status_code": "SEARCH_THEME_COLLECTION_NAMES_NOT_FOUND"
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:11 PM</td>
+				<td class='step-details'>
+						searchThemeCollectionNegativeScenarioes Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByThemeCollectionName - searchThemeCollectionNegativeScenarioes-Blank search</span>
+						<span class='test-time'>Feb 21, 2022 05:14:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:11 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:11 PM</td>
+				<td class='step-details'>
+						Response{
+    "code": "VOL_CTLG_0092",
+    "sub_code": "VOL_CTLG_THEME_003",
+    "summary": "SEARCH_BY_THEME_COLLECTION_NAME:SEARCH_BY_THEME_NAME",
+    "description": "storeId must not be null or blank.",
+    "status_code": "USECASE_ILLEGAL_ARGUMENT_EXCEPTION"
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:11 PM</td>
+				<td class='step-details'>
+						searchThemeCollectionNegativeScenarioes Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>DeleteThemeByID - deleteThemeID-Delete Theme BY Theme_id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:11 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:12 PM</td>
+				<td class='step-details'>
+						statucode : 200Theme_id is deleted
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:12 PM</td>
+				<td class='step-details'>
+						deleteThemeID Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>DeleteThemeCollectionByID - getAttributes-Delete Collection Theme by Theme collection ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:12 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:12 PM</td>
+				<td class='step-details'>
+						statuscode : 200Theme_id is deleted
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:12 PM</td>
+				<td class='step-details'>
+						getAttributes Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>GetThemeAttributes - getAttributes-Positive Testcase</span>
+						<span class='test-time'>Feb 21, 2022 05:14:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:12 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:12 PM</td>
+				<td class='step-details'>
+						Response{
+    "theme_attributes": [
+        {
+            "attribute_id": 1,
+            "attribute_name": "display_position",
+            "attribute_values": [
+                "store_banner",
+                "store_category"
+            ]
+        },
+        {
+            "attribute_id": 2,
+            "attribute_name": "display_style",
+            "attribute_values": [
+                "background"
+            ]
+        }
+    ]
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:12 PM</td>
+				<td class='step-details'>
+						getAttributes Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateBanner - createBanner-Create Banner</span>
+						<span class='test-time'>Feb 21, 2022 05:14:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:12 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:13 PM</td>
+				<td class='step-details'>
+						Chart is created ---> {
     "banner_id": 1417,
     "name": "RIP_PUNITH_Q0yMOVjccT",
     "language": "English ",
@@ -663,7 +2349,49 @@
     "banner_build_infos": null,
     "banner_subscriptions": null
 }
-21/02/2022 17:14:13 devpinoyLogger Negative Scenarios of  ---> {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:13 PM</td>
+				<td class='step-details'>
+						createBanner Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateBanner - createBannerNegative-Create Banner</span>
+						<span class='test-time'>Feb 21, 2022 05:14:13 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:13 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:13 PM</td>
+				<td class='step-details'>
+						Negative Scenarios of  ---> {
     "banner_id": 1418,
     "name": "RIP_PUNITH",
     "language": "English ",
@@ -684,9 +2412,135 @@
     "banner_build_infos": null,
     "banner_subscriptions": null
 }
-21/02/2022 17:14:13 devpinoyLogger 
-21/02/2022 17:14:13 devpinoyLogger 
-21/02/2022 17:14:14 devpinoyLogger [
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:13 PM</td>
+				<td class='step-details'>
+						createBannerNegative Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllBanner - NegativeGetAllBanner-Invalid Store Id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:13 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:13 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:13 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:13 PM</td>
+				<td class='step-details'>
+						NegativeGetAllBanner Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllBanner - NegativeGetAllBanner-Invalid Query Param</span>
+						<span class='test-time'>Feb 21, 2022 05:14:13 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:13 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:13 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:13 PM</td>
+				<td class='step-details'>
+						NegativeGetAllBanner Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='32'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllBanner - getAllBanners-Get All Banners positive sheet</span>
+						<span class='test-time'>Feb 21, 2022 05:14:13 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:13 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:14 PM</td>
+				<td class='step-details'>
+						Response[
     {
         "store_id": 168,
         "type": "realtone",
@@ -3033,10 +4887,208 @@
         "name": "RIP_PUNITH_Q0yMOVjccT"
     }
 ]
-21/02/2022 17:14:14 devpinoyLogger 
-21/02/2022 17:14:14 devpinoyLogger 
-21/02/2022 17:14:14 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@1c4aa701
-21/02/2022 17:14:15 devpinoyLogger {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:14 PM</td>
+				<td class='step-details'>
+						getAllBanners Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='33'>
+					<div class='test-heading'>
+						<span class='test-name'>GetBannerById - getBannerByID-Get All Banners positive sheet</span>
+						<span class='test-time'>Feb 21, 2022 05:14:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:14 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:14 PM</td>
+				<td class='step-details'>
+						Response{
+    "language": "English ",
+    "content_dto": null,
+    "store_id": 168,
+    "type": "none",
+    "id": null,
+    "banner_id": 1417,
+    "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
+    "banner_names": [
+        {
+            "language_name": "",
+            "name": "RIP_PUNITH_Q0yMOVjccT"
+        }
+    ],
+    "banner_build_infos": null,
+    "banner_subscriptions": null,
+    "navigation_description": null,
+    "name": "RIP_PUNITH_Q0yMOVjccT",
+    "gif_url": "https://rbtqa.onmobile.com/nstreaming/v3/gif?target=&item_type=banner_gif&store_id=168",
+    "video_url": "https://rbtqa.onmobile.com/nstreaming/v3/video?target=&item_type=banner_video&store_id=168",
+    "description": null
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:14 PM</td>
+				<td class='step-details'>
+						Veified the ChartID : null
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:14 PM</td>
+				<td class='step-details'>
+						getBannerByID Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='34'>
+					<div class='test-heading'>
+						<span class='test-name'>GetBannerById - getBannerById_NegativeScenarios-Invalid Store Id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:14 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:14 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:14 PM</td>
+				<td class='step-details'>
+						getBannerById_NegativeScenarios Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='35'>
+					<div class='test-heading'>
+						<span class='test-name'>GetBannerById - getBannerById_NegativeScenarios-Invalid Query Param</span>
+						<span class='test-time'>Feb 21, 2022 05:14:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:14 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:14 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:14 PM</td>
+				<td class='step-details'>
+						getBannerById_NegativeScenarios Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='36'>
+					<div class='test-heading'>
+						<span class='test-name'>UpdateBanner - updateTheme-Update Banner ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:14 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:15 PM</td>
+				<td class='step-details'>
+						Banner is updated ---->  
+{
     "banner_id": 1417,
     "name": "RIP_PUNITH_Q0yMOVjccT",
     "language": "English ",
@@ -3074,8 +5126,49 @@
     ],
     "banner_subscriptions": null
 }
-21/02/2022 17:14:15 devpinoyLogger 200
-21/02/2022 17:14:15 devpinoyLogger {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:15 PM</td>
+				<td class='step-details'>
+						updateTheme Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='37'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByBannerName - searchBannerByname-Search Banner By Name with Valid Test Data</span>
+						<span class='test-time'>Feb 21, 2022 05:14:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:15 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:15 PM</td>
+				<td class='step-details'>
+						Response{
     "total_item_count": 1,
     "offset": 0,
     "item_count": 1,
@@ -3089,132 +5182,545 @@
         }
     ]
 }
-21/02/2022 17:14:15 devpinoyLogger 
-21/02/2022 17:14:15 devpinoyLogger {
-    "total_item_count": 4,
-    "offset": 0,
-    "item_count": 4,
-    "banners": [
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F416.jpg&item_type=banner&store_id=168",
-            "banner_id": 416,
-            "name": "abcd",
-            "type": "none",
-            "language": null
-        },
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
-            "banner_id": 451,
-            "name": "ÍabcíóÓúcdRÚüÜ",
-            "type": "none",
-            "language": "en"
-        },
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
-            "banner_id": 452,
-            "name": "ÍabcíóÓúcdRÚüÜ",
-            "type": "none",
-            "language": "pt"
-        },
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
-            "banner_id": 1240,
-            "name": "abcbanner",
-            "type": "tp_static_url",
-            "language": "en"
-        }
-    ]
-}
-21/02/2022 17:14:16 devpinoyLogger {
-    "total_item_count": 335,
-    "offset": 0,
-    "item_count": 10,
-    "banners": [
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
-            "banner_id": 450,
-            "name": "Top Músicas",
-            "type": "realtone",
-            "language": "en"
-        },
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F433.jpg&item_type=banner&store_id=168",
-            "banner_id": 433,
-            "name": "Banner_Dynamic_URL_1",
-            "type": "realtone",
-            "language": null
-        },
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F432.jpg&item_type=banner&store_id=168",
-            "banner_id": 432,
-            "name": "Banner_Static_ULR_1",
-            "type": "realtone",
-            "language": null
-        },
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F430.jpg&item_type=banner&store_id=168",
-            "banner_id": 430,
-            "name": "SampleBanner",
-            "type": "realtone",
-            "language": ""
-        },
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F64.jpg&item_type=banner&store_id=168",
-            "banner_id": 64,
-            "name": "Banner-1",
-            "type": "ringback",
-            "language": ""
-        },
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F65.jpg&item_type=banner&store_id=168",
-            "banner_id": 65,
-            "name": "Banner-2",
-            "type": "ringback",
-            "language": "ma"
-        },
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F66.jpg&item_type=banner&store_id=168",
-            "banner_id": 66,
-            "name": "Banner-3",
-            "type": "ringback",
-            "language": ""
-        },
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F67.jpg&item_type=banner&store_id=168",
-            "banner_id": 67,
-            "name": "Banner-4",
-            "type": "realtone",
-            "language": "hi"
-        },
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2Fbanner1.jpg&item_type=banner&store_id=168",
-            "banner_id": 170,
-            "name": "banner168_1",
-            "type": "none",
-            "language": null
-        },
-        {
-            "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2Fbanner2.jpg&item_type=banner&store_id=168",
-            "banner_id": 172,
-            "name": "banner168_2",
-            "type": "none",
-            "language": null
-        }
-    ]
-}
-21/02/2022 17:14:16 devpinoyLogger Banner ID is deleted ----> 
-21/02/2022 17:14:16 devpinoyLogger {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:15 PM</td>
+				<td class='step-details'>
+						searchBannerByname Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='38'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByBannerName - searchBannerBynameNegative-Search Banner By Name with inValid Store ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:15 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:15 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:15 PM</td>
+				<td class='step-details'>
+						searchBannerBynameNegative Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='39'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByBannerName - searchBannerBynameNegative-Search Banner By Name with inValid Search Iteam</span>
+						<span class='test-time'>Feb 21, 2022 05:14:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:15 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:15 PM</td>
+				<td class='step-details'>
+						Response 
+{"total_item_count":4,"offset":0,"item_count":4,"banners":[{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F416.jpg&item_type=banner&store_id=168","banner_id":416,"name":"abcd","type":"none","language":null},{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168","banner_id":451,"name":"ÍabcíóÓúcdRÚüÜ","type":"none","language":"en"},{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168","banner_id":452,"name":"ÍabcíóÓúcdRÚüÜ","type":"none","language":"pt"},{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168","banner_id":1240,"name":"abcbanner","type":"tp_static_url","language":"en"}]}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:15 PM</td>
+				<td class='step-details'>
+						searchBannerBynameNegative Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='40'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByBannerName - searchBannerBynameNegative-Search Banner By Name with  blank  Search Iteam</span>
+						<span class='test-time'>Feb 21, 2022 05:14:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:15 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:16 PM</td>
+				<td class='step-details'>
+						Response 
+{"total_item_count":335,"offset":0,"item_count":10,"banners":[{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168","banner_id":450,"name":"Top Músicas","type":"realtone","language":"en"},{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F433.jpg&item_type=banner&store_id=168","banner_id":433,"name":"Banner_Dynamic_URL_1","type":"realtone","language":null},{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F432.jpg&item_type=banner&store_id=168","banner_id":432,"name":"Banner_Static_ULR_1","type":"realtone","language":null},{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F430.jpg&item_type=banner&store_id=168","banner_id":430,"name":"SampleBanner","type":"realtone","language":""},{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F64.jpg&item_type=banner&store_id=168","banner_id":64,"name":"Banner-1","type":"ringback","language":""},{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F65.jpg&item_type=banner&store_id=168","banner_id":65,"name":"Banner-2","type":"ringback","language":"ma"},{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F66.jpg&item_type=banner&store_id=168","banner_id":66,"name":"Banner-3","type":"ringback","language":""},{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2F67.jpg&item_type=banner&store_id=168","banner_id":67,"name":"Banner-4","type":"realtone","language":"hi"},{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2Fbanner1.jpg&item_type=banner&store_id=168","banner_id":170,"name":"banner168_1","type":"none","language":null},{"image_url":"https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=banner_url%2Fbanner2.jpg&item_type=banner&store_id=168","banner_id":172,"name":"banner168_2","type":"none","language":null}]}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:16 PM</td>
+				<td class='step-details'>
+						searchBannerBynameNegative Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='41'>
+					<div class='test-heading'>
+						<span class='test-name'>DeleteBannerById - deleteBannerByID-Delete Banner id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:16 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:16 PM</td>
+				<td class='step-details'>
+						statucode : 200Banner ID is deleted
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:16 PM</td>
+				<td class='step-details'>
+						deleteBannerByID Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='42'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateBannerCollection - createChatByChatName-Create Collection Banner with valid store id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:16 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:16 PM</td>
+				<td class='step-details'>
+						Banner Collection ID is created ---> {
     "banner_collection_id": 320,
     "banner_collection_name": "RIP PUNITH_Hk6oox9oAU",
     "banner_collection_type": "promotional",
     "storeId": 168
 }
-21/02/2022 17:14:17 devpinoyLogger 
-21/02/2022 17:14:17 devpinoyLogger 
-21/02/2022 17:14:17 devpinoyLogger 
-21/02/2022 17:14:17 devpinoyLogger 
-21/02/2022 17:14:17 devpinoyLogger 
-21/02/2022 17:14:18 devpinoyLogger [
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:16 PM</td>
+				<td class='step-details'>
+						createChatByChatName Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='43'>
+					<div class='test-heading'>
+						<span class='test-name'>GetBannerCollectionByID - getBannerCollectionsByID_NegativeScenarios-Get Banner Collection By ID with invalid store ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:16 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:17 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:17 PM</td>
+				<td class='step-details'>
+						getBannerCollectionsByID_NegativeScenarios Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='44'>
+					<div class='test-heading'>
+						<span class='test-name'>GetBannerCollectionByID - getBannerCollectionsByID_NegativeScenarios-Get Banner Collection By ID with invalid  Banner Collection ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:17 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:17 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:17 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:17 PM</td>
+				<td class='step-details'>
+						getBannerCollectionsByID_NegativeScenarios Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='45'>
+					<div class='test-heading'>
+						<span class='test-name'>GetBannerCollectionByID - getBannerCollectionsByID_NegativeScenarios-Get Banner Collection By ID with invalid  Query Param i.e Response</span>
+						<span class='test-time'>Feb 21, 2022 05:14:17 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:17 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:17 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:17 PM</td>
+				<td class='step-details'>
+						getBannerCollectionsByID_NegativeScenarios Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='46'>
+					<div class='test-heading'>
+						<span class='test-name'>GetBannerCollectionByID - getBannerCollectionsById-Get Collection By ID with Valid Banner Collection ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:17 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:17 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:17 PM</td>
+				<td class='step-details'>
+						Response{
+    "store_id": 168,
+    "banners": [
+        
+    ],
+    "banner_collection_id": 320,
+    "banner_collection_name": "RIP PUNITH_Hk6oox9oAU",
+    "banner_collection_type": "promotional"
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:17 PM</td>
+				<td class='step-details'>
+						Veified the Banner Collection ID : 320
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:17 PM</td>
+				<td class='step-details'>
+						getBannerCollectionsById Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='47'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllBannerCollections - NegativeGetAllBanner-Get All Banner Collection with Invalid store ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:17 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:17 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:17 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:17 PM</td>
+				<td class='step-details'>
+						NegativeGetAllBanner Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='48'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllBannerCollections - NegativeGetAllBanner-Get All Banner Collection with Invalid query Param i.e response</span>
+						<span class='test-time'>Feb 21, 2022 05:14:17 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:17 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:17 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:17 PM</td>
+				<td class='step-details'>
+						NegativeGetAllBanner Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='49'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllBannerCollections - getAllBannerCollections-Get All Banner Collection with valid data</span>
+						<span class='test-time'>Feb 21, 2022 05:14:17 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:17 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:18 PM</td>
+				<td class='step-details'>
+						Response[
     {
         "store_id": 168,
         "banner_collection_id": 230,
@@ -3714,7 +6220,49 @@
         "banner_collection_type": "promotional"
     }
 ]
-21/02/2022 17:14:18 devpinoyLogger {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:18 PM</td>
+				<td class='step-details'>
+						getAllBannerCollections Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='50'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchBannerCollectionByName - searchBannerCollectionByname-Search Banner Collection By Name with valid Test Data</span>
+						<span class='test-time'>Feb 21, 2022 05:14:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:18 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:18 PM</td>
+				<td class='step-details'>
+						Response{
     "total_item_count": 1,
     "offset": 0,
     "item_count": 1,
@@ -3728,24 +6276,271 @@
         }
     ]
 }
-21/02/2022 17:14:18 devpinoyLogger 
-21/02/2022 17:14:18 devpinoyLogger {
-    "code": "VOL_CTLG_0037",
-    "sub_code": "VOL_CTLG_BNNR_003",
-    "summary": "SEARCH_BY_BANNER_COLLECTION_NAME:SEARCH_BY_BANNER_COLLECTION_NAME",
-    "description": "storeId must not be null or blank.",
-    "status_code": "USECASE_ILLEGAL_ARGUMENT_EXCEPTION"
-}
-21/02/2022 17:14:19 devpinoyLogger Banner collection ID is deleted ----> 
-21/02/2022 17:14:19 devpinoyLogger Negative Scenarios of  ---> 
-21/02/2022 17:14:19 devpinoyLogger Negative Scenarios of  ---> {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:18 PM</td>
+				<td class='step-details'>
+						searchBannerCollectionByname Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='51'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchBannerCollectionByName - searchBannerCollectionBynameNegative-Search By Banner Collection by name with Invalid store id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:18 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:18 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:18 PM</td>
+				<td class='step-details'>
+						searchBannerCollectionBynameNegative Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='52'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchBannerCollectionByName - searchBannerCollectionBynameNegative-Search By Banner Collection by name with Invalid blank Search Iteam</span>
+						<span class='test-time'>Feb 21, 2022 05:14:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:18 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:18 PM</td>
+				<td class='step-details'>
+						Response 
+{"code":"VOL_CTLG_0037","sub_code":"VOL_CTLG_BNNR_003","summary":"SEARCH_BY_BANNER_COLLECTION_NAME:SEARCH_BY_BANNER_COLLECTION_NAME","description":"storeId must not be null or blank.","status_code":"USECASE_ILLEGAL_ARGUMENT_EXCEPTION"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:18 PM</td>
+				<td class='step-details'>
+						searchBannerCollectionBynameNegative Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='53'>
+					<div class='test-heading'>
+						<span class='test-name'>DeleteBannerCollecion - deleteBannerCollectionByID-Delete Banner Collection with valid banner Collection</span>
+						<span class='test-time'>Feb 21, 2022 05:14:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:18 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:19 PM</td>
+				<td class='step-details'>
+						statucode : 200Theme_id is deleted
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:19 PM</td>
+				<td class='step-details'>
+						deleteBannerCollectionByID Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='54'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateChat - NegativeScenarioCreateChat-Create Chat with Invalid Store_id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:19 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:19 PM</td>
+				<td class='step-details'>
+						Negative Scenarios of  --->
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:19 PM</td>
+				<td class='step-details'>
+						NegativeScenarioCreateChat Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='55'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateChat - NegativeScenarioCreateChat-Create Chat with Blank Chart_Name</span>
+						<span class='test-time'>Feb 21, 2022 05:14:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:19 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:19 PM</td>
+				<td class='step-details'>
+						Negative Scenarios of  ---> {
     "code": "chart_name",
     "sub_code": "request_body",
     "summary": "VOL_CTLG_CHART_001:CHART:CHART:CREATE_CHART",
     "description": "must not be null or blank.",
     "status_code": "ENTRYWAY_REQUEST_VALIDATION_EXCEPTION"
 }
-21/02/2022 17:14:19 devpinoyLogger Negative Scenarios of  ---> <html lang="en">
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:19 PM</td>
+				<td class='step-details'>
+						NegativeScenarioCreateChat Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='56'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateChat - NegativeScenarioCreateChat-Create Chat with Invalid  Chart Type</span>
+						<span class='test-time'>Feb 21, 2022 05:14:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:19 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:19 PM</td>
+				<td class='step-details'>
+						Negative Scenarios of  ---> <html lang="en">
   <head>
     <title>HTTP Status 500 – Internal Server Error</title>
     <style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style>
@@ -3754,7 +6549,49 @@
     <h1>HTTP Status 500 – Internal Server Error</h1>
   </body>
 </html>
-21/02/2022 17:14:19 devpinoyLogger {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:19 PM</td>
+				<td class='step-details'>
+						NegativeScenarioCreateChat Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='57'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateChat - createChatByChatName-Create Chat by Chat Name</span>
+						<span class='test-time'>Feb 21, 2022 05:14:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:19 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:19 PM</td>
+				<td class='step-details'>
+						Chart is created ---> {
     "chart_id": 1234627,
     "chart_name": "RIP_Punith_p1KqLiroSg",
     "store_id": 168,
@@ -3768,12 +6605,342 @@
         }
     ]
 }
-21/02/2022 17:14:20 devpinoyLogger 
-21/02/2022 17:14:20 devpinoyLogger 
-21/02/2022 17:14:20 devpinoyLogger 
-21/02/2022 17:14:20 devpinoyLogger 
-21/02/2022 17:14:20 devpinoyLogger 
-21/02/2022 17:14:28 devpinoyLogger [
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:19 PM</td>
+				<td class='step-details'>
+						createChatByChatName Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='58'>
+					<div class='test-heading'>
+						<span class='test-name'>GetChartByID - getCahrtById_NegativeTest-Invalid Store_id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:19 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:20 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:20 PM</td>
+				<td class='step-details'>
+						getCahrtById_NegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='59'>
+					<div class='test-heading'>
+						<span class='test-name'>GetChartByID - getCahrtById_NegativeTest-invalid query Param</span>
+						<span class='test-time'>Feb 21, 2022 05:14:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:20 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:20 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:20 PM</td>
+				<td class='step-details'>
+						getCahrtById_NegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='60'>
+					<div class='test-heading'>
+						<span class='test-name'>GetChartByID - getCahrtById_NegativeTest-invalid chart ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:20 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:20 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:20 PM</td>
+				<td class='step-details'>
+						getCahrtById_NegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='61'>
+					<div class='test-heading'>
+						<span class='test-name'>GetChartByID - getChartByID-Get Chart By Chat ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:20 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:20 PM</td>
+				<td class='step-details'>
+						Response{
+    "type": "chart",
+    "offset": 0,
+    "language": "en",
+    "item_count": 0,
+    "items": [
+        
+    ],
+    "chart_id": 1234627,
+    "chart_name": "RIP_Punith_p1KqLiroSg",
+    "chart_build_info": null,
+    "clearance_status_code": "D",
+    "additional_attributes": [
+        
+    ],
+    "tokens": [
+        
+    ],
+    "total_item_count": 0,
+    "locale_chart_names": [
+        {
+            "language": "",
+            "chart_name": "RIP_Punith_p1KqLiroSg",
+            "description": null
+        }
+    ],
+    "primary_image": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=168"
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:20 PM</td>
+				<td class='step-details'>
+						Veified the ChartID : 1234627
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:20 PM</td>
+				<td class='step-details'>
+						getChartByID Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='62'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllCharts - NegativeGetAllCharts-invalid Query param i.e response</span>
+						<span class='test-time'>Feb 21, 2022 05:14:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:20 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:20 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:20 PM</td>
+				<td class='step-details'>
+						NegativeGetAllCharts Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='63'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllCharts - NegativeGetAllCharts-invalid store_id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:20 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:20 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:20 PM</td>
+				<td class='step-details'>
+						NegativeGetAllCharts Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='64'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllCharts - getAllCharts-Get all charts</span>
+						<span class='test-time'>Feb 21, 2022 05:14:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:20 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:28 PM</td>
+				<td class='step-details'>
+						Response[
     {
         "language": "en",
         "purchasable": false,
@@ -19831,7 +22998,49 @@
         "primary_image": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=168"
     }
 ]
-21/02/2022 17:14:28 devpinoyLogger {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:28 PM</td>
+				<td class='step-details'>
+						getAllCharts Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='65'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByChartName - searchByChartName-Search Chart by chart name</span>
+						<span class='test-time'>Feb 21, 2022 05:14:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:28 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:28 PM</td>
+				<td class='step-details'>
+						Response{
     "total_item_count": 1,
     "offset": 0,
     "item_count": 1,
@@ -19846,42 +23055,635 @@
         }
     ]
 }
-21/02/2022 17:14:28 devpinoyLogger 
-21/02/2022 17:14:29 devpinoyLogger {
-    "total_item_count": 0,
-    "offset": 0,
-    "item_count": 0,
-    "charts": [
-        
-    ]
-}
-21/02/2022 17:14:29 devpinoyLogger chart  ID is delete ----> 1234627
-21/02/2022 17:14:29 devpinoyLogger Negative Scenarios of  ---> 
-21/02/2022 17:14:29 devpinoyLogger Negative Scenarios of  ---> {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:28 PM</td>
+				<td class='step-details'>
+						searchByChartName Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='66'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByChartName - searchByChartNameNegativeTest-Search Chart by chart name With invalid store id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:28 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:28 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:28 PM</td>
+				<td class='step-details'>
+						searchByChartNameNegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='67'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByChartName - searchByChartNameNegativeTest-Search Chart by chart name  with invalid search name</span>
+						<span class='test-time'>Feb 21, 2022 05:14:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:28 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:29 PM</td>
+				<td class='step-details'>
+						Response 
+{"total_item_count":0,"offset":0,"item_count":0,"charts":[]}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:29 PM</td>
+				<td class='step-details'>
+						searchByChartNameNegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='68'>
+					<div class='test-heading'>
+						<span class='test-name'>DeleteChartByID - deleteChartById-Delete Chart BY ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:29 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:29 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:29 PM</td>
+				<td class='step-details'>
+						statucode : 200chart_id is deleted
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:29 PM</td>
+				<td class='step-details'>
+						deleteChartById Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='69'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateChartCollection - NegativeScenarioCreateChat-create Chart collection by invalid store id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:29 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:29 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:29 PM</td>
+				<td class='step-details'>
+						Negative Scenarios of chart collection API --->
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:29 PM</td>
+				<td class='step-details'>
+						NegativeScenarioCreateChat Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='70'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateChartCollection - NegativeScenarioCreateChat-create Chart collection with blank collection name</span>
+						<span class='test-time'>Feb 21, 2022 05:14:29 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:29 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:29 PM</td>
+				<td class='step-details'>
+						Negative Scenarios of chart collection API ---> {
     "code": "chart_collection_name",
     "sub_code": "request_body",
     "summary": "VOL_CTLG_CHART_002:CHART:CHART_COLLECTION:CREATE_CHART_COLLECTION",
     "description": "must not be null or blank.",
     "status_code": "ENTRYWAY_REQUEST_VALIDATION_EXCEPTION"
 }
-21/02/2022 17:14:29 devpinoyLogger {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:29 PM</td>
+				<td class='step-details'>
+						NegativeScenarioCreateChat Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='71'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateChartCollection - createChatByChatName-Create Chart Collection by  chart collection name</span>
+						<span class='test-time'>Feb 21, 2022 05:14:29 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:29 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:29 PM</td>
+				<td class='step-details'>
+						Chart collection is created ---> {
     "chart_collection_id": 386,
     "chart_collection_name": "RIP_PUNITH_tigqkVgqnl",
     "store_id": 168
 }
-21/02/2022 17:14:30 devpinoyLogger 
-21/02/2022 17:14:30 devpinoyLogger {
-    "code": "VOL_CTLG_0004",
-    "sub_code": "VOL_CTLG_CHART_002",
-    "summary": "GET_CHART_COLLECTION:GET_CHART_COLLECTION_BY_ID",
-    "description": "invalid chart collection id",
-    "status_code": "INVALID_CHART_COLLECTION_ID"
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:29 PM</td>
+				<td class='step-details'>
+						createChatByChatName Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='72'>
+					<div class='test-heading'>
+						<span class='test-name'>GetChartCollectionByID - getChartCollectionByID-Get Chart Collection By ID positive sheet</span>
+						<span class='test-time'>Feb 21, 2022 05:14:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:30 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:30 PM</td>
+				<td class='step-details'>
+						Response{
+    "store_id": 168,
+    "chart_collection_name": "RIP_PUNITH_tigqkVgqnl",
+    "chart_collection_charts": [
+        
+    ],
+    "chart_collection_id": 386
 }
-21/02/2022 17:14:30 devpinoyLogger 
-21/02/2022 17:14:30 devpinoyLogger 
-21/02/2022 17:14:31 devpinoyLogger 
-21/02/2022 17:14:31 devpinoyLogger 
-21/02/2022 17:14:35 devpinoyLogger [
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:30 PM</td>
+				<td class='step-details'>
+						Veified the Chart collection id : null
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:30 PM</td>
+				<td class='step-details'>
+						getChartCollectionByID Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='73'>
+					<div class='test-heading'>
+						<span class='test-name'>GetChartCollectionByID - getChartCollectionById_NegativeTest-Get Chart Collection by invalid store ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:30 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:30 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:30 PM</td>
+				<td class='step-details'>
+						getChartCollectionById_NegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='74'>
+					<div class='test-heading'>
+						<span class='test-name'>GetChartCollectionByID - getChartCollectionById_NegativeTest-Get Chart Collection by invalid ChartCollection ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:30 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:30 PM</td>
+				<td class='step-details'>
+						Response 
+{"code":"VOL_CTLG_0004","sub_code":"VOL_CTLG_CHART_002","summary":"GET_CHART_COLLECTION:GET_CHART_COLLECTION_BY_ID","description":"invalid chart collection id","status_code":"INVALID_CHART_COLLECTION_ID"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:30 PM</td>
+				<td class='step-details'>
+						getChartCollectionById_NegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='75'>
+					<div class='test-heading'>
+						<span class='test-name'>GetChartCollectionByID - getChartCollectionById_NegativeTest-Get Chart Collection By Invalid Query param i.e response key</span>
+						<span class='test-time'>Feb 21, 2022 05:14:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:30 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:30 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:30 PM</td>
+				<td class='step-details'>
+						getChartCollectionById_NegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='76'>
+					<div class='test-heading'>
+						<span class='test-name'>GetChartCollectionByID - getChartCollectionById_NegativeTest-Get Chart Collection by invalid ChartCollection ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:30 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:30 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:30 PM</td>
+				<td class='step-details'>
+						getChartCollectionById_NegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='77'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllChartCollections - NegativeGetAllBanner-Get All chart collection by invalid Store_id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:30 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:31 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:31 PM</td>
+				<td class='step-details'>
+						NegativeGetAllBanner Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='78'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllChartCollections - NegativeGetAllBanner-Get All chart collection by invalid Query Param</span>
+						<span class='test-time'>Feb 21, 2022 05:14:31 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:31 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:31 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:31 PM</td>
+				<td class='step-details'>
+						NegativeGetAllBanner Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='79'>
+					<div class='test-heading'>
+						<span class='test-name'>GetAllChartCollections - getAllChartCollection-Get All collection chart Details</span>
+						<span class='test-time'>Feb 21, 2022 05:14:31 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:31 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:35 PM</td>
+				<td class='step-details'>
+						Response[
     {
         "store_id": 168,
         "chart_collection_name": "Top Músicas",
@@ -20273,15 +24075,136 @@
         "chart_collection_id": 381
     }
 ]
-21/02/2022 17:14:35 devpinoyLogger 
-21/02/2022 17:14:35 devpinoyLogger {
-    "code": "VOL_CTLG_0037",
-    "sub_code": "VOL_CTLG_BNNR_003",
-    "summary": "SEARCH_BY_BANNER_COLLECTION_NAME:SEARCH_BY_BANNER_COLLECTION_NAME",
-    "description": "chart collections not found168",
-    "status_code": "SEARCH_CHART_COLLECTION_NAMES_NOT_FOUND"
-}
-21/02/2022 17:14:36 devpinoyLogger {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:35 PM</td>
+				<td class='step-details'>
+						getAllChartCollection Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='80'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByChartCollectionName - getChartCollectionsNegativeTest-Search By Chart Collection Name with invalid store_id</span>
+						<span class='test-time'>Feb 21, 2022 05:14:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:35 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:35 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:35 PM</td>
+				<td class='step-details'>
+						getChartCollectionsNegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='81'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByChartCollectionName - getChartCollectionsNegativeTest-Search By Chart Collection Name with invalid collection Name</span>
+						<span class='test-time'>Feb 21, 2022 05:14:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:35 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:35 PM</td>
+				<td class='step-details'>
+						Response 
+{"code":"VOL_CTLG_0037","sub_code":"VOL_CTLG_BNNR_003","summary":"SEARCH_BY_BANNER_COLLECTION_NAME:SEARCH_BY_BANNER_COLLECTION_NAME","description":"chart collections not found168","status_code":"SEARCH_CHART_COLLECTION_NAMES_NOT_FOUND"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:35 PM</td>
+				<td class='step-details'>
+						getChartCollectionsNegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='82'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchByChartCollectionName - searchChartByCollectionName-Search By Chat collection with valid Search Name</span>
+						<span class='test-time'>Feb 21, 2022 05:14:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:35 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:36 PM</td>
+				<td class='step-details'>
+						Response{
     "total_item_count": 1,
     "offset": 0,
     "item_count": 1,
@@ -20294,31 +24217,449 @@
         }
     ]
 }
-21/02/2022 17:14:36 devpinoyLogger Chart collection ID is deleted ----> 
-21/02/2022 17:14:36 devpinoyLogger {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:36 PM</td>
+				<td class='step-details'>
+						searchChartByCollectionName Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='83'>
+					<div class='test-heading'>
+						<span class='test-name'>DeleteChartCollectionByID - deleteChartCollectionById-Delete Chart Collection By Chart Collection ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:36 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:36 PM</td>
+				<td class='step-details'>
+						statucode : 200chart collection is deleted
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:36 PM</td>
+				<td class='step-details'>
+						deleteChartCollectionById Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='84'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateFaq - createChatByChatName-Create FAQ with valid store ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:36 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:36 PM</td>
+				<td class='step-details'>
+						Chart is created ---> {
     "faq_id": 163,
     "text": "sample text",
     "url": "url with modified data",
     "language": "kannada_j8",
     "last_updated": "2022-02-21T11:41:03.063"
 }
-21/02/2022 17:14:37 devpinoyLogger 
-21/02/2022 17:14:37 devpinoyLogger {
-    "code": "VOL_CTLG_0027",
-    "sub_code": "VOL_CTLG_FAQ_001",
-    "summary": "GET_FAQ:GET_FAQ",
-    "description": "FAQ not found for store_id: 168",
-    "status_code": "NO_CONTENT_FOUND"
-}
-21/02/2022 17:14:37 devpinoyLogger {
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:36 PM</td>
+				<td class='step-details'>
+						createChatByChatName Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='85'>
+					<div class='test-heading'>
+						<span class='test-name'>GetFaq - getFaqByFaqId-Get FAQ By store id and launguage</span>
+						<span class='test-time'>Feb 21, 2022 05:14:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:36 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:37 PM</td>
+				<td class='step-details'>
+						Response{
     "faqs": [
         {
-            "language": "",
-            "text": "",
-            "url": "http://172.19.113.32:8833/faq/App_FAQ_Final_updated.html",
-            "last_updated": "2021-07-26T11:55:50",
-            "faq_id": 107
+            "language": "kannada_j8",
+            "text": "sample text",
+            "url": "url with modified data",
+            "last_updated": "2022-02-21T11:41:03",
+            "faq_id": 163
         }
     ]
 }
-21/02/2022 17:14:37 devpinoyLogger 
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:37 PM</td>
+				<td class='step-details'>
+						Veified the ChartID : null
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:37 PM</td>
+				<td class='step-details'>
+						getFaqByFaqId Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='86'>
+					<div class='test-heading'>
+						<span class='test-name'>GetFaq - getFaqByFaqIdNegativeTest-Get FAQ with Invalid Store ID</span>
+						<span class='test-time'>Feb 21, 2022 05:14:37 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:37 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:37 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:37 PM</td>
+				<td class='step-details'>
+						getFaqByFaqIdNegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='87'>
+					<div class='test-heading'>
+						<span class='test-name'>GetFaq - getFaqByFaqIdNegativeTest-Get FAQ with Invalid language</span>
+						<span class='test-time'>Feb 21, 2022 05:14:37 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:37 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:37 PM</td>
+				<td class='step-details'>
+						Response 
+{"code":"VOL_CTLG_0027","sub_code":"VOL_CTLG_FAQ_001","summary":"GET_FAQ:GET_FAQ","description":"FAQ not found for store_id: 168","status_code":"NO_CONTENT_FOUND"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:37 PM</td>
+				<td class='step-details'>
+						getFaqByFaqIdNegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='88'>
+					<div class='test-heading'>
+						<span class='test-name'>GetFaq - getFaqByFaqIdNegativeTest-Get FAQ with Blank language</span>
+						<span class='test-time'>Feb 21, 2022 05:14:37 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:37 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:37 PM</td>
+				<td class='step-details'>
+						Response 
+{"faqs":[{"language":"","text":"","url":"http://172.19.113.32:8833/faq/App_FAQ_Final_updated.html","last_updated":"2021-07-26T11:55:50","faq_id":107}]}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:37 PM</td>
+				<td class='step-details'>
+						getFaqByFaqIdNegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='89'>
+					<div class='test-heading'>
+						<span class='test-name'>GetFaq - getFaqByFaqIdNegativeTest-Get FAQ with Invalid query Param</span>
+						<span class='test-time'>Feb 21, 2022 05:14:37 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 21, 2022 05:14:37 PM</span>
+	<span class='label end-time'>Feb 21, 2022 05:14:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:37 PM</td>
+				<td class='step-details'>
+						Response
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:37 PM</td>
+				<td class='step-details'>
+						getFaqByFaqIdNegativeTest Passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>89</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Feb 21, 2022 05:13:53 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Feb 21, 2022 05:14:39 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 0m 46s+547ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 89,
+				passParent: 89,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				childCount: 0,
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 0,
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		<script>
+			var timeline = {
+			        "CreateTheme - createThemByThemeName-Create Tme ID":0,"UpdateThemeImageURL - updateThemeImageURL-Update Theme_url by Theme_id":0,"UpdateTheme - updateTheme-Update Theme_url by Theme_id":0,"GetThemeByID - getThemeByThemeID-Get Theme by Theme_ID":0.001,"GetThemeByID - getThemeByThemeid_NegativeScenarios-Invalid ThemeID":0.001,"GetThemeByID - getThemeByThemeid_NegativeScenarios-Invalid StoreID":0.001,"GetAllThemes - getAllThemes-Get All themes":0,"UploadThemeImage - uploadThemeImage-Upload Theme Image":0,"CreateThemeCollection - createThemByThemeName-Create Theme collection":0.001,"UpdateThemeCollection - updateTheme-Update Theme Collection by Collection Theme ID":0,"GetThemeCollectionByID - InvalidThemeCollection-Invalid Theme Collection ID":0,"GetThemeCollectionByID - InvalidThemeCollection-Invalid StoreID":0,"GetThemeCollectionByID - InvalidThemeCollection-Invalid StoreID and Collection ID":0.001,"GetThemeCollectionByID - InvalidThemeCollection-Invalid query param":0,"GetThemeCollectionByID - InvalidThemeCollection-Blank query param":0,"GetThemeCollectionByID - getThemeCollection-Get theme Collection By Collection Theme ID":0,"GetAllCollectionThemes - validateThemesRequest-Get all Theme collections":0,"SearchByThemeName - searchThemeByThemeNameNegativeScenarioes-Inavlid Search_Iteam":0,"SearchByThemeName - searchThemeByThemeNameNegativeScenarioes-invalid store ID":0,"SearchByThemeName - validateSearchThemeByThemeName-Get Theme By Theme Name":0,"SearchByThemeCollectionName - searchThemeCollection-Search Theme Collection by Collection Theme Name":0,"SearchByThemeCollectionName - searchThemeCollectionNegativeScenarioes-Invalid Store_id":0,"SearchByThemeCollectionName - searchThemeCollectionNegativeScenarioes-Invalid Search":0,"SearchByThemeCollectionName - searchThemeCollectionNegativeScenarioes-Blank search":0,"DeleteThemeByID - deleteThemeID-Delete Theme BY Theme_id":0,"DeleteThemeCollectionByID - getAttributes-Delete Collection Theme by Theme collection ID":0,"GetThemeAttributes - getAttributes-Positive Testcase":0,"CreateBanner - createBanner-Create Banner":0,"CreateBanner - createBannerNegative-Create Banner":0,"GetAllBanner - NegativeGetAllBanner-Invalid Store Id":0,"GetAllBanner - NegativeGetAllBanner-Invalid Query Param":0,"GetAllBanner - getAllBanners-Get All Banners positive sheet":0,"GetBannerById - getBannerByID-Get All Banners positive sheet":0,"GetBannerById - getBannerById_NegativeScenarios-Invalid Store Id":0,"GetBannerById - getBannerById_NegativeScenarios-Invalid Query Param":0,"UpdateBanner - updateTheme-Update Banner ID":0,"SearchByBannerName - searchBannerByname-Search Banner By Name with Valid Test Data":0,"SearchByBannerName - searchBannerBynameNegative-Search Banner By Name with inValid Store ID":0,"SearchByBannerName - searchBannerBynameNegative-Search Banner By Name with inValid Search Iteam":0,"SearchByBannerName - searchBannerBynameNegative-Search Banner By Name with  blank  Search Iteam":0.001,"DeleteBannerById - deleteBannerByID-Delete Banner id":0,"CreateBannerCollection - createChatByChatName-Create Collection Banner with valid store id":0,"GetBannerCollectionByID - getBannerCollectionsByID_NegativeScenarios-Get Banner Collection By ID with invalid store ID":0,"GetBannerCollectionByID - getBannerCollectionsByID_NegativeScenarios-Get Banner Collection By ID with invalid  Banner Collection ID":0,"GetBannerCollectionByID - getBannerCollectionsByID_NegativeScenarios-Get Banner Collection By ID with invalid  Query Param i.e Response":0,"GetBannerCollectionByID - getBannerCollectionsById-Get Collection By ID with Valid Banner Collection ID":0,"GetAllBannerCollections - NegativeGetAllBanner-Get All Banner Collection with Invalid store ID":0,"GetAllBannerCollections - NegativeGetAllBanner-Get All Banner Collection with Invalid query Param i.e response":0,"GetAllBannerCollections - getAllBannerCollections-Get All Banner Collection with valid data":0,"SearchBannerCollectionByName - searchBannerCollectionByname-Search Banner Collection By Name with valid Test Data":0,"SearchBannerCollectionByName - searchBannerCollectionBynameNegative-Search By Banner Collection by name with Invalid store id":0,"SearchBannerCollectionByName - searchBannerCollectionBynameNegative-Search By Banner Collection by name with Invalid blank Search Iteam":0,"DeleteBannerCollecion - deleteBannerCollectionByID-Delete Banner Collection with valid banner Collection":0,"CreateChat - NegativeScenarioCreateChat-Create Chat with Invalid Store_id":0,"CreateChat - NegativeScenarioCreateChat-Create Chat with Blank Chart_Name":0,"CreateChat - NegativeScenarioCreateChat-Create Chat with Invalid  Chart Type":0,"CreateChat - createChatByChatName-Create Chat by Chat Name":0,"GetChartByID - getCahrtById_NegativeTest-Invalid Store_id":0,"GetChartByID - getCahrtById_NegativeTest-invalid query Param":0,"GetChartByID - getCahrtById_NegativeTest-invalid chart ID":0,"GetChartByID - getChartByID-Get Chart By Chat ID":0,"GetAllCharts - NegativeGetAllCharts-invalid Query param i.e response":0,"GetAllCharts - NegativeGetAllCharts-invalid store_id":0,"GetAllCharts - getAllCharts-Get all charts":0,"SearchByChartName - searchByChartName-Search Chart by chart name":0,"SearchByChartName - searchByChartNameNegativeTest-Search Chart by chart name With invalid store id":0,"SearchByChartName - searchByChartNameNegativeTest-Search Chart by chart name  with invalid search name":0,"DeleteChartByID - deleteChartById-Delete Chart BY ID":0,"CreateChartCollection - NegativeScenarioCreateChat-create Chart collection by invalid store id":0,"CreateChartCollection - NegativeScenarioCreateChat-create Chart collection with blank collection name":0,"CreateChartCollection - createChatByChatName-Create Chart Collection by  chart collection name":0,"GetChartCollectionByID - getChartCollectionByID-Get Chart Collection By ID positive sheet":0,"GetChartCollectionByID - getChartCollectionById_NegativeTest-Get Chart Collection by invalid store ID":0,"GetChartCollectionByID - getChartCollectionById_NegativeTest-Get Chart Collection by invalid ChartCollection ID":0,"GetChartCollectionByID - getChartCollectionById_NegativeTest-Get Chart Collection By Invalid Query param i.e response key":0,"GetChartCollectionByID - getChartCollectionById_NegativeTest-Get Chart Collection by invalid ChartCollection ID":0,"GetAllChartCollections - NegativeGetAllBanner-Get All chart collection by invalid Store_id":0,"GetAllChartCollections - NegativeGetAllBanner-Get All chart collection by invalid Query Param":0,"GetAllChartCollections - getAllChartCollection-Get All collection chart Details":0,"SearchByChartCollectionName - getChartCollectionsNegativeTest-Search By Chart Collection Name with invalid store_id":0,"SearchByChartCollectionName - getChartCollectionsNegativeTest-Search By Chart Collection Name with invalid collection Name":0,"SearchByChartCollectionName - searchChartByCollectionName-Search By Chat collection with valid Search Name":0,"DeleteChartCollectionByID - deleteChartCollectionById-Delete Chart Collection By Chart Collection ID":0,"CreateFaq - createChatByChatName-Create FAQ with valid store ID":0,"GetFaq - getFaqByFaqId-Get FAQ By store id and launguage":0,"GetFaq - getFaqByFaqIdNegativeTest-Get FAQ with Invalid Store ID":0,"GetFaq - getFaqByFaqIdNegativeTest-Get FAQ with Invalid language":0,"GetFaq - getFaqByFaqIdNegativeTest-Get FAQ with Blank language":0,"GetFaq - getFaqByFaqIdNegativeTest-Get FAQ with Invalid query Param":0
+			};
+		</script>
+		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/c23457b/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+		</script>
+	</body>
+</html>
