@@ -1,26 +1,26 @@
-21/02/2022 17:13:55 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@302edb74
-21/02/2022 17:13:56 devpinoyLogger {
-    "theme_id": 229,
+22/02/2022 17:17:06 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@4db60246
+22/02/2022 17:17:08 devpinoyLogger {
+    "theme_id": 240,
     "store_id": 168,
-    "theme_name": "RIP Punith _ mnPDvdS3AB"
+    "theme_name": "RIP Punith _ KYypB5jWu6"
 }
-21/02/2022 17:13:57 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@3de79067
-21/02/2022 17:13:57 devpinoyLogger {
-    "theme_id": 229,
+22/02/2022 17:17:08 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@561d88ee
+22/02/2022 17:17:08 devpinoyLogger {
+    "theme_id": 240,
     "store_id": 168,
-    "theme_name": "RIP Punith _ mnPDvdS3AB",
-    "image_url": "http://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=theme_url%2F229.jpeg&item_type=theme&store_id=168",
+    "theme_name": "RIP Punith _ KYypB5jWu6",
+    "image_url": "http://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=theme_url%2F240.jpeg&item_type=theme&store_id=168",
     "theme_attributes": [
         {
-            "entity_id": 136,
+            "entity_id": 147,
             "attribute_id": 2,
             "attribute_name": "display_style",
             "attribute_value": "Front"
         }
     ]
 }
-21/02/2022 17:13:57 devpinoyLogger 200
-21/02/2022 17:14:01 devpinoyLogger [
+22/02/2022 17:17:08 devpinoyLogger 200
+22/02/2022 17:17:11 devpinoyLogger [
     {
         "theme_id": 1,
         "store_id": 168,
@@ -634,17 +634,17 @@
         "theme_name": "RIP "
     },
     {
-        "theme_id": 229,
+        "theme_id": 240,
         "store_id": 168,
-        "image_url": "http://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=theme_url%2F229.jpeg&item_type=theme&store_id=168",
-        "theme_name": "RIP Punith _ mnPDvdS3AB"
+        "image_url": "http://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=theme_url%2F240.jpeg&item_type=theme&store_id=168",
+        "theme_name": "RIP Punith _ KYypB5jWu6"
     }
 ]
-21/02/2022 17:14:08 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@68479e8b
-21/02/2022 17:14:12 devpinoyLogger 
-21/02/2022 17:14:13 devpinoyLogger {
-    "banner_id": 1417,
-    "name": "RIP_PUNITH_Q0yMOVjccT",
+22/02/2022 17:17:17 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@20fa5277
+22/02/2022 17:17:20 devpinoyLogger 
+22/02/2022 17:17:21 devpinoyLogger {
+    "banner_id": 1439,
+    "name": "RIP_PUNITH_jTgVDUtHx0",
     "language": "English ",
     "store_id": 168,
     "type": "none",
@@ -657,14 +657,14 @@
     "banner_names": [
         {
             "language_name": "",
-            "name": "RIP_PUNITH_Q0yMOVjccT"
+            "name": "RIP_PUNITH_jTgVDUtHx0"
         }
     ],
     "banner_build_infos": null,
     "banner_subscriptions": null
 }
-21/02/2022 17:14:13 devpinoyLogger Negative Scenarios of  ---> {
-    "banner_id": 1418,
+22/02/2022 17:17:21 devpinoyLogger Negative Scenarios of  ---> {
+    "banner_id": 1440,
     "name": "RIP_PUNITH",
     "language": "English ",
     "store_id": 390,
@@ -684,9 +684,9 @@
     "banner_build_infos": null,
     "banner_subscriptions": null
 }
-21/02/2022 17:14:13 devpinoyLogger 
-21/02/2022 17:14:13 devpinoyLogger 
-21/02/2022 17:14:14 devpinoyLogger [
+22/02/2022 17:17:21 devpinoyLogger 
+22/02/2022 17:17:21 devpinoyLogger 
+22/02/2022 17:17:22 devpinoyLogger [
     {
         "store_id": 168,
         "type": "realtone",
@@ -2475,7 +2475,7 @@
     {
         "store_id": 168,
         "type": "ringback",
-        "id": "12754750",
+        "id": "100011",
         "banner_id": 713,
         "name": "S_banner1"
     },
@@ -2629,7 +2629,7 @@
     {
         "store_id": 168,
         "type": "ringback",
-        "id": "11194712",
+        "id": "105",
         "banner_id": 748,
         "name": "canceled"
     },
@@ -3029,16 +3029,16 @@
         "store_id": 168,
         "type": "none",
         "id": null,
-        "banner_id": 1417,
-        "name": "RIP_PUNITH_Q0yMOVjccT"
+        "banner_id": 1439,
+        "name": "RIP_PUNITH_jTgVDUtHx0"
     }
 ]
-21/02/2022 17:14:14 devpinoyLogger 
-21/02/2022 17:14:14 devpinoyLogger 
-21/02/2022 17:14:14 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@1c4aa701
-21/02/2022 17:14:15 devpinoyLogger {
-    "banner_id": 1417,
-    "name": "RIP_PUNITH_Q0yMOVjccT",
+22/02/2022 17:17:22 devpinoyLogger 
+22/02/2022 17:17:22 devpinoyLogger 
+22/02/2022 17:17:22 devpinoyLogger io.restassured.internal.RequestSpecificationImpl@14c18a6a
+22/02/2022 17:17:23 devpinoyLogger {
+    "banner_id": 1439,
+    "name": "RIP_PUNITH_jTgVDUtHx0",
     "language": "English ",
     "store_id": 168,
     "type": "none",
@@ -3051,7 +3051,7 @@
     "banner_names": [
         {
             "language_name": "",
-            "name": "RIP_PUNITH_Q0yMOVjccT"
+            "name": "RIP_PUNITH_jTgVDUtHx0"
         },
         {
             "language_name": "english",
@@ -3074,23 +3074,23 @@
     ],
     "banner_subscriptions": null
 }
-21/02/2022 17:14:15 devpinoyLogger 200
-21/02/2022 17:14:15 devpinoyLogger {
+22/02/2022 17:17:23 devpinoyLogger 200
+22/02/2022 17:17:23 devpinoyLogger {
     "total_item_count": 1,
     "offset": 0,
     "item_count": 1,
     "banners": [
         {
             "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=banner&store_id=168",
-            "banner_id": 1417,
-            "name": "RIP_PUNITH_Q0yMOVjccT",
+            "banner_id": 1439,
+            "name": "RIP_PUNITH_jTgVDUtHx0",
             "type": "none",
             "language": "English "
         }
     ]
 }
-21/02/2022 17:14:15 devpinoyLogger 
-21/02/2022 17:14:15 devpinoyLogger {
+22/02/2022 17:17:23 devpinoyLogger 
+22/02/2022 17:17:23 devpinoyLogger {
     "total_item_count": 4,
     "offset": 0,
     "item_count": 4,
@@ -3125,7 +3125,7 @@
         }
     ]
 }
-21/02/2022 17:14:16 devpinoyLogger {
+22/02/2022 17:17:24 devpinoyLogger {
     "total_item_count": 335,
     "offset": 0,
     "item_count": 10,
@@ -3202,19 +3202,19 @@
         }
     ]
 }
-21/02/2022 17:14:16 devpinoyLogger Banner ID is deleted ----> 
-21/02/2022 17:14:16 devpinoyLogger {
-    "banner_collection_id": 320,
-    "banner_collection_name": "RIP PUNITH_Hk6oox9oAU",
+22/02/2022 17:17:24 devpinoyLogger Banner ID is deleted ----> 
+22/02/2022 17:17:24 devpinoyLogger {
+    "banner_collection_id": 331,
+    "banner_collection_name": "RIP PUNITH_Rr0y2yeUHz",
     "banner_collection_type": "promotional",
     "storeId": 168
 }
-21/02/2022 17:14:17 devpinoyLogger 
-21/02/2022 17:14:17 devpinoyLogger 
-21/02/2022 17:14:17 devpinoyLogger 
-21/02/2022 17:14:17 devpinoyLogger 
-21/02/2022 17:14:17 devpinoyLogger 
-21/02/2022 17:14:18 devpinoyLogger [
+22/02/2022 17:17:24 devpinoyLogger 
+22/02/2022 17:17:24 devpinoyLogger 
+22/02/2022 17:17:25 devpinoyLogger 
+22/02/2022 17:17:25 devpinoyLogger 
+22/02/2022 17:17:25 devpinoyLogger 
+22/02/2022 17:17:25 devpinoyLogger [
     {
         "store_id": 168,
         "banner_collection_id": 230,
@@ -3709,43 +3709,43 @@
     },
     {
         "store_id": 168,
-        "banner_collection_id": 320,
-        "banner_collection_name": "RIP PUNITH_Hk6oox9oAU",
+        "banner_collection_id": 331,
+        "banner_collection_name": "RIP PUNITH_Rr0y2yeUHz",
         "banner_collection_type": "promotional"
     }
 ]
-21/02/2022 17:14:18 devpinoyLogger {
+22/02/2022 17:17:26 devpinoyLogger {
     "total_item_count": 1,
     "offset": 0,
     "item_count": 1,
     "banner_collections": [
         {
-            "banner_collection_id": 320,
-            "banner_collection_name": "RIP PUNITH_Hk6oox9oAU",
+            "banner_collection_id": 331,
+            "banner_collection_name": "RIP PUNITH_Rr0y2yeUHz",
             "banner_collection_type": "promotional",
             "store_id": 168,
             "banners": null
         }
     ]
 }
-21/02/2022 17:14:18 devpinoyLogger 
-21/02/2022 17:14:18 devpinoyLogger {
+22/02/2022 17:17:26 devpinoyLogger 
+22/02/2022 17:17:26 devpinoyLogger {
     "code": "VOL_CTLG_0037",
     "sub_code": "VOL_CTLG_BNNR_003",
     "summary": "SEARCH_BY_BANNER_COLLECTION_NAME:SEARCH_BY_BANNER_COLLECTION_NAME",
     "description": "storeId must not be null or blank.",
     "status_code": "USECASE_ILLEGAL_ARGUMENT_EXCEPTION"
 }
-21/02/2022 17:14:19 devpinoyLogger Banner collection ID is deleted ----> 
-21/02/2022 17:14:19 devpinoyLogger Negative Scenarios of  ---> 
-21/02/2022 17:14:19 devpinoyLogger Negative Scenarios of  ---> {
+22/02/2022 17:17:26 devpinoyLogger Banner collection ID is deleted ----> 
+22/02/2022 17:17:26 devpinoyLogger Negative Scenarios of  ---> 
+22/02/2022 17:17:27 devpinoyLogger Negative Scenarios of  ---> {
     "code": "chart_name",
     "sub_code": "request_body",
     "summary": "VOL_CTLG_CHART_001:CHART:CHART:CREATE_CHART",
     "description": "must not be null or blank.",
     "status_code": "ENTRYWAY_REQUEST_VALIDATION_EXCEPTION"
 }
-21/02/2022 17:14:19 devpinoyLogger Negative Scenarios of  ---> <html lang="en">
+22/02/2022 17:17:27 devpinoyLogger Negative Scenarios of  ---> <html lang="en">
   <head>
     <title>HTTP Status 500 – Internal Server Error</title>
     <style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style>
@@ -3754,26 +3754,26 @@
     <h1>HTTP Status 500 – Internal Server Error</h1>
   </body>
 </html>
-21/02/2022 17:14:19 devpinoyLogger {
-    "chart_id": 1234627,
-    "chart_name": "RIP_Punith_p1KqLiroSg",
+22/02/2022 17:17:27 devpinoyLogger {
+    "chart_id": 1234638,
+    "chart_name": "RIP_Punith_ltsbuOuSSY",
     "store_id": 168,
     "type": "chart",
     "language": "en",
     "locale_chart_names": [
         {
             "language": "",
-            "chart_name": "RIP_Punith_p1KqLiroSg",
+            "chart_name": "RIP_Punith_ltsbuOuSSY",
             "description": null
         }
     ]
 }
-21/02/2022 17:14:20 devpinoyLogger 
-21/02/2022 17:14:20 devpinoyLogger 
-21/02/2022 17:14:20 devpinoyLogger 
-21/02/2022 17:14:20 devpinoyLogger 
-21/02/2022 17:14:20 devpinoyLogger 
-21/02/2022 17:14:28 devpinoyLogger [
+22/02/2022 17:17:27 devpinoyLogger 
+22/02/2022 17:17:27 devpinoyLogger 
+22/02/2022 17:17:28 devpinoyLogger 
+22/02/2022 17:17:28 devpinoyLogger 
+22/02/2022 17:17:28 devpinoyLogger 
+22/02/2022 17:17:32 devpinoyLogger [
     {
         "language": "en",
         "purchasable": false,
@@ -19825,29 +19825,29 @@
         "language": "en",
         "purchasable": false,
         "store_id": 168,
-        "chart_id": 1234627,
-        "chart_name": "RIP_Punith_p1KqLiroSg",
+        "chart_id": 1234638,
+        "chart_name": "RIP_Punith_ltsbuOuSSY",
         "type": "chart",
         "primary_image": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=168"
     }
 ]
-21/02/2022 17:14:28 devpinoyLogger {
+22/02/2022 17:17:32 devpinoyLogger {
     "total_item_count": 1,
     "offset": 0,
     "item_count": 1,
     "charts": [
         {
             "image_url": "https://rbtqa.onmobile.com/nstreaming/v3/image?width=100&target=&item_type=chart&store_id=168",
-            "chart_id": 1234627,
-            "chart_name": "RIP_Punith_p1KqLiroSg",
+            "chart_id": 1234638,
+            "chart_name": "RIP_Punith_ltsbuOuSSY",
             "purchasable": false,
             "type": "chart",
             "language": "en"
         }
     ]
 }
-21/02/2022 17:14:28 devpinoyLogger 
-21/02/2022 17:14:29 devpinoyLogger {
+22/02/2022 17:17:33 devpinoyLogger 
+22/02/2022 17:17:33 devpinoyLogger {
     "total_item_count": 0,
     "offset": 0,
     "item_count": 0,
@@ -19855,33 +19855,33 @@
         
     ]
 }
-21/02/2022 17:14:29 devpinoyLogger chart  ID is delete ----> 1234627
-21/02/2022 17:14:29 devpinoyLogger Negative Scenarios of  ---> 
-21/02/2022 17:14:29 devpinoyLogger Negative Scenarios of  ---> {
+22/02/2022 17:17:33 devpinoyLogger chart  ID is delete ----> 1234638
+22/02/2022 17:17:33 devpinoyLogger Negative Scenarios of  ---> 
+22/02/2022 17:17:33 devpinoyLogger Negative Scenarios of  ---> {
     "code": "chart_collection_name",
     "sub_code": "request_body",
     "summary": "VOL_CTLG_CHART_002:CHART:CHART_COLLECTION:CREATE_CHART_COLLECTION",
     "description": "must not be null or blank.",
     "status_code": "ENTRYWAY_REQUEST_VALIDATION_EXCEPTION"
 }
-21/02/2022 17:14:29 devpinoyLogger {
-    "chart_collection_id": 386,
-    "chart_collection_name": "RIP_PUNITH_tigqkVgqnl",
+22/02/2022 17:17:34 devpinoyLogger {
+    "chart_collection_id": 397,
+    "chart_collection_name": "RIP_PUNITH_NGx2e7SI4X",
     "store_id": 168
 }
-21/02/2022 17:14:30 devpinoyLogger 
-21/02/2022 17:14:30 devpinoyLogger {
+22/02/2022 17:17:34 devpinoyLogger 
+22/02/2022 17:17:34 devpinoyLogger {
     "code": "VOL_CTLG_0004",
     "sub_code": "VOL_CTLG_CHART_002",
     "summary": "GET_CHART_COLLECTION:GET_CHART_COLLECTION_BY_ID",
     "description": "invalid chart collection id",
     "status_code": "INVALID_CHART_COLLECTION_ID"
 }
-21/02/2022 17:14:30 devpinoyLogger 
-21/02/2022 17:14:30 devpinoyLogger 
-21/02/2022 17:14:31 devpinoyLogger 
-21/02/2022 17:14:31 devpinoyLogger 
-21/02/2022 17:14:35 devpinoyLogger [
+22/02/2022 17:17:34 devpinoyLogger 
+22/02/2022 17:17:34 devpinoyLogger 
+22/02/2022 17:17:35 devpinoyLogger 
+22/02/2022 17:17:35 devpinoyLogger 
+22/02/2022 17:17:37 devpinoyLogger [
     {
         "store_id": 168,
         "chart_collection_name": "Top Músicas",
@@ -20264,8 +20264,8 @@
     },
     {
         "store_id": 168,
-        "chart_collection_name": "RIP_PUNITH_tigqkVgqnl",
-        "chart_collection_id": 386
+        "chart_collection_name": "RIP_PUNITH_NGx2e7SI4X",
+        "chart_collection_id": 397
     },
     {
         "store_id": 168,
@@ -20273,44 +20273,44 @@
         "chart_collection_id": 381
     }
 ]
-21/02/2022 17:14:35 devpinoyLogger 
-21/02/2022 17:14:35 devpinoyLogger {
+22/02/2022 17:17:37 devpinoyLogger 
+22/02/2022 17:17:37 devpinoyLogger {
     "code": "VOL_CTLG_0037",
     "sub_code": "VOL_CTLG_BNNR_003",
     "summary": "SEARCH_BY_BANNER_COLLECTION_NAME:SEARCH_BY_BANNER_COLLECTION_NAME",
     "description": "chart collections not found168",
     "status_code": "SEARCH_CHART_COLLECTION_NAMES_NOT_FOUND"
 }
-21/02/2022 17:14:36 devpinoyLogger {
+22/02/2022 17:17:38 devpinoyLogger {
     "total_item_count": 1,
     "offset": 0,
     "item_count": 1,
     "chart_collections": [
         {
-            "chart_collection_id": 386,
-            "chart_collection_name": "RIP_PUNITH_tigqkVgqnl",
+            "chart_collection_id": 397,
+            "chart_collection_name": "RIP_PUNITH_NGx2e7SI4X",
             "store_id": 168,
             "chart_collection_charts": null
         }
     ]
 }
-21/02/2022 17:14:36 devpinoyLogger Chart collection ID is deleted ----> 
-21/02/2022 17:14:36 devpinoyLogger {
-    "faq_id": 163,
+22/02/2022 17:17:38 devpinoyLogger Chart collection ID is deleted ----> 
+22/02/2022 17:17:38 devpinoyLogger {
+    "faq_id": 174,
     "text": "sample text",
     "url": "url with modified data",
-    "language": "kannada_j8",
-    "last_updated": "2022-02-21T11:41:03.063"
+    "language": "kannada_4z",
+    "last_updated": "2022-02-22T11:44:03.076"
 }
-21/02/2022 17:14:37 devpinoyLogger 
-21/02/2022 17:14:37 devpinoyLogger {
+22/02/2022 17:17:38 devpinoyLogger 
+22/02/2022 17:17:39 devpinoyLogger {
     "code": "VOL_CTLG_0027",
     "sub_code": "VOL_CTLG_FAQ_001",
     "summary": "GET_FAQ:GET_FAQ",
     "description": "FAQ not found for store_id: 168",
     "status_code": "NO_CONTENT_FOUND"
 }
-21/02/2022 17:14:37 devpinoyLogger {
+22/02/2022 17:17:39 devpinoyLogger {
     "faqs": [
         {
             "language": "",
@@ -20321,4 +20321,4 @@
         }
     ]
 }
-21/02/2022 17:14:37 devpinoyLogger 
+22/02/2022 17:17:39 devpinoyLogger 

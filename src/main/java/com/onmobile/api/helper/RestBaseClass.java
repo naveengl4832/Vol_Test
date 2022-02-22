@@ -18,6 +18,7 @@ import com.onmobile.api.config.Constants;
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 
+
 public class RestBaseClass extends RestListener implements Constants {
 
 	public static String baseURI;
@@ -110,4 +111,5 @@ public class RestBaseClass extends RestListener implements Constants {
 		flushReport();
 		restBaseLogger.exiting(restBaseSourceClass, restBaseSourceMethod);
 	}
+	
 }
