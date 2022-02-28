@@ -111,8 +111,6 @@
 			<version>1.9.8</version>
 		</dependency>
 
-
-
 	</dependencies>
 
 	<properties>
@@ -170,7 +168,6 @@
 		</plugins>
 
 	</build>
-
 	<reporting>
 		<excludeDefaults>true</excludeDefaults>
 		<plugins>
